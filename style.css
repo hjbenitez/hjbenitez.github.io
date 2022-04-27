@@ -4,15 +4,15 @@
 }
 
 .headline {
-    font-size: 30pt;
-    font-style: bold;
-    font-style: italic;
+    font-size: 60pt;
+    font-weight: bolder;
+    font: small-caps;
 }
 
 h1 {
-    font-size: 25pt;
+    font-size: 40pt;
 }
 
 p {
-    font-size: 20pt;
+    font-size: 40pt;
 }
