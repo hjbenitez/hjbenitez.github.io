@@ -5,9 +5,11 @@
 
 .headline {
     font-size: 30pt;
+    font-style: bold;
+    font-style: italic;
 }
 
-h2 {
+h1 {
     font-size: 25pt;
 }
 
