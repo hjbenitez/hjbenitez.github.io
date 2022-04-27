@@ -1,14 +1,16 @@
+.main {
+    display: grid;
+    place-items: center;
+}
+
 .headline {
-    text-align: center;
     font-size: 30pt;
 }
 
 h2 {
-    text-align: center;
     font-size: 15pt;
 }
 
 p {
-    text-align: center;
     font-size: 10pt;
 }
