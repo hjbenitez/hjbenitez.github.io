@@ -21,15 +21,16 @@ header #navigation ul li {
     display: inline-block;
 }
 
-header #navigation-internal ul li a{
+header #navigation-internal ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 10px
 }
 
-header #navigation-internal ul li a:hover{
+header #navigation-internal ul li a:hover {
     background: #444;
-    border-radius: 10px; /*Rounds corners*/
+    border-radius: 10px;
+    /*Rounds corners*/
     transition: 0.5s ease all;
 }
 
@@ -45,7 +46,7 @@ header #navigation-external {
     text-align: right;
 }
 
-header #navigation-external ul li a{
+header #navigation-external ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -57,32 +58,50 @@ header #navigation-external img {
 }
 
 .hero {
-    min-height: 800px;
+    display: flex;
+    margin-top: 50px;
+    min-height: 650px;
+}
+
+.hero-identity {
+    background: #e6e6e6;
     text-align: center;
-    background: #555;
-    background-image: url('images/background.jpg');
-    background-size: cover;   
+    width: 35%;
+    line-height: 100%;
+}
+
+.hero-identity img {
+    width: 60%;
+    margin-top: 10%;
+}
+
+.hero-identity h1 {
+    font-size: 52px;
+}
+
+.hero-identity h2 {
+    font-size: 32px;
+}
+
+.hero-identity a {
+    font-size: 32px;
+    color: #43a1e0;
 }
 
 .hero-content {
+    background: #43a1e0;
+    width: 75%;
     color: white;
-    padding-top: 130px;
     line-height: 1;
-}
 
-.hero-title {
-    margin: 0;
-    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .hero-content p {
-    font-size: 50px;
-    margin-bottom: 60px;
-}
-
-.hero-content img {
-    width: 150x;
-    border-radius: 50%;
-    margin-right: 8px;
-    vertical-align: middle;
+    font-size: 24px;
+    margin-left: 60px;
+    margin-right: 60px
 }
