@@ -60,14 +60,19 @@ header #navigation-external img {
 .hero {
     display: flex;
     margin-top: 50px;
-    min-height: 650px;
 }
 
 .hero-identity {
     background: #e6e6e6;
-    text-align: center;
     width: 35%;
     line-height: 100%;
+    height: auto;
+
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .hero-identity img {
@@ -76,15 +81,15 @@ header #navigation-external img {
 }
 
 .hero-identity h1 {
-    font-size: 52px;
+    font-size: 3em;
 }
 
 .hero-identity h2 {
-    font-size: 32px;
+    font-size: 2em;
 }
 
 .hero-identity a {
-    font-size: 32px;
+    font-size: 2em;
     color: #43a1e0;
 }
 
@@ -101,7 +106,11 @@ header #navigation-external img {
 }
 
 .hero-content p {
-    font-size: 24px;
-    margin-left: 60px;
-    margin-right: 60px
+    font-size: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.projects {
+    text-align: center;
 }
