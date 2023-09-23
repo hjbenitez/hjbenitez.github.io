@@ -115,5 +115,40 @@ header #navigation-external img {
 }
 
 .projects {
+    color: white;
+    background: #43a1e0;
+    display: flex;
+    margin: 3vw;
+}
+
+.projects-header {
     text-align: center;
+    min-height: 8vw;
+    margin: 3vw;
+    color: white;
+    background: #43a1e0;
+    border-radius: 2vw;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.projects-header h1{
+    font-size: 5vw;
+    line-height: 1vw;
+}
+
+.projects-project{
+    flex: 1;
+    text-align: center;
+    line-height: 1vw;
+    min-height: 36vw;
+    border: 0.25vw solid black;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
