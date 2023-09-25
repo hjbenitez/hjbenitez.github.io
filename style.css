@@ -116,7 +116,6 @@ header #navigation-external img {
 
 .projects {
     color: white;
-    background: #43a1e0;
     display: flex;
     margin: 3vw;
 }
@@ -136,35 +135,57 @@ header #navigation-external img {
 }
 
 .projects-project{
-
+    background: #4d4d4d;
+    position: relative;
     flex: 1;
+    align-items: center;
+    margin: 1vw;
+    border-radius: 4vw;
+}
+
+.info {
+    transition: .5s ease;
+    line-height: 1.5vw;
+    font-size: 1.5vw;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     text-align: center;
-    line-height: 1vw;
+    color: white;
 
-    border: 0.25vw solid black;
-
-    
-
-    overflow: hidden;
-
-    
+    width: 30vw;
 }
 
-.projects-project a{
-    font-size: 2vw;
-    color: rgba(0, 0, 0, 0);
-    text-decoration: none;
+
+.preview-image{
+    width: 100%;
+    height: 100%;
+    
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    border-radius: 4vw;
+    /*border: 0.25vw solid black;*/
 }
 
-.projects-project a:hover{
+.projects-project:hover .preview-image{
+    opacity:0.3;
+}
+
+.projects-project:hover .info {
+    opacity:1;
+}
+
+/*
+.projects-project a img:hover{
     color: rgba(255, 255, 255, 1);
     background: rgba(148, 148, 148, 0.5);
     transition: 0.5s ease all;
 }
+*/
 
-.projects-project img{
-    width: 100%;
-    height: 100%
-}
 
 
