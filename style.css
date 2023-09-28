@@ -28,7 +28,8 @@ header #navigation-internal ul li a {
 
 header #navigation-internal ul li a:hover {
     background: #444;
-    border-radius: 10px; /*Rounds corners*/
+    border-radius: 10px;
+    /*Rounds corners*/
     transition: 0.5s ease all;
 }
 
@@ -57,7 +58,7 @@ header #navigation-external img {
 
 .hero {
     display: grid;
-    margin:3vw;
+    margin: 3vw;
 }
 
 .hero-identity, .hero-content {
@@ -114,16 +115,12 @@ header #navigation-external img {
     margin-right: 5%;
 }
 
-.projects {
-    color: white;
-    display: flex;
-    margin: 3vw;
-}
-
-.projects-header {
+.section-header {
     text-align: center;
     min-height: 8vw;
-    margin: 3vw;
+    font-size: 2vw;
+    line-height: 1vw;
+    margin: 1vw 3vw;
     color: white;
     background: #43a1e0;
     border-radius: 2vw;
@@ -134,12 +131,27 @@ header #navigation-external img {
     flex-direction: column;
 }
 
-.projects-project{
-    background: #4d4d4d;
+.projects {
+    color: white;
+    display: flex;
+    margin: 2vw;
+}
+
+.projects-project {
+    background: #43a1e0;
     position: relative;
     flex: 1;
     align-items: center;
-    margin: 1vw;
+    margin: 1vw 1vw 0vw 1vw;
+    border-radius: 2vw;
+}
+
+.projects-project-cover{
+
+    position: relative;
+    flex: 1;
+    align-items: center;
+    margin: 1vw 1vw 0vw 1vw;
     border-radius: 4vw;
 }
 
@@ -155,15 +167,17 @@ header #navigation-external img {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    background: gray;
 
-    width: 30vw;
+    width: 20vw;
+    border-radius: 2vw;
 }
 
 
-.preview-image{
+.preview-image {
     width: 100%;
     height: 100%;
-    
+
     opacity: 1;
     transition: 0.5s ease;
     backface-visibility: hidden;
@@ -171,21 +185,62 @@ header #navigation-external img {
     /*border: 0.25vw solid black;*/
 }
 
-.projects-project:hover .preview-image{
-    opacity:0.3;
+.projects-project-cover:hover .preview-image {
+    opacity: 0.6;
 }
 
-.projects-project:hover .info {
-    opacity:1;
+.projects-project-cover:hover .info {
+    opacity: 1;
 }
 
-/*
-.projects-project a img:hover{
-    color: rgba(255, 255, 255, 1);
-    background: rgba(148, 148, 148, 0.5);
-    transition: 0.5s ease all;
+
+.devlogs {
+    color: white;
+    display: flex;
+    margin: 1vw 2vw;
 }
-*/
 
+.devlogs-project {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin: 0vw 1vw;
+    border-radius: 0.5vw;
+    text-align: center;
 
+    min-height: 20vw;
+}
 
+.devlogs-link {
+    background: #43a1e0;
+    margin: 1vw 1vw;
+    border-radius: 0.75vw;
+    
+}
+
+.devlogs-link a{
+    text-decoration: none;
+}
+
+.button-devlog {
+    color: white;
+    height: 5vw;
+    text-decoration: none;
+    display: flex;
+    border: 0.25vw solid #ffffff;
+    border-radius: 0.75vw;
+    transition: .5s ease;
+}
+
+.button-devlog:hover{
+    background: rgb(0, 63, 171);
+    transition: 0.5s ease;
+}
+.button-devlog h1 {
+    font-size: 1.5vw;
+    line-height: 0.5vw;
+    text-align: center;
+    flex:1;
+    margin: auto;
+}
