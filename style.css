@@ -3,6 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    background: white;
 }
 
 header {
@@ -103,6 +104,9 @@ footer a{
 
     min-height: 32.5vw;
     border-radius: 5vw;
+
+    box-sizing: border-box;
+    border: 0.25vw solid black;
 }
 
 .hero-identity img {
@@ -110,6 +114,9 @@ footer a{
     margin-top: 10%;
     margin-bottom: 5%;
     border-radius: 2vw;
+
+    box-sizing: border-box;
+    border: 0.25vw solid black;
 }
 
 .hero-identity h1 {
@@ -207,7 +214,7 @@ footer a{
     backface-visibility: hidden;
     border-radius: 2vw;
     box-sizing: border-box;
-    border: 0.25vw solid #444;
+    border: 0.25vw solid black;
 }
 
 .highlight{
@@ -243,7 +250,7 @@ footer a{
 }
 
 .devlogs-link {
-    background: #43a1e0;
+    background: white;
     margin: 1vw 1vw;
     border-radius: 0.75vw;
 }
@@ -256,16 +263,17 @@ footer a{
     color: white;
     height: 6vw;
     text-decoration: none;
-    border: 0.25vw solid #444;
+    border: 0.25vw solid black;
     border-radius: 0.75vw;
     transition: .5s ease;
 }
 
 .button-devlog:hover{
-    background: #3277a5;
+    background: #b4b4b4;
     transition: 0.5s ease;
 }
 .button-devlog h1 {
+    color: black;
     padding: 0.5vw 1.5vw 0vw;
     font-size: 1.5vw;
     line-height: 1.5vw;
@@ -275,7 +283,7 @@ footer a{
 
 .button-devlog h2 {
     padding: 0vw 1.5vw 0vw;
-    color: #d3d3d3;
+    color: #444;
     font-size: 1vw;
     line-height: 1.5vw;
     text-align: left;
@@ -284,7 +292,7 @@ footer a{
 
 .button-devlog p {
     padding: 0vw 1.5vw 0vw;
-    color: white;
+    color: black;
     font-size: 1vw;
     line-height: 1.5vw;
     text-align: left;
