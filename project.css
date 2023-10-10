@@ -1,0 +1,22 @@
+.project-main{
+    margin: 3vw;
+}
+
+.project-boiler{
+    background: gray;
+    display: flex;
+}
+
+.project-cover{
+    background: lightcoral;
+    width:65%
+}
+
+.project-cover img{
+    width:100%
+}
+
+.project-information{
+    background: lightblue;
+    width:35%;
+}
