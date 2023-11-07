@@ -5,8 +5,7 @@
 .project-boiler {
    /* background: gray;*/
     display: flex;
-    margin: 1vw;
-    line-height: 0vh;
+    line-height: 0vh;;
 }
 
 .project-cover {
@@ -39,7 +38,7 @@
     background: lightgrey;
     font-size: 2.5vw;
     text-align: center;
-    margin: 0vw 2vw;
+    margin: 0vw 1vw;
     padding: 1.5vw 0vw;
     border-radius: 0.5vw;
 
@@ -53,7 +52,7 @@
 .project-stat {
     background: lightgray;
     text-align: center;
-    margin: 1vw 2vw 0vw 2vw;
+    margin: 1vw 1vw 0vw;
     max-height: 4vw;
     min-height: 3vw;
     padding: 0.5vw 0vw;
@@ -90,7 +89,7 @@
     text-align: center;
     text-decoration: none;
     border-radius: 0.5vw;
-    margin: 0.5vw 2vw 0vw;
+    margin: 0.5vw 1vw 0vw;
 
     display: flex;
     justify-content: center;
@@ -116,6 +115,50 @@
 }
 
 .project-images img:hover {
-    -webkit-transform:scale(1.5);
+    -webkit-transform:scale(1.25);
     transform:scale(1.25);
+}
+
+.project-blocks{
+    display: flex;
+}
+
+.project-block{
+    flex:1;
+    margin: 1vw;
+}
+
+.project-block-title {
+    background-color: #43a1e0;
+    padding: .5vw;
+    text-align: center;
+    line-height: 0.5vw;
+}
+
+.project-block-content{
+    background: aquamarine;
+    text-align: center;
+    min-height: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.project-block-content p{
+    margin: 1vw;
+}
+
+.project-block-content-list{
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.project-block-content ul li {
+    list-style-type: none;
+    padding: 1vw;
 }
