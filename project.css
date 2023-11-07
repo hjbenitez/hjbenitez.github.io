@@ -3,14 +3,15 @@
 }
 
 .project-boiler {
-   /* background: gray;*/
+    /* background: gray;*/
     display: flex;
-    line-height: 0vh;;
+    line-height: 0vh;
 }
 
 .project-cover {
     /*background: lightcoral;*/
-    width: 65%
+    margin: 0vw 1vw;
+    width: 66%
 }
 
 .project-cover img {
@@ -20,17 +21,19 @@
 .project-cover iframe {
     width: 100%;
     height: 100%;
+    border-radius: 2vw;
 }
 
 
 .project-sidebar {
     /*background: lightpink;*/
     display: inline-block;
-    width: 35%;
+    width: 34%;
+    margin: 0vw 0.25vw;
 }
 
 .project-information {
-   /* background: lightblue;*/
+    /* background: lightblue;*/
     width: 100%;
     height: 90%;
 
@@ -51,7 +54,7 @@
 }
 
 .project-title h1 {
-    color:white;
+    color: white;
     font-size: 80%;
     line-height: 1vw;
 }
@@ -107,7 +110,7 @@
 .project-images {
     max-height: 50vh;
     display: flex;
-    margin: 1vw 0vw; 
+    margin: 1vw 0vw;
 }
 
 .project-images img {
@@ -118,22 +121,22 @@
     flex: 1;
 
     border-radius: 2vw;
-    transition:transform 0.25s ease;
+    transition: transform 0.25s ease;
 }
 
 .project-images img:hover {
-    -webkit-transform:scale(1.25);
-    transform:scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
 }
 
-.project-blocks{
+.project-blocks {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
 }
 
-.project-block{
+.project-block {
     margin: 1vw;
     flex: 1;
 }
@@ -149,10 +152,11 @@
     margin: 0vw 10vw;
 }
 
-.project-block-content{
+.project-block-content {
     /*background: aquamarine;*/
     text-align: center;
-    height: 40vh;
+    min-height: 10vh;
+    max-height: 40vh;
 
     display: flex;
     justify-content: center;
@@ -160,24 +164,24 @@
     flex-direction: column;
 }
 
-.project-block-content.goal{
+.project-block-content.goal {
     height: 10vh;
 }
 
-.project-block-content p{
-    font-size: 1vw;
-    margin: 1vw 18vw;
+.project-block-content p {
+    font-size: 1.1vw;
+    margin: 1vw 15vw;
 }
 
 .project-block-content ul li {
-    font-size: 1vw;
+    font-size: 1.1vw;
     list-style-type: none;
-    padding: 1vw 5vw;
+    padding: 0vw 3vw 1vw;
 }
 
-.project-block-content-list{
+.project-block-content-list {
     display: flex;
+    flex: 1;
     justify-content: center;
-    align-content: center;
     flex-direction: row;
 }
