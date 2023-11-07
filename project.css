@@ -35,7 +35,7 @@
 }
 
 .project-title {
-    background: lightgrey;
+    background-color: #43a1e0;
     font-size: 2.5vw;
     text-align: center;
     margin: 0vw 1vw;
@@ -45,6 +45,7 @@
 }
 
 .project-title h1 {
+    color:white;
     font-size: 80%;
     line-height: 1vw;
 }
@@ -121,24 +122,31 @@
 
 .project-blocks{
     display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .project-block{
-    flex:1;
     margin: 1vw;
+    flex: 1;
 }
 
 .project-block-title {
     background-color: #43a1e0;
+    color: white;
     padding: .5vw;
     text-align: center;
     line-height: 0.5vw;
+
+    border-radius: 1vw;
+    margin: 0vw 10vw;
 }
 
 .project-block-content{
-    background: aquamarine;
+    /*background: aquamarine;*/
     text-align: center;
-    min-height: 30vh;
+    height: 40vh;
 
     display: flex;
     justify-content: center;
@@ -146,19 +154,24 @@
     flex-direction: column;
 }
 
+.project-block-content.goal{
+    height: 10vh;
+}
+
 .project-block-content p{
-    margin: 1vw;
+    font-size: 1vw;
+    margin: 1vw 20vw;
+}
+
+.project-block-content ul li {
+    font-size: 1vw;
+    list-style-type: none;
+    padding: 1vw 5vw;
 }
 
 .project-block-content-list{
-    margin: 1vw;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: row;
-}
-
-.project-block-content ul li {
-    list-style-type: none;
-    padding: 1vw;
 }
