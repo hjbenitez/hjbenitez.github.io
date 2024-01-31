@@ -98,11 +98,11 @@ footer a{
 .hero-identity {
     background: #e6e6e6;
     width: 32.5vw;
-    line-height: 1vw;
+    line-height: 0.5vw;
     height: auto;
     text-align: center;
 
-    min-height: 32.5vw;
+    min-height: 20vw;
     border-radius: 5vw;
 
     box-sizing: border-box;
@@ -110,9 +110,8 @@ footer a{
 }
 
 .hero-identity img {
-    width: 45%;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    width: 40%;
+    margin-top: 5%;
     border-radius: 2vw;
 
     box-sizing: border-box;
@@ -120,15 +119,15 @@ footer a{
 }
 
 .hero-identity h1 {
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 
 .hero-identity h2 {
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .hero-identity a {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #43a1e0;
 }
 
@@ -142,7 +141,7 @@ footer a{
     align-content: center;
     flex-direction: column;
 
-    min-height: 32.5vw;
+    min-height: 20vw;
     border-radius: 5vw;
 }
 
@@ -179,11 +178,12 @@ footer a{
     position: relative;
     flex: 1;
     align-items: center;
-    margin: 0vw 2vw 0vw;
+    margin: 0vw 1vw 0vw;
     border-radius: 2vw;
     display: inline-block;
 }
 
+/*
 .info {
     transition: .5s ease;
     line-height: 1.5vw;
@@ -192,16 +192,15 @@ footer a{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 100%);
+    -ms-transform: translate(-50%, 100%);
     text-align: center;
     color: white;
     background: gray;
 
-    width: 20vw;
-    border-radius: 2vw;
-}
-
+    width: 100%;
+   border-radius: 2vw;
+} */
 .projects-project-cover{
     position: relative;
 }
