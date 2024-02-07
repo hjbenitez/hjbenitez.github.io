@@ -179,8 +179,9 @@ footer a{
     flex: 1;
     align-items: center;
     margin: 0vw 1vw 0vw;
-    border-radius: 2vw;
+    border-radius: 1vw;
     display: inline-block;
+    line-height: 0vw;
 }
 
 /*
@@ -207,13 +208,14 @@ footer a{
 
 .preview-image {
     width: 100%;
-    height: 100%;
+    height: 45vw;
     opacity: 1;
     transition: 0.5s ease;
     backface-visibility: hidden;
-    border-radius: 2vw;
+    border-radius: 1vw;
     box-sizing: border-box;
     border: 0.25vw solid black;
+    object-fit: cover;
 }
 
 .highlight{
