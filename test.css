@@ -1,84 +1,110 @@
 /*
  CSS for the main interaction
 */
-.tabset > input[type="radio"] {
-    position: absolute;
-    left: -200vw;
-  }
-  
-  .tabset .tab-panel {
-    display: none;
-  }
-  
-  .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
-  .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
-  .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
-  .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
-  .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
-  .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
-    display: block;
-  }
-  
-  /*
+.tabset>input[type="radio"] {
+  position: absolute;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+.tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+.tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
+.tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
+.tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
+.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
    Styling
   */
-  body {
-    font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
-    color: #333;
-    font-weight: 300;
-  }
+.tabset {
+  text-align: center;
+}
+
+.tab-panel {
+  background-color: #B6BCE0;
+}
+
+body {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 300;
+  background-color: #E0D5B5;
+  margin:0;
+}
+
+.tabset>label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 2px solid black;
+  border-bottom: 0;
+  width: 22.95%;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 1vw 1vw 0vw 0vw;
+  background: #A0A3BE;
+  color: white;
+
+  margin: 0vw -0.2vw;
+
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tabset>label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+input:focus-visible+label {
+  /*outline: 2px solid rgba(0, 102, 204, 1);*/
+  /*border-radius: 3px;*/
+}
+
+.tabset>label:hover,
+.tabset>input:focus+label,
+.tabset>input:checked+label {
+  background: #B6BCE0;
+}
+
+.tabset>label:hover::after,
+.tabset>input:focus+label::after,
+.tabset>input:checked+label::after {
+  background: white;
+}
+
+.tabset>input:checked+label {
+  border-color: #ccc;
+  border: 2px solid black;
+  border-bottom: 2px solid #B6BCE0;
+  margin-bottom: -2px;
+}
+.tab-panels {
+  padding: 30px 0;
+  border-top: 2px solid black;
+  background: #B6BCE0;
+
+}
+
+.tab-panel {
+  margin: 0vw 10vw;
   
-  .tabset > label {
-    position: relative;
-    display: inline-block;
-    padding: 15px 15px 25px;
-    border: 1px solid transparent;
-    border-bottom: 0;
-    cursor: pointer;
-    font-weight: 600;
-  }
-  
-  .tabset > label::after {
-    content: "";
-    position: absolute;
-    left: 15px;
-    bottom: 10px;
-    width: 22px;
-    height: 4px;
-    background: #8d8d8d;
-  }
-  
-  input:focus-visible + label {
-    outline: 2px solid rgba(0,102,204,1);
-    border-radius: 3px;
-  }
-  
-  .tabset > label:hover,
-  .tabset > input:focus + label,
-  .tabset > input:checked + label {
-    color: #06c;
-  }
-  
-  .tabset > label:hover::after,
-  .tabset > input:focus + label::after,
-  .tabset > input:checked + label::after {
-    background: #06c;
-  }
-  
-  .tabset > input:checked + label {
-    border-color: #ccc;
-    border-bottom: 1px solid #fff;
-    margin-bottom: -1px;
-  }
-  
-  .tab-panel {
-    padding: 30px 0;
-    border-top: 1px solid #ccc;
-  }
-  
-  /*
+}
+
+
+/*
    Demo purposes only
-  */
+  
   *,
   *:before,
   *:after {
@@ -92,3 +118,55 @@
   .tabset {
     max-width: 65em;
   }
+  */
+
+  header {
+    background: #E0D5B5;
+    color: #ffffff;
+}
+
+header #navigation {
+    display: flex;
+    vertical-align: middle;
+    font-size: 1.5vw;
+}
+
+header #navigation ul li {
+    display: inline-block;
+}
+
+header #navigation-internal ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 1vw;
+}
+
+header #navigation-internal ul li a:hover {
+    background: #444;
+    border-radius: 10px;
+    /*Rounds corners*/
+    transition: 0.5s ease all;
+}
+
+header #navigation-internal {
+    width: 49%;
+    display: inline-block;
+    text-align: left;
+}
+
+header #navigation-external {
+    width: 49%;
+    display: inline-block;
+    text-align: right;
+}
+
+header #navigation-external ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1vw;
+}
+
+header #navigation-external img {
+    width: 3vw;
+    vertical-align: middle;
+}
