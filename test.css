@@ -1,11 +1,22 @@
 /*
  CSS for the main interaction
 */
+
 .tabset>input[type="radio"] {
   position: absolute;
+  appearance:none;
+}
+
+.headerset>input[type="radio"] {
+  position: absolute;
+  appearance:none;
 }
 
 .tabset .tab-panel {
+  display: none;
+}
+
+.headerset .header-panel {
   display: none;
 }
 
@@ -18,11 +29,34 @@
   display: block;
 }
 
+.headerset>input:first-child:checked~.header-panels>.header-panel:first-child{
+  display: block;
+}
+
 /*
    Styling
   */
+  header {
+    text-align: center;
+  }
+
+  .headerset>label {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 25px;
+    width: 40%;
+    cursor: pointer;
+    font-weight: 600;
+    background: #A19676;
+    color: white;
+  
+    justify-content: center;
+    flex-direction: column;
+  }
+
 .tabset {
   text-align: center;
+  background: #A19676;
 }
 
 .tab-panel {
@@ -40,11 +74,12 @@ body {
 .tabset>label {
   position: relative;
   display: inline-block;
-  padding: 15px 15px 25px;
+  padding: 15px 15px ;
   border: 2px solid black;
   border-bottom: 0;
   width: 22.95%;
   cursor: pointer;
+  font-size: 2vw;
   font-weight: 600;
   border-radius: 1vw 1vw 0vw 0vw;
   background: #A0A3BE;
@@ -56,6 +91,7 @@ body {
   flex-direction: column;
 }
 
+/*
 .tabset>label::after {
   content: "";
   position: absolute;
@@ -64,7 +100,7 @@ body {
   width: 22px;
   height: 4px;
   background: #8d8d8d;
-}
+}*/
 
 input:focus-visible+label {
   /*outline: 2px solid rgba(0, 102, 204, 1);*/
@@ -77,12 +113,13 @@ input:focus-visible+label {
   background: #B6BCE0;
 }
 
+/*
 .tabset>label:hover::after,
 .tabset>input:focus+label::after,
 .tabset>input:checked+label::after {
   background: white;
 }
-
+*/
 .tabset>input:checked+label {
   border-color: #ccc;
   border: 2px solid black;
