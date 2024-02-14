@@ -48,12 +48,13 @@ header {
   justify-content: center;
   flex-direction: column;
   z-index: 0;
+  flex-basis: 100%;
 }
 
 .headerset>label {
   position: relative;
   display: flex;
-  padding: 15px 15px;
+  padding: 1.5vw 1.5vw;
   width: 30%;
   min-height: 5vw;
   cursor: pointer;
@@ -61,18 +62,19 @@ header {
   font-weight: 600;
   background: #A19676;
   color: white;
-  
-  border: 2px solid black;
 
-  margin-bottom: -2vw;
+  border: 0.15vw solid black;
+
+  margin-bottom: -4vw;
   padding-top: 2vw;
+  padding-bottom: 4vw;
   flex-direction: column;
 }
 
-.header-panel .content{
+.header-panel .content {
   background: #ffffff;
   display: flex;
-  margin-bottom: -2vw;
+  margin-bottom: -4vw;
   min-height: 30vw;
 }
 
@@ -81,10 +83,10 @@ header {
   color: white;
   flex: 1;
   border: 2px solid black;
-  border-bottom: 0px;
-  padding: 15px 15px;
+  border-bottom: 0vw;
+  padding: 1.5vw 1.5vw;
   z-index: 1;
-  
+
 }
 
 .middle {
@@ -92,7 +94,7 @@ header {
   width: 30%;
   background: #A19676;
   color: white;
-  padding: 15px 15px;
+  padding: 1.5vw 1.5vw;
   z-index: 1;
   font-size: 1.5vw;
 }
@@ -105,6 +107,10 @@ header {
 
 .tabset {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .tab-panel {
@@ -112,7 +118,7 @@ header {
 }
 
 body {
-  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  font: 1vw/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
   color: #333;
   font-weight: 300;
   background-color: #E0D5B5;
@@ -120,20 +126,21 @@ body {
 }
 
 .tabset>label {
-  margin-top: -10vw; /* Higher or lower number depending on how far up you want it to go */
+  /*margin-top: -10vw;  Higher or lower number depending on how far up you want it to go */
   position: relative;
   display: inline-block;
-  padding: 15px 15px;
-  border: 2px solid black;
+  padding: 1.5vw 1.5vw;
+  border: 0.15vw solid black;
   border-bottom: 0;
-  width: 22.95%;
+  width: fit-content;
   cursor: pointer;
   font-size: 1.5vw;
   font-weight: 600;
   border-radius: 1vw 1vw 0vw 0vw;
   background: #A0A3BE;
   color: white;
-
+  flex: 1;
+  max-height: 5vw;
   justify-content: center;
   flex-direction: column;
 
@@ -171,54 +178,131 @@ input:focus-visible+label {
 */
 .tabset>input:checked+label {
   border-color: #ccc;
-  border: 2px solid black;
-  border-bottom: 2px solid #B6BCE0;
-  margin-bottom: -2px;
+  border: 0.15vw solid black;
+  border-bottom: 0.15vw solid #B6BCE0;
+  margin-bottom: -0.2vw;
 }
 
 .tab-panels {
   position: relative;
-
-  border-top: 2px solid black;
+  flex-basis: 100%;
+  border-top: 0.15vw solid black;
   background: #B6BCE0;
-  z-index: 2;  
+  z-index: 2;
 
 }
 
 .tab-panel {
-  margin: 0vw 10vw;
+  margin: 0vw 4vw;
   z-index: 1;
   min-height: 30vw;
 }
 
-
-/*
-   Demo purposes only
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-  
-  body {
-    padding: 30px;
-  }
-  
-  .tabset {
-    max-width: 65em;
-  }
-  */
 
 header {
   background: #E0D5B5;
   color: #ffffff;
 }
 
+/* Section Header Style */
+.section-header {
+  margin: 2vw 0vw;
+  display: grid;
+}
+
+.bottom, .top {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.section-header>.bottom {
+  background: #A19676;
+  height: 5vw;
+  margin-top: 1vw;
+  border: 0.15vw solid black;
+}
+
+.section-header>.top {
+  background: #E0D5B5;
+  color: white;
+  height: 5vw;
+  font-size: 3.5vw;
+  font-weight: bold;
+  border: 0.15vw solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+.section-header>.top:hover{
+  margin-top: 1vw;
+}*/
+/*------------------------------------*/
+
+/* Project Button Style*/
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex:1;
+  gap: 2vw;
+
+  margin-bottom: 2vw;
+}
+
+.project {
+  display: grid;
+  flex: 1;
+}
+
+.project-bottom, .project-top {
+  grid-row: 1;
+  grid-column: 1;
+
+  height: 45vw;
+}
+
+.project-bottom {
+  display:flex;
+  background: #A19676;
+
+  border: 0.15vw solid black;
+  border-radius: 1vw;
+
+  margin-top: 1vw;
+}
+
+.project-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview-image{
+  width: 100%;
+  height: 45vw;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 1vw;
+  box-sizing: border-box;
+  border: 0.15vw solid black;
+  object-fit: cover;
+}
+
+.project>.project-top:hover{
+  margin-top:1.25vw;
+}
+
+
+
+/*------------------------------------*/
 footer {
   position: relative;
   background: #A19676;
   min-height: 25vw;
-  border-top: 2px solid black;
+  border-top: 0.15vw solid black;
   z-index: 2;
 }
