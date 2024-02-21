@@ -33,6 +33,15 @@
   display: block;
 }
 
+::-webkit-scrollbar {
+  width: 0.25vw;
+  background-color: #B6BCE0
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #E0D5B5;
+}
+
 /*
    Styling
 */
@@ -115,6 +124,7 @@ header {
 
 .tab-panel {
   background-color: #B6BCE0;
+  min-height: 1000px;
 }
 
 body {
@@ -172,13 +182,13 @@ input:focus-visible+label {
   
 }
 
-/*
+
 .tabset>label:hover::after,
 .tabset>input:focus+label::after,
 .tabset>input:checked+label::after {
   background: white;
 }
-*/
+
 .tabset>input:checked+label {
   border-color: #ccc;
   border: 0.15vw solid black;
@@ -198,7 +208,7 @@ input:focus-visible+label {
 .tab-panel {
   margin: 0vw 4vw;
   z-index: 1;
-  min-height: 30vw;
+
 }
 
 
@@ -344,7 +354,7 @@ header {
 footer {
   position: relative;
   background: #A19676;
-  min-height: 25vw;
+  min-height: 5vw;
   border-top: 0.15vw solid rgb(53, 53, 53);
   z-index: 2;
 }
