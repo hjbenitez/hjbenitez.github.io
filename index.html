@@ -4,142 +4,259 @@
 <head>
     <meta charset="UTF-8" />
     <title>Humberto Benitez</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+    <script src="test.js"></script>
+
 
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <!-- NAVIGATION -->
-        <div id="navigation">
-            <!-- INTERNAL NAVIGATION -->
-            <nav id="navigation-internal">
-                <ul>
-                    <li><a href="index.html">Humberto Benitez</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="devlogs.html">Devlogs</a></li>
-                    <li><a href="files\Resume V3.0.pdf" download target="_blank">Resume</a></li>
-                </ul>
-            </nav>
+        <div class="headerset">
+            <input type="radio" name="tabset" id="tab5" aria-controls="humberto">
+            <label for="tab5">Humberto Benitez</label>
 
-            <!-- EXTERNAL NAVIGATION -->
-            <nav id="navigation-external">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/hjbenitez/" target="_blank"><img
-                                src="images\linkedin.png"></a></li>
-                    <li><a href="https://twitter.com/hjbenitez177" target="_blank"><img src="images\twitter.png"></a>
-                    </li>
-                    <li><a href="https://benitez177.itch.io/" target="_blank"><img src="images\itch-io.png"></a></li>
-                    <li><a href="https://github.com/hjbenitez" target="_blank"><img src="images\github.png"></a></li>
-                </ul>
-            </nav>
+            <div class="header-panels">
+                <section id="humberto" class="header-panel">
+                    <div class="content">
+                        <div class="side">
+                            <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean,
+                                rich,
+                                toasty
+                                and bready malt flavor, restrained bitterness, and a dry finish that encourages another
+                                drink. The
+                                overall malt impression is soft, elegant, and complex, with a rich aftertaste that is
+                                never
+                                cloying
+                                or heavy.</p>
+                        </div>
+
+                        <div class="middle">
+                            <img src="images\Me fr.png">
+                            <h1>Game Programmer</h1>
+                            <h1>Catchy Tagline</h1>
+                        </div>
+
+                        <div class="side">
+                            <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean,
+                                rich,
+                                toasty
+                                and bready malt flavor, restrained bitterness, and a dry finish that encourages another
+                                drink. The
+                                overall malt impression is soft, elegant, and complex, with a rich aftertaste that is
+                                never
+                                cloying
+                                or heavy.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </header>
 
-    <!-- MAIN -->
-    <div class="page-main">
-        <!-- HERO -->
-        <div class="hero">
-            <div class="hero-content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae ligula facilisis, commodo eros
-                    ut, euismod orci. Praesent euismod auctor ultricies. Sed placerat nulla turpis, eu sagittis libero
-                    vehicula sit amet.
-                    Nulla facilisi. Proin tortor mauris, viverra accumsan nisl ut, auctor dapibus erat. Interdum et
-                    malesuada fames ac ante ipsum primis in faucibus. Mauris mattis, arcu vitae cursus facilisis, purus
-                    erat volutpat nunc, nec ultrices lectus quam eu dui.
-                    Curabitur facilisis magna dignissim, varius nunc et, luctus libero. Donec ultrices rhoncus augue sed
-                    lobortis. Curabitur non sapien leo. Fusce hendrerit pellentesque lacus at ultricies.
-                    Nam vulputate diam sed nisi tincidunt, et molestie tellus interdum. Aliquam a faucibus massa.
-                </p>
-            </div>
+    <div class="tabset">
+        <!-- Tab 1 -->
+        <input type="radio" name="tabset" id="tab1" aria-controls="home" checked>
+        <label for="tab1">Home</label>
+        <!-- Tab 2 -->
+        <input type="radio" name="tabset" id="tab2" aria-controls="projects">
+        <label for="tab2">Projects</label>
+        <!-- Tab 3 -->
+        <input type="radio" name="tabset" id="tab3" aria-controls="writings">
+        <label for="tab3">Writings</label>
+        <!-- Tab 4 -->
+        <input type="radio" name="tabset" id="tab4" aria-controls="devlogs">
+        <label for="tab4">Devlogs</label>
 
-            <div class="hero-identity">
-                <img src="images\Me fr.png">
-                <h1>Humberto Benitez</h1>
-                <h2>Game Programmer</h2>
-                <h2>Catchy Tagline</h2>
-                <h1></h1>
-            </div>
+        <div class="tab-panels">
 
-        </div>
-
-        <div class="section-header">
-            <h1>Featured Projects</h1>
-        </div>
-
-        <div class="projects">
-            <div class="projects-project">
-                <div class="projects-project-cover">
-                    <a href="projects\project1.html">
-                        <img src="images\One Month at a TIme.png" class="preview-image" title="One Month at a Time">
-                    </a>
+            <!-- HOME TAB --------------------------------------------------------------------------------->
+            <section id="home" class="tab-panel">
+                <div class="section-header">
+                    <div class="bottom"></div>
+                    <div class="top">Featured Projects</div>
                 </div>
 
-                <div class="devlogs-container">
-                    <div class="devlogs-link">
-                        <a href="https://benitez177.itch.io/test-devlog/devlog/516612/post-production" target="_blank">
-                            <div class="button-devlog">
-                                <h1>Post-Production</h1>
-                                <h2>April 14, 2023</h2>
-                                <p><b>Thoughts on reaching post-production stage</b></p>
-                            </div>
-                        </a>
+                <div class="projects-container">
+                    <div class="project">
+                        <div class="project-bottom"></div>
+                        <div class="project-top">
+                            <a href="projects\project1.html">
+                                <img src="images\One Month at a TIme.png" class="preview-image"
+                                    title="One Month at a Time">
+                                <div class="preview-info">
+                                    <div class="text">
+                                        <h1>One Month at a Time</h1>
+                                        <h3>Programmer • 2023</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+                        <div class="project-bottom"></div>
+                        <div class="project-top">
+                            <a href="projects\project2.html">
+                                <img src="images\Gunsmith.png" class="preview-image" title="Gunsmith">
+                                <div class="preview-info">
+                                    <div class="text">
+                                        <h1>Gunsmith</h1>
+                                        <h3>Programmer • 2023</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-bottom"></div>
+                        <div class="project-top">
+                            <a href="projects\project3.html">
+                                <img src="images\The Hanger.png" class="preview-image" title="The Hanger">
+                                <div class="preview-info">
+                                    <div class="text">
+                                        <h1>The Hanger</h1>
+                                        <h3>Programmer • 2023</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="projects-project">
-                <div class="projects-project-cover">
-                    <a href="projects\project2.html">
-                        <img src="images\Gunsmith.png" class="preview-image" title="Gunsmith">
-                    </a>
-                </div>
+            <!-- PROJECTS TAB ------------------------------------------------------------------------------>
+            <!-- ROW 1 ----------------------------------------->
+            <section id="projects" class="tab-panel">
+                <div class="projects-container">
+                    <div class="project">
+                        <div class="project-bottom"></div>
+                        <div class="project-top">
+                            <a href="projects\project1.html">
+                                <img src="images\One Month at a TIme.png" class="preview-image"
+                                    title="One Month at a Time">
+                                <div class="preview-info">
+                                    <div class="text">
+                                        <h1>One Month at a Time</h1>
+                                        <h3>Programmer • 2023</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-                <div class="devlogs-container">
-                    <div class="devlogs-link">
-                        <a href="projects\project2.html" target="_blank">
-                            <div class="button-devlog">
-                                <h1>Devlog 3</h1>
-                                <h2>Date</h2>
-                                <p><b>Description</b></p>
-                            </div>
-                        </a>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-bottom"></div>
+                        <div class="project-top">
+                            <a href="projects\project2.html">
+                                <img src="images\Gunsmith.png" class="preview-image" title="Gunsmith">
+                                <div class="preview-info">
+                                    <div class="text">
+                                        <h1>Gunsmith</h1>
+                                        <h3>Programmer • 2023</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-bottom"></div>
+                        <div class="project-top">
+                            <a href="projects\project3.html">
+                                <img src="images\The Hanger.png" class="preview-image" title="The Hanger">
+                                <div class="preview-info">
+                                    <div class="text">
+                                        <h1>The Hanger</h1>
+                                        <h3>Programmer • 2023</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="projects-project">
-                <div class="projects-project-cover">
-                    <a href="projects\project3.html">
-                        <img src="images\The Hanger.png" class="preview-image" title="The Hanger">
-                    </a>
-                </div>
-                
-                <div class="devlogs-container">
-                    <div class="devlogs-link">
-                        <a href="projects\project3.html" target="_blank">
-                            <div class="button-devlog">
-                                <h1>Devlog 3</h1>
-                                <h2>Date</h2>
-                                <p><b>Description</b></p>
-                            </div>
-                        </a>
+                <!-- ROW 2 ----------------------------------------->
+                <div class="projects-container">
+                    <div class="project">
+                        <div class="project-bottom"></div>
+                        <div class="project-top">
+                            <a href="projects\project1.html">
+                                <img src="images\One Month at a TIme.png" class="preview-image" title="One Month at a Time">
+                                <div class="preview-info">
+                                    <div class="text">
+                                        <h1>Project 1</h1>
+                                        <h3>Programmer • 2023</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                    </div>
+    
+                    <div class="project">
+                        <div class="project-bottom"></div>
+                        <div class="project-top">
+                            <a href="projects\project2.html">
+                                <img src="images\Gunsmith.png" class="preview-image" title="Gunsmith">
+                                <div class="preview-info">
+                                    <div class="text">
+                                        <h1>Project 2</h1>
+                                        <h3>Programmer • 2023</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="project">
+                        <div class="project-bottom"></div>
+                        <div class="project-top">
+                            <a href="projects\project3.html">
+                                <img src="images\The Hanger.png" class="preview-image" title="The Hanger">
+                                <div class="preview-info">
+                                    <div class="text">
+                                        <h1>Project 3</h1>
+                                        <h3>Programmer • 2023</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section id="writings" class="tab-panel">
+                <h2>6C. Dunkles Bock</h2>
+                <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that emphasizes the
+                    malty-rich and somewhat toasty qualities of continental malts without being sweet in the finish.</p>
+                <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a brewing
+                    center and popular exporter in the days of the Hanseatic League (14th to 17th century). Recreated in
+                    Munich starting in the 17th century. The name “bock” is based on a corruption of the name “Einbeck”
+                    in the Bavarian dialect, and was thus only used after the beer came to Munich. “Bock” also means
+                    “Ram” in German, and is often used in logos and advertisements.</p>
+            </section>
+
+            <section id="devlogs" class="tab-panel">
+                <h2>Yo Mamo</h2>
+                <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that emphasizes the
+                    malty-rich and somewhat toasty qualities of continental malts without being sweet in the finish.</p>
+                <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a brewing
+                    center and popular exporter in the days of the Hanseatic League (14th to 17th century). Recreated in
+                    Munich starting in the 17th century. The name “bock” is based on a corruption of the name “Einbeck”
+                    in the Bavarian dialect, and was thus only used after the beer came to Munich. “Bock” also means
+                    “Ram” in German, and is often used in logos and advertisements.</p>
+            </section>
         </div>
-        <footer>
-            <div><img src="images\Me fr.png"></div>
-            <span>
-                <a href="https://github.com/hjbenitez/hjbenitez.github.io">I made the website myself!</a> <br/>
-                &copy; 2023
-            </span>
-        </footer>
+
     </div>
-    <script src="main.js"></script>
+
+    <footer>
+
+    </footer>
 
 </body>
-
-</html>
