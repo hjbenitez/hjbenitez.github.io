@@ -34,12 +34,14 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0.25vw;
+  width: 1vw;
   background-color: #B6BCE0
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #E0D5B5;
+  background-color: #A19676;
+  border: 0.15vw solid black;
+  border-radius: 0.15vw;
 }
 
 /*
@@ -48,6 +50,21 @@
 header {
   text-align: center;
   min-height: 5vw;
+  display: flex;
+}
+
+/* NAVIGATION */
+.navigation {
+  align-items: left;
+}
+
+.navigation ul{
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation ul li{
+  text-decoration: none;
 }
 
 .headerset {
