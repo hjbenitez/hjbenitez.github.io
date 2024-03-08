@@ -49,86 +49,83 @@
 */
 header {
   text-align: center;
-  min-height: 5vw;
+  min-height: 6vw;
   display: flex;
 }
 
 /* NAVIGATION */
 .navigation {
-  align-items: left;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  /*background: lightcoral;*/
+  width: 100%;
+
+  margin-bottom: -1vw;
 }
 
-.navigation ul{
-  list-style-type: none;
+.internal, .title, .external {
   display: flex;
 }
 
-.navigation ul li{
+.internal ul, .title ul, .external ul {
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+
+  padding: 0;
+  margin: 0;
+
+  margin-bottom: 1vw;
+}
+
+.internal {
+  grid-row: 1;
+  grid-column: 1;
+
+  font-size: 2.5vw;
+  font-weight: bold;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+.title {
+  grid-row: 1;
+  grid-column: 2;
+
+  font-size: 2.5vw;
+  font-weight: bold;
+  background: #A19676;
+  border: 0.2vw black solid;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.external {
+  grid-row: 1;
+  grid-column: 3;
+
+  align-items: center;
+  justify-content: right;
+  flex-direction: row;
+}
+
+.external ul {
+  line-height: 0;
+}
+
+.external ul li{
+  padding-right: 1vw;
+  padding-left: 1vw;
   text-decoration: none;
 }
 
-.headerset {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 0;
-  flex-basis: 100%;
-}
-
-.headerset>label {
-  position: relative;
-  display: flex;
-  padding: 1.5vw 1.5vw;
-  width: 30%;
-  min-height: 5vw;
-  cursor: pointer;
-  font-size: 2vw;
-  font-weight: 600;
-  background: #A19676;
-  color: white;
-
-  border: 0.15vw solid black;
-
-  margin-bottom: -4vw;
-  padding-top: 2vw;
-  padding-bottom: 4vw;
-  flex-direction: column;
-}
-
-.header-panel .content {
-  background: #ffffff;
-  display: flex;
-  margin-bottom: -4vw;
-  min-height: 30vw;
-}
-
-.side {
-  background: #B6BCE0;
-  color: white;
-  flex: 1;
-  border: 2px solid black;
-  border-bottom: 0vw;
-  padding: 1.5vw 1.5vw;
-  z-index: 1;
-
-}
-
-.middle {
-  position: relative;
-  width: 30%;
-  background: #A19676;
-  color: white;
-  padding: 1.5vw 1.5vw;
-  z-index: 1;
-  font-size: 1.5vw;
-}
-
-.middle img {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 2vw;
+.external img{
+  width: 4vw;
 }
 
 .tabset {
