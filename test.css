@@ -90,6 +90,19 @@ header {
   flex-direction: row;
 }
 
+.internal a{ 
+  color: white;
+  text-decoration: none;
+
+  transition: 0.25s;
+  padding: 0.5vw 1.5vw;
+}
+
+.internal a:hover {
+  background: gray;
+  transition: 0.25s;
+  border-radius: 0.5vw;
+}
 
 .title {
   grid-row: 1;
@@ -110,7 +123,7 @@ header {
   grid-column: 3;
 
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   flex-direction: row;
 }
 
@@ -119,8 +132,8 @@ header {
 }
 
 .external ul li{
-  padding-right: 1vw;
-  padding-left: 1vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
   text-decoration: none;
 }
 
