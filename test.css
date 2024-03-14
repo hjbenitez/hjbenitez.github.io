@@ -85,20 +85,21 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-}
 
-.internal ul {
+  padding-right: 2vw;
+  padding-left: 2vw;
+
   line-height: 0;
 }
 
-.internal ul li{
-  padding-right: 2vw;
-  padding-left: 2vw;
-  text-decoration: none;
-}
+.internal a {
+  line-height: 0;
+  margin: 0vw 1.5vw;
+  margin-top: -1vw;
+} 
 
 .internal img{
-  width: 4vw;
+  width: 6vw;
 }
 
 .title {
@@ -124,18 +125,14 @@ header {
   flex-direction: row;
 }
 
-.external ul {
+.external a {
   line-height: 0;
-}
-
-.external ul li{
-  padding-right: 2vw;
-  padding-left: 2vw;
-  text-decoration: none;
-}
+  margin: 0vw 1.5vw;
+  margin-top: -1vw;
+} 
 
 .external img{
-  width: 4vw;
+  width: 6vw;
 }
 
 .tabset {
@@ -144,10 +141,12 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  margin: 0vw 3vw 3vw;
 }
 
 .tab-panel {
-  background-color: #B6BCE0;
+  background-color: #DABE6E;
   min-height: 1000px;
 }
 
@@ -155,7 +154,7 @@ body {
   font: 1vw/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
   color: #333;
   font-weight: 300;
-  background-color: #E0D5B5;
+  background: #343E85;
   margin: 0;
 }
 
@@ -171,7 +170,7 @@ body {
   font-size: 1.5vw;
   font-weight: 600;
   border-radius: 1vw 1vw 0vw 0vw;
-  background: #A0A3BE;
+  background: #635526;
   color: white;
   flex: 1;
   max-height: 5vw;
@@ -201,7 +200,7 @@ input:focus-visible+label {
 .tabset>label:hover,
 .tabset>input:focus+label,
 .tabset>input:checked+label {
-  background: #B6BCE0;
+  background: #DABE6E;
   transition: background 0.25s;
   
 }
@@ -216,7 +215,7 @@ input:focus-visible+label {
 .tabset>input:checked+label {
   border-color: #ccc;
   border: 0.15vw solid black;
-  border-bottom: 0.15vw solid #B6BCE0;
+  border-bottom: 0.15vw solid #DABE6E;
   margin-bottom: -0.2vw;
 }
 
@@ -224,20 +223,19 @@ input:focus-visible+label {
   position: relative;
   flex-basis: 100%;
   border-top: 0.15vw solid black;
-  background: #B6BCE0;
+  background: #DABE6E;
+  border: 0.15vw black solid; 
   z-index: 2;
-
 }
 
 .tab-panel {
   margin: 0vw 4vw;
   z-index: 1;
-
 }
 
 
 header {
-  background: #E0D5B5;
+  background: #343E85;
   color: #ffffff;
 }
 
@@ -253,14 +251,14 @@ header {
 }
 
 .section-header>.bottom {
-  background: #A19676;
+  background: #0E1A48;
   height: 5vw;
   margin-top: 1vw;
   border: 0.15vw solid black;
 }
 
 .section-header>.top {
-  background: #E0D5B5;
+  background: #343E85;
   color: white;
   height: 5vw;
   font-size: 3.5vw;
@@ -377,7 +375,7 @@ header {
   padding-top: 1vw;
 }
 
-.button {
+.button, .button-header {
   display: grid;
 
   justify-content: center;
@@ -388,15 +386,24 @@ header {
   padding-bottom: 2vw;
 }
 
-.button-bottom, .button-top {
+.button-header>.button-bottom, .button-header>.button-top {
   grid-row: 1;
   grid-column: 1;
+
+  height: 5vw;
+  width: 35vw;
+}
+
+.button>.button-bottom, .button>.button-top {
+  grid-row: 1;
+  grid-column: 1;
+
   height: 5vw;
   width: 60vw;
 }
 
 .button-bottom {
-  background: #A19676;
+  background: #635526;
 
   border: 0.15vw solid black;
   border-radius: 1vw;
@@ -412,7 +419,7 @@ header {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 3vw;
 
   display: flex;
   justify-content: center;
@@ -421,7 +428,7 @@ header {
 }
 
 .button-top{
-  background: #E0D5B5;
+  background: #DABE6E;
   flex: 1;
   border: 0.15vw solid black;
   border-radius: 1vw;
@@ -429,7 +436,8 @@ header {
   transition: margin-top 0.25s ease-in;
 }
 
-.button>.button-top:hover{
+.button>.button-top:hover,
+.button-header>.button-top:hover{
   margin-top:1vw;
   transition: margin-top 0.25s ease-in;
 }
@@ -437,7 +445,7 @@ header {
 /*------------------------------------*/
 footer {
   position: relative;
-  background: #A19676;
+  background: #DABE6E;
   min-height: 5vw;
   border-top: 0.15vw solid rgb(53, 53, 53);
   z-index: 2;
