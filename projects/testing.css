@@ -10,12 +10,10 @@
   }
   
   .button-bottom {
-    background: #635526;
-  
-    border: 0.15vw solid black;
-    border-radius: 1vw;
-  
-    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
   
   .button-top>a{
@@ -32,32 +30,29 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-  }
-  
-  .button-top{
-    background: #DABE6E;
-    flex: 1;
-    border: 0.15vw solid black;
-    border-radius: 1vw;
-  
+
     transition: margin-top 0.25s ease-in;
   }
-
+  
 .button-header>.button-bottom,
 .button-header>.button-top {
     grid-row: 1;
     grid-column: 1;
 
-    height: 5vw;
-    width: 35vw;
+    height: 8vw;
 }
 
-.button>.button-top:hover,
-.button-header>.button-top:hover {
-    margin-top: 1vw;
+.button-header>.button-top>a:hover {
+    margin-top: 0.85vw;
     transition: margin-top 0.25s ease-in;
 }
 
 .logo-image{
-    height: 2vw;
+    height: 8vw;
+    
+}
+
+.logo-image-back {
+  height: 5.175vw;
+  margin-top: 4.5vw;
 }

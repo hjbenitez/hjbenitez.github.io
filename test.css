@@ -56,26 +56,17 @@ header {
 /* NAVIGATION */
 .navigation {
   display: grid;
-  grid-template-columns: 35% 30% 35%;
+  grid-template-columns: 45% 10% 45%;
   /*background: lightcoral;*/
   width: 100%;
 
   margin-bottom: -1vw;
 }
 
-.internal, .title, .external {
+.internal,
+.title,
+.external {
   display: flex;
-}
-
-.internal ul, .title ul, .external ul {
-  list-style-type: none;
-  display: flex;
-  text-decoration: none;
-
-  padding: 0;
-  margin: 0;
-
-  margin-bottom: 1vw;
 }
 
 .internal {
@@ -94,11 +85,11 @@ header {
 
 .internal a {
   line-height: 0;
-  margin: 0vw 1.5vw;
-  margin-top: -1vw;
-} 
+  margin: 0vw 3vw;
+  margin-top: 0vw;
+}
 
-.internal img{
+.internal img {
   width: 6vw;
 }
 
@@ -127,11 +118,11 @@ header {
 
 .external a {
   line-height: 0;
-  margin: 0vw 1.5vw;
-  margin-top: -1vw;
-} 
+  margin: 0vw 3vw;
+  margin-top: 0vw;
+}
 
-.external img{
+.external img {
   width: 6vw;
 }
 
@@ -142,7 +133,7 @@ header {
   justify-content: center;
   align-items: center;
 
-  margin: 0vw 3vw 3vw;
+  margin: 1vw 3vw 3vw;
 }
 
 .tab-panel {
@@ -202,7 +193,7 @@ input:focus-visible+label {
 .tabset>input:checked+label {
   background: #DABE6E;
   transition: background 0.25s;
-  
+
 }
 
 
@@ -224,7 +215,7 @@ input:focus-visible+label {
   flex-basis: 100%;
   border-top: 0.15vw solid black;
   background: #DABE6E;
-  border: 0.15vw black solid; 
+  border: 0.15vw black solid;
   z-index: 2;
 }
 
@@ -245,7 +236,8 @@ header {
   display: grid;
 }
 
-.bottom, .top {
+.bottom,
+.top {
   grid-column: 1;
   grid-row: 1;
 }
@@ -269,6 +261,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 /*
 .section-header>.top:hover{
   margin-top: 1vw;
@@ -281,7 +274,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex:1;
+  flex: 1;
   gap: 2vw;
 
   margin-bottom: 2vw;
@@ -293,14 +286,15 @@ header {
   flex: 1;
 }
 
-.project-bottom, .project-top {
+.project-bottom,
+.project-top {
   grid-row: 1;
   grid-column: 1;
   height: 45vw;
 }
 
 .project-bottom {
-  display:flex;
+  display: flex;
   background: #A19676;
 
   border: 0.15vw solid black;
@@ -309,7 +303,7 @@ header {
   margin-top: 1vw;
 }
 
-.project-top{
+.project-top {
   display: flex;
 
   background: #E0D5B5;
@@ -322,13 +316,13 @@ header {
   transition: margin-top 0.25s ease-in;
 }
 
-.project-top>a{
+.project-top>a {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.preview-image{
+.preview-image {
   width: 100%;
   height: 100%;
   border-radius: 0.8vw;
@@ -342,10 +336,10 @@ header {
   height: 20%;
   border: 0.15vw solid black;
   border-radius: 0 0 0.8vw 0.8vw;
-  
+
   opacity: 0;
   position: absolute;
-  top:90%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -361,8 +355,9 @@ header {
   font-weight: bold;
   margin: 1vw;
 }
-.project>.project-top:hover{
-  margin-top:1vw;
+
+.project>.project-top:hover {
+  margin-top: 1vw;
   transition: margin-top 0.25s ease-in;
 }
 
@@ -375,7 +370,8 @@ header {
   padding-top: 1vw;
 }
 
-.button, .button-header {
+.button,
+.button-header {
   display: grid;
 
   justify-content: center;
@@ -386,32 +382,14 @@ header {
   padding-bottom: 2vw;
 }
 
-.button-header>.button-bottom, .button-header>.button-top {
-  grid-row: 1;
-  grid-column: 1;
-
-  height: 5vw;
-  width: 35vw;
-}
-
-.button>.button-bottom, .button>.button-top {
-  grid-row: 1;
-  grid-column: 1;
-
-  height: 5vw;
-  width: 60vw;
-}
-
 .button-bottom {
-  background: #635526;
-
-  border: 0.15vw solid black;
-  border-radius: 1vw;
-
-  margin-top: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.button-top>a{
+.button-top>a {
   width: 100%;
   height: 100%;
   position: relative;
@@ -425,22 +403,38 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-}
-
-.button-top{
-  background: #DABE6E;
-  flex: 1;
-  border: 0.15vw solid black;
-  border-radius: 1vw;
 
   transition: margin-top 0.25s ease-in;
 }
 
-.button>.button-top:hover,
-.button-header>.button-top:hover{
-  margin-top:1vw;
+.button-header>.button-bottom,
+.button-header>.button-top {
+  grid-row: 1;
+  grid-column: 1;
+
+  height: 8vw;
+}
+
+.button-header>.button-top>a:hover {
+  margin-top: 0.85vw;
   transition: margin-top 0.25s ease-in;
 }
+
+.button>.button-top:hover {
+  margin-top: 1vw;
+  transition: margin-top 0.25s ease-in;
+}
+
+.logo-image {
+  height: 8vw;
+
+}
+
+.logo-image-back {
+  height: 5.175vw;
+  margin-top: 4.5vw;
+}
+
 
 /*------------------------------------*/
 footer {
