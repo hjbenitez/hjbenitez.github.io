@@ -1,5 +1,11 @@
+.project-background {
+    position: relative;
+    background: #B6BCE0;
+    border: 0.15vw black solid;
+}
+
 .project-main {
-    margin: 3vw 4vw;
+    padding: 3vw 4vw;    
 }
 
 .project-boiler {
