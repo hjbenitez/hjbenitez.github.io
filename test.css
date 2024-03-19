@@ -56,74 +56,48 @@ header {
 /* NAVIGATION */
 .navigation {
   display: grid;
-  grid-template-columns: 45% 10% 45%;
+  grid-template-columns: 37.5% 25% 37.5%;
   /*background: lightcoral;*/
   width: 100%;
 
   margin-bottom: -1vw;
 }
 
-.internal,
 .title,
 .external {
   display: flex;
 }
 
-.internal {
+#left-navigation {
   grid-row: 1;
   grid-column: 1;
-
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-
-  padding-right: 2vw;
-  padding-left: 2vw;
-
-  line-height: 0;
 }
 
-.internal a {
-  line-height: 0;
-  margin: 0vw 3vw;
-  margin-top: 0vw;
-}
-
-.internal img {
-  width: 6vw;
-}
-
-.title {
+#right-navigation{
   grid-row: 1;
-  grid-column: 2;
-
-  font-size: 2.5vw;
-  font-weight: bold;
-  background: #A19676;
-  border: 0.2vw black solid;
-
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  grid-column: 3;
 }
 
 .external {
-  grid-row: 1;
-  grid-column: 3;
-
   align-items: center;
   justify-content: center;
   flex-direction: row;
+
+  margin-bottom: -1.5vw;
 }
 
-.external a {
+.external>.link-button {
   line-height: 0;
-  margin: 0vw 3vw;
+  margin: 0vw 2vw;
   margin-top: 0vw;
 }
 
+
 .external img {
   width: 6vw;
+  border: 0.15vw solid black;
+  border-radius: 5vw;
+  background: #DABE6E;
 }
 
 .tabset {
@@ -158,8 +132,11 @@ body {
   border-bottom: 0;
   width: fit-content;
   cursor: pointer;
+
   font-size: 1.5vw;
   font-weight: 600;
+  -webkit-text-stroke: 0.05vw black;
+
   border-radius: 1vw 1vw 0vw 0vw;
   background: #635526;
   color: white;
@@ -371,7 +348,8 @@ header {
 }
 
 .button,
-.button-header {
+.button-header,
+.link-button {
   display: grid;
 
   justify-content: center;
@@ -431,8 +409,34 @@ header {
 }
 
 .logo-image-back {
-  height: 5.175vw;
-  margin-top: 4.5vw;
+  height: 6.2vw;
+  margin-top: 3.5vw;
+}
+
+.link-button>.button-bottom,
+.link-button>.button-top {
+    grid-row: 1;
+    grid-column: 1;
+
+    height: 6vw;
+} 
+
+.link-button>.button-top>a:hover {
+    margin-top: 1vw;
+    transition: margin-top 0.25s ease-in;
+}
+
+.link-button>.button-top {
+  border-radius: 5vw;
+}
+
+.link-button>.button-bottom {
+  background: #635526;
+  width: 6vw;
+
+  margin-top: 2vw;
+  border: 0.15vw solid black;
+  border-radius: 5vw;
 }
 
 

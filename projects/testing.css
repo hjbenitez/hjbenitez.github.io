@@ -1,4 +1,83 @@
-.button, .button-header {
+/*
+   Styling
+*/
+header {
+  text-align: center;
+  min-height: 6vw;
+  display: flex;
+}
+
+/* NAVIGATION */
+.navigation {
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  /*background: lightcoral;*/
+  width: 100%;
+
+  margin-bottom: -1vw;
+}
+
+.title,
+.external {
+  display: flex;
+}
+
+#left-navigation {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#right-navigation{
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.external {
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  margin-bottom: -1.5vw;
+}
+
+.external>.link-button {
+  line-height: 0;
+  margin: 0vw 3vw;
+  margin-top: 0vw;
+}
+
+
+.external img {
+  width: 6vw;
+  border: 0.15vw solid black;
+  border-radius: 5vw;
+  background: #DABE6E;
+}
+
+
+body {
+  font: 1vw/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 300;
+  background: #343E85;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button, .button-header, .link-button {
     display: grid;
   
     justify-content: center;
@@ -49,10 +128,35 @@
 
 .logo-image{
     height: 8vw;
-    
 }
 
 .logo-image-back {
   height: 5.175vw;
   margin-top: 4.5vw;
+}
+
+.link-button>.button-bottom,
+.link-button>.button-top {
+    grid-row: 1;
+    grid-column: 1;
+
+    height: 6vw;
+} 
+
+.link-button>.button-top>a:hover {
+    margin-top: 1vw;
+    transition: margin-top 0.25s ease-in;
+}
+
+.link-button>.button-top {
+  border-radius: 5vw;
+}
+
+.link-button>.button-bottom {
+  background: #635526;
+  width: 6vw;
+
+  margin-top: 2vw;
+  border: 0.15vw solid black;
+  border-radius: 5vw;
 }
