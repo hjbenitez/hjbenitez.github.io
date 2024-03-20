@@ -410,6 +410,11 @@ header {
   width: 50vw;
 }
 
+#resume-header>.top{
+  border: 0;
+  border-bottom: 0.15vw solid black;
+}
+
 .resume-embed {
   display: grid;
   background: #474B59;
@@ -433,12 +438,13 @@ header {
   background: #31343d;
   height: 60vw;
   margin-top: 1vw;
-  border-bottom: 0.15vw solid black;
+  border: 0.15vw solid black;
 }
 
 .resume-embed>.top {
   background: #474B59;
-  border-bottom: 0.15vw solid black;
+  border: 0.15vw solid black;
+
   height: 60vw;
 
   display: flex;
