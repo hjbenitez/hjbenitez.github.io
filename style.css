@@ -415,37 +415,52 @@ header {
   border-bottom: 0.15vw solid black;
 }
 
-.resume-embed {
-  display: grid;
-  background: #474B59;
-  width: 50vw;
+.resume-embed>iframe {
+  height: 45vw;
+  width: 40vw;
+  
+  margin-top: 2vw;
 }
 
-.resume-embed>.top,
-.resume-embed>.bottom {
+.resume-embed {
+  display: flex;
+  background: #474B59;
+  width: 50vw;
+  border: 0.15vw solid black;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.download-button { 
+  display: grid;
+  margin-top: 2vw;
+}
+
+.download-button>.top,
+.download-button>.bottom {
   grid-column: 1;
   grid-row: 1;
 }
 
-.resume-embed>.top>iframe {
-  height: 45vw;
-  width: 40vw;
+.download-button>.bottom {
+  background: #0E1A48;
 
-  margin-top: 2vw;
-}
+  height: 10vw;
+  width: 50vw;
 
-.resume-embed>.bottom {
-  background: #31343d;
-  height: 60vw;
   margin-top: 1vw;
-  border: 0.15vw solid black;
+  border-bottom: 0.15vw solid black;
 }
 
-.resume-embed>.top {
-  background: #474B59;
-  border: 0.15vw solid black;
+.download-button>.top {
+  background: #343E85;
+  border-bottom: 0.15vw solid black;
+  border-top: 0.15vw solid black;
 
-  height: 60vw;
+  height: 10vw;
+  width: 50vw;
 
   display: flex;
   justify-content: center;
