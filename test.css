@@ -112,7 +112,7 @@ header {
 
 .tab-panel {
   background-color: #DABE6E;
-  min-height: 1000px;
+  min-height: 500px;
 }
 
 body {
@@ -439,6 +439,78 @@ header {
   border-radius: 5vw;
 }
 
+
+/* ABOUT ME */
+.about-me-content{
+  margin-top: 3vw;
+
+  font-size: 1.5vw;
+}
+
+.profile-pic {
+  width: 25vw;
+  margin: 1vw;
+
+  border-radius: 1vw;
+}
+
+.hero-panel{
+  display: flex;
+
+  background: #474B59;
+  
+  margin: 0vw 6vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.hero-panel>p{
+  margin: 0vw 2vw;
+  color: white;
+}
+
+.about-me-lists{
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.about-me-list {
+  background: #474B59;
+  color: white;
+  min-width: 20vw;
+  margin:2vw 3.5vw;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.about-me-list>h1{
+  padding: 0;
+  margin: 0;
+  font-size: 1.75vw;
+
+  margin: 1vw 0vw 2vw;
+  padding: 1vw 0vw;
+
+  background: #DABE6E;
+}
+
+.about-me-list>ul {
+  padding: 0;
+  margin: 0;
+}
+
+.about-me-list>ul li{
+  list-style: none;
+  text-decoration: none;
+
+  margin-bottom: 1vw;
+}
 
 /*------------------------------------*/
 footer {
