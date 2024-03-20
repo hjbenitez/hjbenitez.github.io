@@ -344,10 +344,6 @@ header {
   opacity: 0.9;
 }
 
-.resume-embed {
-  padding-top: 1vw;
-}
-
 .button,
 .button-header,
 .link-button {
@@ -399,6 +395,86 @@ header {
   transition: margin-top 0.25s ease-in;
 }
 
+#resume>.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+}
+
+#resume-header {
+  margin: 0;
+  width: 50vw;
+}
+
+.resume-embed {
+  display: grid;
+  background: #474B59;
+  width: 50vw;
+}
+
+.resume-embed>.top,
+.resume-embed>.bottom {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.resume-embed>.top>iframe {
+  height: 45vw;
+  width: 40vw;
+
+  margin-top: 2vw;
+}
+
+.resume-embed>.bottom {
+  background: #31343d;
+  height: 60vw;
+  margin-top: 1vw;
+  border-bottom: 0.15vw solid black;
+}
+
+.resume-embed>.top {
+  background: #474B59;
+  border-bottom: 0.15vw solid black;
+  height: 60vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button>.button-bottom,
+.button>.button-top {
+  grid-row: 1;
+  grid-column: 1;
+
+  height: 8vw;
+}
+
+.button>.button-bottom {
+  background: #635526;
+  width: 40vw;
+
+  margin-top: 1vw;
+  border: 0.15vw solid black;
+
+  border-radius: 2vw;
+}
+
+.button>.button-top {
+  background: #DABE6E;
+  width: 40vw;
+  border: 0.15vw solid black;
+
+  border-radius: 2vw;
+
+  transition: margin-top 0.25s ease-in;
+}
+
 .button>.button-top:hover {
   margin-top: 1vw;
   transition: margin-top 0.25s ease-in;
@@ -406,7 +482,6 @@ header {
 
 .logo-image {
   height: 8vw;
-
 }
 
 .logo-image-back {
@@ -575,7 +650,7 @@ header {
 }
 
 .wip {
-  height:20vw;
+  height:30vw;
   margin: 8vw 0vw;
 }
 
