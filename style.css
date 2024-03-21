@@ -686,6 +686,27 @@ header {
   margin: 8vw 0vw;
 }
 
+/* BIG PROJECTS TAB*/
+.big-projects-container{
+  display: grid;
+  
+  margin: 2vw 0vw;
+  background: lightblue;
+  min-width: 50vw;
+  min-height: 100vw;
+}
+
+#project-1{
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.big-project-left{
+  background: lightcoral;
+  min-width: 40vw;
+  min-height: 25vw;
+}
+
 /*------------------------------------*/
 footer {
   position: relative;
