@@ -1,3 +1,15 @@
+/* VARIABLES*/
+:root{
+  --primary-colour: #343E85;
+  --primary-colour-shade: #0E1A48;
+  
+  --secondary-colour: #853438;
+  --secondary-colour-shade: #40191B;
+
+  --teritary-colour: #474B59;
+  --teritary-colour-shade: #31343d;
+}
+
 /*
  CSS for the main interaction
 */
@@ -33,15 +45,15 @@
   display: block;
 }
 
-::-webkit-scrollbar {
-  width: 1vw;
-  background-color: #B6BCE0
-}
-
 ::-webkit-scrollbar-thumb {
-  background-color: #A19676;
+  background-color: var(--secondary-colour);
   border: 0.15vw solid black;
   border-radius: 0.15vw;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+  background-color: var(--secondary-colour-shade)
 }
 
 /*
@@ -97,7 +109,7 @@ header {
   width: 6vw;
   border: 0.15vw solid black;
   border-radius: 5vw;
-  background: #DABE6E;
+  background: var(--secondary-colour);
 }
 
 .tabset {
@@ -107,11 +119,11 @@ header {
   justify-content: center;
   align-items: center;
 
-  margin: 1vw 3vw 3vw;
+  margin: 1vw 4vw 3vw;
 }
 
 .tab-panel {
-  background-color: #DABE6E;
+  background-color: var(--secondary-colour);
   min-height: 500px;
 }
 
@@ -119,7 +131,7 @@ body {
   font: 1vw/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
   color: #333;
   font-weight: 300;
-  background: #343E85;
+  background: var(--primary-colour);
   margin: 0;
 }
 
@@ -133,13 +145,13 @@ body {
   width: fit-content;
   cursor: pointer;
 
-  font-size: 1.5vw;
+  font-size: 2vw;
   font-weight: 600;
-  -webkit-text-stroke: 0.05vw black;
+  letter-spacing: 5px;
 
   border-radius: 1vw 1vw 0vw 0vw;
-  background: #635526;
-  color: white;
+  background: var(--secondary-colour-shade);
+  color: gray;
   flex: 1;
   max-height: 5vw;
   justify-content: center;
@@ -168,7 +180,8 @@ input:focus-visible+label {
 .tabset>label:hover,
 .tabset>input:focus+label,
 .tabset>input:checked+label {
-  background: #DABE6E;
+  background: var(--secondary-colour);
+  color: white;
   transition: background 0.25s;
 
 }
@@ -183,7 +196,7 @@ input:focus-visible+label {
 .tabset>input:checked+label {
   border-color: #ccc;
   border: 0.15vw solid black;
-  border-bottom: 0.15vw solid #DABE6E;
+  border-bottom: 0.15vw solid var(--secondary-colour);
   margin-bottom: -0.2vw;
 }
 
@@ -191,7 +204,7 @@ input:focus-visible+label {
   position: relative;
   flex-basis: 100%;
   border-top: 0.15vw solid black;
-  background: #DABE6E;
+  background: var(--secondary-colour);
   border: 0.15vw black solid;
   z-index: 2;
 }
@@ -203,7 +216,7 @@ input:focus-visible+label {
 
 
 header {
-  background: #343E85;
+  background: var(--primary-colour);
   color: #ffffff;
 }
 
@@ -221,14 +234,14 @@ header {
 }
 
 .section-header>.bottom {
-  background: #0E1A48;
+  background: var(--primary-colour-shade);
   height: 5vw;
   margin-top: 1vw;
   border: 0.15vw solid black;
 }
 
 .section-header>.top {
-  background: #343E85;
+  background: var(--primary-colour);
   color: white;
   height: 5vw;
   font-size: 3.5vw;
@@ -424,7 +437,7 @@ header {
 
 .resume-embed {
   display: flex;
-  background: #474B59;
+  background: var(--teritary-colour);
   width: 50vw;
   border: 0.15vw solid black;
 
@@ -445,7 +458,7 @@ header {
 }
 
 .download-button>.bottom {
-  background: #0E1A48;
+  background: var(--primary-colour-shade);
 
   height: 10vw;
   width: 50vw;
@@ -455,7 +468,7 @@ header {
 }
 
 .download-button>.top {
-  background: #343E85;
+  background: var(--primary-colour);
   border-bottom: 0.15vw solid black;
   border-top: 0.15vw solid black;
 
@@ -477,7 +490,7 @@ header {
 }
 
 .button>.button-bottom {
-  background: #635526;
+  background: var(--secondary-colour-shade);
   width: 40vw;
 
   margin-top: 1vw;
@@ -487,7 +500,7 @@ header {
 }
 
 .button>.button-top {
-  background: #DABE6E;
+  background: var(--secondary-colour);
   width: 40vw;
   border: 0.15vw solid black;
 
@@ -506,7 +519,7 @@ header {
 }
 
 .logo-image-back {
-  height: 6.2vw;
+  height: 6.075vw;
   margin-top: 3.5vw;
 }
 
@@ -528,7 +541,7 @@ header {
 }
 
 .link-button>.button-bottom {
-  background: #635526;
+  background: var(--secondary-colour-shade);
   width: 6vw;
 
   margin-top: 2vw;
@@ -560,14 +573,14 @@ header {
 }
 
 .hero-panel>.bottom {
-  background: #31343d;
+  background: var(--teritary-colour-shade);
   height: 35vw;
   margin-top: 1vw;
   border: 0.15vw solid black;
 }
 
 .hero-panel>.top {
-  background: #474B59;
+  background: var(--teritary-colour);
   color: white;
   height: 35vw;
   font-size: 1.5vw;
@@ -582,7 +595,6 @@ header {
   margin-right: 2.5vw;
   line-height: 3vw;
   color: white;
-  -webkit-text-stroke: 0.025vw black;
 
 }
 
@@ -598,7 +610,7 @@ header {
 }
 
 .about-me-list {
-  background: #474B59;
+  background: var(--teritary-colour);
   color: white;
   min-width: 15vw;
   
@@ -613,7 +625,7 @@ header {
 
 /* List Header Style */
 .list-header {
-  background: #343E85;
+  background: var(--primary-colour);
   color: white;
   height: 3vw;
   
@@ -628,7 +640,6 @@ header {
 .list-header> h1 {
   font-size: 1.75vw;
   font-weight: bold;
-  -webkit-text-stroke: 0.05vw black;
 }
 
 
@@ -638,18 +649,17 @@ header {
 }
 
 .list-body>.bottom {
-  background: #31343d;
+  background: var(--secondary-colour-shade);
   height: 10vw;
   margin-top: 1vw;
   border: 0.15vw solid black;
 }
 
 .list-body>.top {
-  background: #474B59;
+  background: var(--secondary-colour);
   color: white;
   height: 10vw;
   font-size: 1.5vw;
-  -webkit-text-stroke: 0.025vw black;
 
   border: 0.15vw solid black;
 
@@ -678,7 +688,7 @@ header {
 /*------------------------------------*/
 footer {
   position: relative;
-  background: #DABE6E;
+  background: var(--secondary-colour);
   min-height: 5vw;
   border-top: 0.15vw solid rgb(53, 53, 53);
   z-index: 2;
