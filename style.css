@@ -552,14 +552,15 @@ header {
 
 /* ABOUT ME */
 .about-me-content{
-  margin-top: 3vw;
+  margin-top: 2vw;
 
   font-size: 1.5vw;
 }
 
 .profile-pic {
   width: 18vw;
-  margin: 1vw 2.5vw;
+  margin: 1vw 2vw;
+  margin-left: 1vw;
 
   border-radius: 1vw;
   border: 0.15vw solid black;
@@ -567,7 +568,7 @@ header {
 
 .hero-panel {
   display: grid;
-  margin: 0vw 5.5vw 3vw;
+  margin: 0vw 0vw 1vw;
 
   min-height: 30vw;
 }
@@ -604,7 +605,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-right: 2.5vw;
+  margin-right: 1.5vw;
   margin-top: 3vw;
 
 }
@@ -612,7 +613,7 @@ header {
 .about-me-list {
   background: var(--teritary-colour);
   color: white;
-  min-width: 15vw;
+  min-width: 18vw;
   
   justify-content: center;
   align-items: center;
@@ -620,7 +621,7 @@ header {
 }
 
 #middle-list {
-  margin: 0vw 1vw;
+  margin: 0vw 2vw;
 }
 
 /* List Header Style */
