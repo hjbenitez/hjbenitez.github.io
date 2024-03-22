@@ -286,7 +286,7 @@ header {
 
 .project-bottom {
   display: flex;
-  background: #A19676;
+  background: var(--teritary-colour-shade);
 
   border: 0.15vw solid black;
   border-radius: 1vw;
@@ -297,7 +297,7 @@ header {
 .project-top {
   display: flex;
 
-  background: #E0D5B5;
+  background: var(--teritary-colour);
   border: 0.15vw solid black;
   border-radius: 1vw;
 
@@ -727,6 +727,7 @@ header {
 
 .big-project-button {
   display: grid;
+  width: 42.5%;
 }
 
 .big-project-button>.bottom {
@@ -738,7 +739,7 @@ header {
 
 .big-project-button>.top {
   height: 25vw;
-
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -746,8 +747,17 @@ header {
   transition: margin-top 0.25s ease-in;
 }
 
+.big-project-button>.top a{
+  position: relative;
+}
+
 .big-project-button>.top:hover{
   margin-top: 1.075vw;
+}
+
+.big-project-button>.top:hover .big-preview{
+  transition: opacity .5s 0.30s ease;
+  opacity: 0.9;
 }
 
 .big-project-button>.top.left,
@@ -790,11 +800,9 @@ header {
   object-fit: cover;
 }
 
-
-
 .big-project-description {
   display: grid;
-  width: 57.5%;
+  width: 47.5%;
 }
 
 .big-project-description>.bottom {
@@ -844,7 +852,6 @@ header {
 
   height: 40%;
   width: 90%;
-  margin-bottom: 2.5vw;
 
   border-top: 0.25vw solid black;
 
@@ -861,7 +868,7 @@ header {
   height: 3.5vw;
 
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
 
   border: 0.15vw solid black;
   border-radius: 0.5vw;
@@ -869,6 +876,42 @@ header {
 
   justify-content: center;
   align-items: center;
+}
+
+.big-preview-back{
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  justify-content: center;
+  align-items: end;
+}
+
+.big-preview{
+  position: absolute;
+  display: flex;
+  height: 30%;
+  padding: 1vw 9vw;
+  background: rgb(34, 34, 34);
+  opacity: 0;
+
+  transition: opacity .5s ease;
+}
+
+.big-preview.left{
+  border-bottom-left-radius: 0.85vw;
+}
+
+.big-preview.right{
+  border-bottom-right-radius: 0.85vw;
+}
+
+
+
+.big-preview img{
+  height: 100%;
+  object-fit: cover;
 }
 
 /*------------------------------------*/
