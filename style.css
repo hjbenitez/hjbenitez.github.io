@@ -703,12 +703,49 @@ header {
   grid-column: 1;
 }
 
-.big-project-left{
-  background: lightcoral;
+.big-project {
+  display: flex;
+  background: var(--primary-colour);
+  
+  border: 0.15vw solid black;
+  border-radius: 2vw;
+
   width: 65vw;
-  height: 35vw;
+  height: 30vw;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.big-project-left{
+  display: flex;
+
+  line-height: 0;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  margin: 2vw;
+}
+
+.big-project-image {
+  height: 25vw;
+  border-radius: 0.8vw;
+  object-fit: cover;
+}
+
+.big-project-description {
+  color: white;
+  font-size: 1.25vw;
+  line-height: 1.5vw;
+  margin-left: 2vw;
+}
+
+.big-project-description p {
+  margin: 4vw 0vw;
+}
 /*------------------------------------*/
 footer {
   position: relative;
