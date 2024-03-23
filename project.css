@@ -1,14 +1,29 @@
+/* VARIABLES*/
+:root{
+    --primary-colour: #343E85;
+    --primary-colour-shade: #0E1A48;
+    
+    --secondary-colour: #853438;
+    --secondary-colour-shade: #40191B;
+  
+    --teritary-colour: #474B59;
+    --teritary-colour-shade: #31343d;
+  }
+
 .project-background {
     position: relative;
-    background: #B6BCE0;
+    background: var(--secondary-colour);
     border: 0.15vw black solid;
+    margin: 0vw 4vw 3vw; 
+    border-radius: 1vw 1vw 0vw 0vw;   
 }
 
 .project-main {
-    padding: 3vw 4vw;    
+    margin: 0vw 4vw; 
 }
 
 .project-boiler {
+    margin-top: 2vw;
     /* background: gray;*/
     display: flex;
     line-height: 0vh;
@@ -21,7 +36,7 @@
 }
 
 .project-cover img {
-    width: 100%;
+    width: 80%;
 }
 
 .project-cover iframe {
@@ -50,7 +65,8 @@
 }
 
 .project-title {
-    background-color: #43a1e0;
+    background-color: var(--primary-colour);
+    color: white;
     font-size: 2.5vw;
     text-align: center;
     margin: 0vw 1vw;
@@ -66,7 +82,7 @@
 }
 
 .project-stat {
-    background: lightgray;
+    background: var(--teritary-colour);
     text-align: center;
     margin: 1vw 1vw 0vw;
     max-height: 4vw;
@@ -82,13 +98,14 @@
 }
 
 .project-stat h1 {
-    color: lightslategray;
+    color: lightgray;
     font-size: 1vw;
     line-height: 0vh;
     font-weight: bold;
 }
 
 .project-stat p {
+    color: white;
     font-size: 1.5vw;
     line-height: 0vh;
 }
@@ -100,7 +117,8 @@
 }
 
 .project-links a {
-    background: lightgreen;
+    background: var(--primary-colour);
+    color: white;
     flex: 1;
     text-align: center;
     text-decoration: none;
@@ -120,8 +138,8 @@
 }
 
 .project-images img {
-    max-height: 28vw;
-    max-width: 28vw;
+    max-height: 24vw;
+    max-width: 24vw;
     margin: 0vw auto;
     object-fit: cover;
     flex: 1;
@@ -148,7 +166,7 @@
 }
 
 .project-block-title {
-    background-color: #43a1e0;
+    background-color: var(--primary-colour);
     color: white;
     padding: .5vw;
     text-align: center;
@@ -172,14 +190,17 @@
 
 .project-block-content.goal {
     height: 10vh;
+    color: white;
 }
 
 .project-block-content p {
+    color: white;
     font-size: 1.1vw;
     margin: 1vw 15vw;
 }
 
 .project-block-content ul li {
+    color: white;
     font-size: 1.1vw;
     list-style-type: none;
     padding: 0vw 3vw 1vw;

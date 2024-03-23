@@ -19,16 +19,7 @@
   appearance: none;
 }
 
-.headerset>input[type="radio"] {
-  position: absolute;
-  appearance: none;
-}
-
 .tabset .tab-panel {
-  display: none;
-}
-
-.headerset .header-panel {
   display: none;
 }
 
@@ -38,10 +29,6 @@
 .tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
 .tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
 .tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
-  display: block;
-}
-
-.headerset>input:first-child:checked~.header-panels>.header-panel:first-child {
   display: block;
 }
 
@@ -63,6 +50,7 @@ header {
   text-align: center;
   min-height: 6vw;
   display: flex;
+  margin-bottom: 1vw;
 }
 
 /* NAVIGATION */
@@ -101,7 +89,6 @@ header {
 .external>.link-button {
   line-height: 0;
   margin: 0vw 2vw;
-  margin-top: 0vw;
 }
 
 
@@ -119,7 +106,7 @@ header {
   justify-content: center;
   align-items: center;
 
-  margin: 1vw 4vw 3vw;
+  margin: 0vw 4vw 3vw;
 }
 
 .tab-panel {
