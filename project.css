@@ -15,6 +15,7 @@
     background: var(--secondary-colour);
     border: 0.15vw black solid;
     margin: 0vw 4vw 3vw; 
+    height: auto;
     border-radius: 1vw 1vw 0vw 0vw;   
 }
 
@@ -285,6 +286,104 @@
 }
 
 /* ACCOMPLISHMENTS ----------------------------*/
+.accomplishments {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 2vw 0vw 0vw;
+}
+
+.accomplishment{
+    display: flex;
+
+    height: 20vw;
+    width:100%;
+    gap: 2vw;
+
+    margin-bottom: 2vw;
+}
+
+.accomplishment-details{
+    display: grid;
+    flex:2;
+}
+
+.accomplishment-details>.bottom{
+    background: var(--teritary-colour-shade);
+    height: 20vw;
+    margin-top: 1vw;
+
+    border: 0.15vw solid black;
+}
+
+.accomplishment-details>.top{
+    background: var(--teritary-colour);
+    height: 20vw;
+
+    border: 0.15vw solid black;
+}
+
+.accomplishment-title {
+    background: var(--primary-colour);
+    color: white;
+
+    height: 5vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-bottom: 0.15vw solid black;
+}
+
+.accomplishment-title h1{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.accomplishment-details p{
+    color: white;
+    text-align: center;
+    height: 15vw;
+}
+
+.accomplishment-image {
+    display: grid;
+    flex: 1;
+}
+
+.accomplishment-image>.bottom {
+    background: var(--teritary-colour-shade);
+    margin-top: 1vw;
+    
+    height: 20vw;
+    width: 100%;
+
+    border: 0.15vw solid black;
+    border-radius: 1vw;
+}
+
+.accomplishment-image>.top {
+    height: 20vw;
+}
+
+.accomplishment-image>.top img {
+    height: 20vw;
+    width: 100%;
+    line-height: 0;
+    object-fit: cover;
+
+    border: 0.15vw solid black;
+    border-radius: 1vw;
+}
+
+
+
+
+
+
+
 .project-blocks {
     display: flex;
     justify-content: center;
