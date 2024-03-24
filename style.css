@@ -214,8 +214,7 @@ header {
 }
 
 .bottom,
-.top,
-.right {
+.top {
   grid-column: 1;
   grid-row: 1;
 }
