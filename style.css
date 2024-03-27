@@ -390,7 +390,7 @@ header {
 }
 
 .button-header>.button-top>a:hover {
-  margin-top: 0.85vw;
+  margin-top: 1.25vw;
   transition: margin-top 0.25s ease-in;
 }
 
@@ -505,8 +505,8 @@ header {
 }
 
 .logo-image-back {
-  height: 6.075vw;
-  margin-top: 3.5vw;
+  height: 8vw;
+  margin-top: 2.5vw;
 }
 
 .link-button>.button-bottom,
@@ -788,7 +788,7 @@ header {
 
 .big-project-description {
   display: grid;
-  width: 47.5%;
+  width: 70%;
 }
 
 .big-project-description>.bottom {
@@ -878,9 +878,13 @@ header {
   position: absolute;
   display: flex;
   height: 30%;
-  padding: 1vw 9vw;
+  width: 100%;
   background: rgb(34, 34, 34);
   opacity: 0;
+  padding: 1vw 0vw;
+  border-top: 0.15vw solid black;
+  align-content: center;
+  justify-content: center;
 
   transition: opacity .5s ease;
 }
@@ -952,7 +956,7 @@ header {
 .article>.top a {
   display: grid;
   grid-template-columns: 75% 25%;
-  
+
   text-decoration: none;
   color: white;
   height: 100%;
