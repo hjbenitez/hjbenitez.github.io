@@ -735,6 +735,8 @@ header {
 
 .big-project-button>.top a{
   position: relative;
+  height: 100%;
+  border: 0.15vw solid black;
 }
 
 .big-project-button>.top:hover{
@@ -746,13 +748,13 @@ header {
   opacity: 0.9;
 }
 
-.big-project-button>.top.left,
+.big-project-button>.top.left a,
 .big-project-button>.bottom.left,
 .big-project-image.left  {
   border-radius: 1vw 0vw 0vw 1vw;
 }
 
-.big-project-button>.top.right,
+.big-project-button>.top.right a,
 .big-project-button>.bottom.right,
 .big-project-image.right  {
   border-radius: 0vw 1vw 1vw 0vw;
@@ -780,9 +782,9 @@ header {
 }
 
 .big-project-image {
-  height: 100%;
+  height: 25vw;
   width: 100%;
-  border: 0.15vw solid black;
+
   object-fit: cover;
 }
 
@@ -801,9 +803,9 @@ header {
 .big-project-description>.top {
   background: var(--primary-colour);
   display: flex;
+  border: 0.15vw solid black;
   height: 25vw;
 
-  border: 0.15vw solid black;
 
   justify-content: center;
   align-items: center;
@@ -910,7 +912,9 @@ header {
 
   justify-content: center;
   align-items: center;
-  flex-direction: column
+  flex-direction: column;
+
+  margin-bottom: 2vw;
 }
 
 .article {
