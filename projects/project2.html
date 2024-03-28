@@ -4,151 +4,248 @@
 <head>
     <meta charset="UTF-8" />
     <title>Humberto Benitez</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../project.css">
+    <link rel="stylesheet" href="..\stylesheets/style.css">
+    <link rel="stylesheet" href="..\stylesheets/project.css">
 
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <!-- NAVIGATION -->
-        <div id="navigation">
-            <!-- INTERNAL NAVIGATION -->
-            <nav id="navigation-internal">
-                <ul>
-                    <li><a href="..\index.html">Humberto Benitez</a></li>
-                    <li><a href="..\projects.html">Projects</a></li>
-                    <li><a href="..\devlogs.html">Devlogs</a></li>
-                </ul>
-            </nav>
+        <div class="navigation">
+            <div class="external" id="left-navigation">
+                <div class="link-button">
+                    <div class="button-bottom"></div>
+                    <div class="button-top">
+                        <a href="https://benitez177.itch.io/" target="_blank"><img class="icon-image"
+                                src="..\images\icons\itch-io.png"></a>
+                    </div>
+                </div>
 
-            <!-- EXTERNAL NAVIGATION -->
-            <nav id="navigation-external">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/hjbenitez/" target="_blank"><img src="..\images\linkedin.png"></a></li>
-                    <li><a href="https://twitter.com/hjbenitez177" target="_blank"><img src="..\images\twitter.png"></a>
-                    </li>
-                    <li><a href="https://benitez177.itch.io/" target="_blank"><img src="..\images\itch-io.png"></a></li>
-                    <li><a href="https://github.com/hjbenitez" target="_blank"><img src="..\images\github.png"></a></li>
-                </ul>
-            </nav>
+                <div class="link-button">
+                    <div class="button-bottom"></div>
+                    <div class="button-top">
+                        <a href="https://twitter.com/hjbenitez177" target="_blank"><img src="..\images\icons\twitter.png"></a>
+                    </div>
+                </div>
+
+                <div class="link-button">
+                    <div class="button-bottom"></div>
+                    <div class="button-top">
+                        <a href="https://medium.com/@hjbenitezdev" target="_blank"><img src="..\images\icons\medium.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-header">
+                <div class="button-bottom"><img src="..\images\icons\logo-back.png" class="logo-image-back"></div>
+                <div class="button-top">
+                    <a href="..\index.html"><img src="..\images\icons\logo.png" class="logo-image"></a>
+                </div>
+            </div>
+
+
+            <div class="external" id="right-navigation">
+                <div class="link-button">
+                    <div class="button-bottom"></div>
+                    <div class="button-top">
+                        <a href="https://www.linkedin.com/in/hjbenitez/" target="_blank"><img
+                                src="..\images\icons\linkedin.png"></a>
+                    </div>
+                </div>
+
+                <div class="link-button">
+                    <div class="button-bottom"></div>
+                    <div class="button-top">
+                        <a href="https://github.com/hjbenitez" target="_blank"><img src="..\images\icons\github.png"></a>
+                    </div>
+                </div>
+
+                <div class="link-button">
+                    <div class="button-bottom"></div>
+                    <div class="button-top">
+                        <a href="mailto:hjbenitezdev@gmail.com" target="_blank" rel="noopener noreferrer"><img
+                                src="..\images\icons\mail.png"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div class="project-main">
-        <div class="project-boiler">
-            <div class="project-cover">
-                <iframe src="https://www.youtube.com/embed/WiXIptaIR-U?si=HIlISQeFtCQ0DAIK" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen></iframe>
-
-                <!-- <img src="..\images/placeholder-cover.png">-->
+    <div class="project-background">
+        <div class="project-main">
+            <div class="project-title">
+                <div class="bottom"></div>
+                <div class="top">
+                    <img src="..\images\StopAndBreathe\StopandBreatheLogo.png" class="project-title-logo">
+                    <img src="..\images\StopAndBreathe\stop-and-breathe-cover.png" class="project-title-cover">
+                </div>
             </div>
 
-            <div class="project-sidebar">
-                <div class="project-information">
-                    <div class="project-title">
-                        <h1>Gunsmith</h1>
+            <div class="infomation-panel">
+                <div class="info-column first-column-info">
+                    <div class="bottom"></div>
+                    <div class="top">
+                        <div class="info-title">
+                            <h1>CONTRIBUTION</h1>
+                        </div>
+                        <div class="info-detail">
+                            <h1>PROGRAMMER</h1>
+                        </div>
                     </div>
-                    <div class="project-stat">
-                        <h1>Engine</h1>
-                        <p>Unreal Engine</p>
+                </div>
+
+                <div class="info-column">
+                    <div class="bottom"></div>
+                    <div class="top">
+                        <div class="info-title">
+                            <h1>ENGINE</h1>
+                        </div>
+                        <div class="info-detail">
+                            <h1>UNREAL ENGINE 5.3</h1>
+                        </div>
                     </div>
-                    <div class="project-stat">
-                        <h1>Language</h1>
-                        <p>Blueprint Visual Scripting</p>
+                </div>
+
+                <div class="info-column">
+                    <div class="bottom"></div>
+                    <div class="top">
+                        <div class="info-title">
+                            <h1>LANGUAGE</h1>
+                        </div>
+                        <div class="info-detail">
+                            <h1>BLUEPRINTS</h1>
+                        </div>
                     </div>
-                    <div class="project-stat">
-                        <h1>Contribution</h1>
-                        <p>Solo Project</p>
+                </div>
+
+                <div class="info-column last-column-info">
+                    <div class="bottom"></div>
+                    <div class="top">
+                        <div class="info-title">
+                            <h1>TYPE</h1>
+                        </div>
+                        <div class="info-detail">
+                            <h1>COLLEGE PROJECT</h1>
+                        </div>
                     </div>
-                    <div class="project-stat">
-                        <h1>Time</h1>
-                        <p>4 Months</p>
+                </div>
+            </div>
+
+            <div class="project-boiler">
+                <div class="project-cover">
+                    <iframe src="https://www.youtube.com/embed/JS2vGvm_OVA?si=R-x1g89bD_NTEAWe"
+                        title="Doc punches Little Mac so hard he shatters reality" frameborder="1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <img src="..\images/placeholder-cover.png">-->
+                </div>
+            </div>
+            <div class="project-description-links">
+                <div class="project-description">
+                    <div class="bottom"></div>
+                    <div class="top">
+                        <p>
+                            Since the project is a visual novel, the team agreed to implement and learn Fungus, a visual
+                            storytelling and scripting tool that comes with a dialogue system so
+                            I can focus other features and polish of other mechanics.
+                        </p>
                     </div>
+
                 </div>
 
                 <div class="project-links">
-                    <a href="https://github.com/" target="_blank">GitHub</a>
-                    <a href="https://itch.io/" target="_blank">Game Page</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-images">
-            <img src="..\images\Gunsmith\Gunsmith1.jpg">
-            <img src="..\images\Gunsmith\Gunsmith2.avif">
-            <img src="..\images\Gunsmith\Gunsmith3.jpg">
-        </div>
-
-        <div class="project-blocks">
-            <div class="project-block">
-                <div class="project-block-title">
-                    <h1>Goal</h1>
-                </div>
-                <div class="project-block-content goal">
-                    <h2>Create a dynamic, interactive menu system that allows the users to customize different weapons.</h2>
+                    <div class="project-link-button">
+                        <div class="bottom" style="background: #030405;"></div>
+                        <div class="top" style="background: #0d1117;">
+                            <a href="http://instagram.com"><img src="..\images\github.png"></a>
+                        </div>
+                    </div>
+    
+                    <div class="project-link-button">
+                        <div class="bottom" style="background: #a13e3e;"></div>
+                        <div class="top" style="background: #fa5c5c;">
+                            <a href="https://onemustimaginegames.itch.io/stop-and-breathe"><img src="..\images\itch-io.png"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <div class="project-images">
+                <div class="project-image">
+                    <img src="..\images\OMAAT\image1.jpg"> 
+                </div>
 
-        </div>
+                <div class="project-image">
+                    <img src="..\images\OMAAT\image2.jpg"> 
+                </div>
 
-        <div class="project-block">
-            <div class="project-block-title">
-                <h1>Description</h1>
+                <div class="project-image">
+                    <img src="..\images\OMAAT\image3.jpg"> 
+                </div>
             </div>
-            <div class="project-block-content">
-                <p>
-                    Gunsmith is a project created for an assignment in an asset creation class at Sheridan College. The assignment last the course of
-                     the semester where we modeled a gun and attachment, textured them, and imported the assets into Unreal Engine to create a menu 
-                     that allowed the user to customize the selected weapon, paint, and attachment. Collaboration was allowed in the form of sharing 
-                     assets for more customization options.
-                </p>
-                <p>
-                    During the course of this project, I modeled and texture two weapon assets (a gun and attachment) and imported them into Unreal. 
-                    I took advantage of the Unreal Marketplace for additional assets for the scene. Sound and music were taken online. The 
-                    customization system, HUD, and all accompanying code were created by me. The other weapons and attachments were created by 
-                    other students (see Collaborators below).
-                </p>
-            </div>
-        </div>
 
-        <div class="project-block">
-            <div class="project-block-title">
-                <h1>Accomplishments</h1>
-            </div>
-            <div class="project-block-content">
-                <div class="project-block-content-list">
-                    <ul>
-                        <li>Knowledge in navigation the Unreal Editor interface</li>
-                        <li>Understanding of Unreal's Blueprint system</li>
-                        <li>3D asset creation (Maya)</li>
-                        <li>Understanding of asset creation concepts (textures, materials, normal maps, etc)</li>
-                        <li>Material handling and manipulation</li>
-                    </ul>
+            <div class="accomplishments">
+                <div class="accomplishment">
+                    <div class="accomplishment-details">
+                        <div class="bottom"></div>
+                        <div class="top">
+                            <div class="accomplishment-title">
+                                <h1>ACCOMPLISHMENT</h1>
+                            </div>
+                            <p>YOYOYOYOYOYOY adslaslfkfl falfk al aslfalfal gakgk[ ksf
+                                afa[sfla aklskf lak klakk agakmgkodm akgm kf]
+                            </p>
+                        </div>
+                    </div>
 
-                    <ul>
-                        <li>Implemented multiple assets such as meshes, textures, and sound files</li>
-                        <li>Camera zoom to better show what you are doing</li>
-                        <li>Dynamic menu that reacts to the gun being modified</li>
-                        <li>Create a particle system and camera bob to add movement to the screen</li>
-                        <li>Added polish to the demo with sound such as button clicks, ambience, and music</li>
-                    </ul>
+                    <div class="accomplishment-image">
+                        <div class="bottom"></div>
+                        <div class="top">
+                            <img src="..\images\placeholders\project-4.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accomplishment">
+                    <div class="accomplishment-image">
+                        <div class="bottom"></div>
+                        <div class="top">
+                            <img src="..\images\placeholders\project-5.jpg">
+                        </div>
+                    </div>
+
+                    <div class="accomplishment-details">
+                        <div class="bottom"></div>
+                        <div class="top">
+                            <div class="accomplishment-title">
+                                <h1>ACCOMPLISHMENT</h1>
+                            </div>
+                            <p>YOYOYOYOYOYOY adslaslfkfl falfk al aslfalfal gakgk[ ksf
+                                afa[sfla aklskf lak klakk agakmgkodm akgm kf]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accomplishment">
+                    <div class="accomplishment-details">
+                        <div class="bottom"></div>
+                        <div class="top">
+                            <div class="accomplishment-title">
+                                <h1>ACCOMPLISHMENT</h1>
+                            </div>
+                            <p>YOYOYOYOYOYOY adslaslfkfl falfk al aslfalfal gakgk[ ksf
+                                afa[sfla aklskf lak klakk agakmgkodm akgm kf]
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <div><img src="..\images\Me fr.png"></div>
-        <span>
-            <a href="https://github.com/hjbenitez/hjbenitez.github.io">I made the website myself!</a> <br/>
-            &copy; 2023
-        </span>
     </footer>
 </body>
 
