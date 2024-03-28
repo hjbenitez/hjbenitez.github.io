@@ -1001,9 +1001,36 @@ header {
 
 /*------------------------------------*/
 footer {
+  display: flex;
   position: relative;
-  background: var(--secondary-colour);
-  min-height: 5vw;
-  border-top: 0.15vw solid rgb(53, 53, 53);
+  margin-top: 2vw;
+  color: white;
+  min-height: 2.5vw;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+ 
   z-index: 2;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.button-left {
+
+}
+
+.footer-button {
+  display: grid;
+}
+
+.footer-button>.bottom {
+  margin-top: 1vw;
+}
+
+.footer-button>.top {
+
 }
