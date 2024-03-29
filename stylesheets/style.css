@@ -6,8 +6,8 @@
   --secondary-colour: #853438;
   --secondary-colour-shade: #40191B;
 
-  --teritary-colour: #474B59;
-  --teritary-colour-shade: #31343d;
+  --tertiary-colour: #474B59;
+  --tertiary-colour-shade: #31343d;
 }
 
 /*
@@ -106,12 +106,11 @@ header {
   justify-content: center;
   align-items: center;
 
-  margin: 0vw 4vw 3vw;
+  margin: 0vw 4vw 0vw;
 }
 
 .tab-panel {
   background-color: var(--secondary-colour);
-  min-height: 500px;
 }
 
 body {
@@ -272,7 +271,7 @@ header {
 
 .project-bottom {
   display: flex;
-  background: var(--teritary-colour-shade);
+  background: var(--tertiary-colour-shade);
 
   border: 0.15vw solid black;
   border-radius: 1vw;
@@ -283,7 +282,7 @@ header {
 .project-top {
   display: flex;
 
-  background: var(--teritary-colour);
+  background: var(--tertiary-colour);
   border: 0.15vw solid black;
   border-radius: 1vw;
 
@@ -400,8 +399,8 @@ header {
   align-items: center;
   flex-direction: column;
 
-  margin-top: 2vw;
-  margin-bottom: 4vw;
+  margin: 2vw 0vw;
+
 }
 
 #resume-header {
@@ -423,7 +422,7 @@ header {
 
 .resume-embed {
   display: flex;
-  background: var(--teritary-colour);
+  background: var(--tertiary-colour);
   width: 50vw;
   border: 0.15vw solid black;
 
@@ -560,14 +559,14 @@ header {
 }
 
 .hero-panel>.bottom {
-  background: var(--teritary-colour-shade);
+  background: var(--tertiary-colour-shade);
   height: 35vw;
   margin-top: 1vw;
   border: 0.15vw solid black;
 }
 
 .hero-panel>.top {
-  background: var(--teritary-colour);
+  background: var(--tertiary-colour);
   color: white;
   height: 35vw;
   font-size: 1.5vw;
@@ -597,7 +596,7 @@ header {
 }
 
 .about-me-list {
-  background: var(--teritary-colour);
+  background: var(--tertiary-colour);
   color: white;
   min-width: 18vw;
   
@@ -717,7 +716,7 @@ header {
 }
 
 .big-project-button>.bottom {
-  background: var(--teritary-colour);
+  background: var(--tertiary-colour);
   height: 25vw;
   margin-top: 1vw;
   border: 0.15vw solid black;
@@ -851,7 +850,7 @@ header {
 .project-tag {
   display: flex;
   flex: 1;
-  background: var(--teritary-colour);
+  background: var(--tertiary-colour);
   color: white;
   height: 3.5vw;
 
@@ -925,7 +924,7 @@ header {
 }
 
 .article>.bottom{
-  background: var(--teritary-colour-shade);
+  background: var(--tertiary-colour-shade);
   height: 12vw;
   margin-top: 1vw;
 
@@ -935,7 +934,7 @@ header {
 }
 
 .article>.top{
-  background: var(--teritary-colour);
+  background: var(--tertiary-colour);
   color: white;
 
   height: 12vw;
@@ -1002,35 +1001,152 @@ header {
 /*------------------------------------*/
 footer {
   display: flex;
+  background: var(--secondary-colour);
   position: relative;
   margin-top: 2vw;
   color: white;
-  min-height: 2.5vw;
+  width: 100%;
+  height: 8vw;
 
+  border-top: 0.15vw solid black;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
+  gap: 7vw;
  
   z-index: 2;
 }
 
-footer a {
-  text-decoration: none;
-  color: white;
+.footer-middle {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.button-left {
-
-}
-
-.footer-button {
+.footer-text {
   display: grid;
 }
 
-.footer-button>.bottom {
-  margin-top: 1vw;
+.footer-text>.bottom {
+  background: var(--primary-colour-shade);
+  width: 22vw;
+  height: 2vw;
+  border: 0.15vw solid black;
+  margin-top: 0.5vw;
+  margin-bottom: -0.65vw;
 }
 
-.footer-button>.top {
+.footer-text>.top {
+  background: var(--primary-colour);
+  width: 22vw;
+  height: 2vw;
+  border: 0.15vw solid black;
+  margin-bottom: -0.65vw;
 
+}
+
+.footer-text p {
+  font-size: 1vw;
+  line-height: 0.25vw;
+  text-align: center;
+}
+
+/* Color Changing Button -----------------------*/
+.footer-buttons {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.color-button {
+  display: grid;
+}
+
+.color-button>.bottom {
+  margin-top: 0.5vw;
+  height: 3vw;
+  width: 20vw;
+
+  border-radius: 1vw;
+  border: 0.15vw solid black;
+}
+
+.color-button>.top {
+  height: 3vw;
+  width: 20vw;
+
+  border-radius: 1vw;
+  border: 0.15vw solid black;
+  transition: margin-top .5s  ease;
+}
+
+.color-button>.top a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 1vw;
+}
+
+.color-button>.top:hover{
+  margin-top: 0.5vw;
+  transition: margin-top .5s  ease;
+  cursor: pointer;
+}
+
+/* Repository Button ------------------------------*/
+.repository-button {
+  display: grid;
+}
+
+.repository-button>.bottom {
+  background: var(--tertiary-colour-shade);
+  margin-top: 0.5vw;
+
+  border: 0.15vw solid black;
+  border-bottom-right-radius: 0.5vw;
+  border-bottom-left-radius: 0.5vw;
+
+  height: 2vw;
+  width: 22vw;
+}
+
+.repository-button>.top {
+  display: flex;
+  background: var(--tertiary-colour);
+  height: 2vw;
+  width: 22vw;
+
+  border: 0.15vw solid black;
+  border-bottom-right-radius: 0.5vw;
+  border-bottom-left-radius: 0.5vw;
+
+  align-items: center;
+  justify-content: center;
+
+  transition: margin-top .5s  ease;
+}
+
+.repository-button>.top:hover {
+  margin-top: 0.5vw;
+  transition: margin-top .5s  ease;
+}
+
+.repository-link {
+  display: flex;
+  color: white;
+  line-height: 1vw;
+  font-size: 1vw;
+  text-decoration: none;
+
+  flex: 1;
+  height: 100%;
+  border-radius: 1vw;
+
+  align-items: center;
+  justify-content: center;
 }
