@@ -697,6 +697,11 @@ header {
   grid-column: 1;
 }
 
+#project-4{
+  grid-row: 4;
+  grid-column: 1;
+}
+
 .big-project {
   display: flex;
 
@@ -824,13 +829,22 @@ header {
 }
 
 
-.big-project-description>.top p {
+.big-project-description>.top>.project-text {
+  display: flex;
+
+  height: 60%;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-text p {
   color: white;
   font-size: 1.25vw;
   line-height: 1.5vw;
   width: 90%;
 
-  height:60%;
   margin-top: 2.5vw;
 }
 

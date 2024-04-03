@@ -299,7 +299,6 @@
 .accomplishment{
     display: flex;
 
-    height: 20vw;
     width:100%;
     gap: 2vw;
 
@@ -313,7 +312,7 @@
 
 .accomplishment-details>.bottom{
     background: var(--teritary-colour-shade);
-    height: 20vw;
+    height: 30vw;
     margin-top: 1vw;
 
     border: 0.15vw solid black;
@@ -321,7 +320,7 @@
 
 .accomplishment-details>.top{
     background: var(--teritary-colour);
-    height: 20vw;
+    height: 30vw;
 
     border: 0.15vw solid black;
 }
@@ -345,7 +344,8 @@
 .accomplishment-details p{
     color: white;
     text-align: center;
-    height: 15vw;
+    height: 30vw;
+    margin: 0vw 2vw;
 }
 
 .accomplishment-image {
@@ -357,7 +357,7 @@
     background: var(--teritary-colour-shade);
     margin-top: 1vw;
     
-    height: 20vw;
+    height: 30vw;
     width: 100%;
 
     border: 0.15vw solid black;
@@ -365,11 +365,11 @@
 }
 
 .accomplishment-image>.top {
-    height: 20vw;
+    height: 30vw;
 }
 
 .accomplishment-image>.top img {
-    height: 20vw;
+    height: 30vw;
     width: 100%;
     line-height: 0;
     object-fit: cover;
