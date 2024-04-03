@@ -312,7 +312,7 @@
 
 .accomplishment-details>.bottom{
     background: var(--teritary-colour-shade);
-    height: 30vw;
+    height: 25vw;
     margin-top: 1vw;
 
     border: 0.15vw solid black;
@@ -320,7 +320,7 @@
 
 .accomplishment-details>.top{
     background: var(--teritary-colour);
-    height: 30vw;
+    height: 25vw;
 
     border: 0.15vw solid black;
 }
@@ -344,8 +344,16 @@
 .accomplishment-details p{
     color: white;
     text-align: center;
-    height: 30vw;
-    margin: 0vw 2vw;
+    height: 25vw;
+    margin: 1vw 2vw;
+}
+
+.accomplishment-details.right p{
+    text-align: right;
+}
+
+.accomplishment-details.left p{
+    text-align: left;
 }
 
 .accomplishment-image {
@@ -357,7 +365,7 @@
     background: var(--teritary-colour-shade);
     margin-top: 1vw;
     
-    height: 30vw;
+    height: 25vw;
     width: 100%;
 
     border: 0.15vw solid black;
@@ -365,11 +373,11 @@
 }
 
 .accomplishment-image>.top {
-    height: 30vw;
+    height: 25vw;
 }
 
 .accomplishment-image>.top img {
-    height: 30vw;
+    height: 25vw;
     width: 100%;
     line-height: 0;
     object-fit: cover;
@@ -377,12 +385,6 @@
     border: 0.15vw solid black;
     border-radius: 1vw;
 }
-
-
-
-
-
-
 
 .project-blocks {
     display: flex;
