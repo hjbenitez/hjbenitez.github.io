@@ -176,7 +176,7 @@
 
 .project-description {
     display: grid;
-    flex: 1;
+    flex: 2;
 }
 
 .project-description>.bottom {
@@ -205,8 +205,8 @@
 .project-description>.top p {
     color: white;
     text-align: center;
-    text-wrap: balance;
-    margin: 0vw 2vw;
+    /*text-wrap: balance;*/
+    margin: 0vw 1vw;
 }
 
 .project-links{
