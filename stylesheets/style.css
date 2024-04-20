@@ -204,6 +204,21 @@ header {
   background: var(--primary-colour);
   color: #ffffff;
 }
+.demo-reel {
+  margin-top: 2vw;
+  display: flex;
+  background: var(--tertiary-colour);
+  border: 0.15vw solid black;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.demo-reel>iframe {
+  height: 45vw;
+  width: 100%;
+}
 
 /* Section Header Style */
 .section-header {
@@ -392,37 +407,15 @@ header {
   transition: margin-top 0.25s ease-in;
 }
 
-#resume>.content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  margin: 2vw 0vw;
-
-}
-
-#resume-header {
-  margin: 0;
-  width: 50vw;
-}
-
-#resume-header>.top{
-  border: 0;
-  border-bottom: 0.15vw solid black;
-}
-
 .resume-embed>iframe {
   height: 45vw;
-  width: 40vw;
-  
-  margin-top: 2vw;
+  width: 100%;
 }
 
 .resume-embed {
+  margin-top: 2vw;
   display: flex;
   background: var(--tertiary-colour);
-  width: 50vw;
   border: 0.15vw solid black;
 
   justify-content: center;
@@ -432,32 +425,16 @@ header {
 
 .download-button { 
   display: grid;
-  margin-top: 2vw;
+  margin: 2vw 0vw;
 }
-
-.download-button>.top,
-.download-button>.bottom {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.download-button>.bottom {
-  background: var(--primary-colour-shade);
-
-  height: 10vw;
-  width: 50vw;
-
-  margin-top: 1vw;
-  border-bottom: 0.15vw solid black;
-}
-
+ 
 .download-button>.top {
   background: var(--primary-colour);
   border-bottom: 0.15vw solid black;
   border-top: 0.15vw solid black;
 
   height: 10vw;
-  width: 50vw;
+  width: 100%;
 
   display: flex;
   justify-content: center;
@@ -465,17 +442,17 @@ header {
   flex-direction: column;
 }
 
-.button>.button-bottom,
-.button>.button-top {
+.download-button>.button-bottom,
+.download-button>.button-top {
   grid-row: 1;
   grid-column: 1;
 
   height: 8vw;
 }
 
-.button>.button-bottom {
+.download-button>.button-bottom {
   background: var(--secondary-colour-shade);
-  width: 40vw;
+  width: 100%;
 
   margin-top: 1vw;
   border: 0.15vw solid black;
@@ -483,9 +460,9 @@ header {
   border-radius: 2vw;
 }
 
-.button>.button-top {
+.download-button>.button-top {
   background: var(--secondary-colour);
-  width: 40vw;
+  width: 100%;
   border: 0.15vw solid black;
 
   border-radius: 2vw;
@@ -493,7 +470,7 @@ header {
   transition: margin-top 0.25s ease-in;
 }
 
-.button>.button-top:hover {
+.download-button>.button-top:hover {
   margin-top: 1vw;
   transition: margin-top 0.25s ease-in;
 }
