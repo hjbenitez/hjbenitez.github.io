@@ -76,8 +76,8 @@
             <div class="project-title">
                 <div class="bottom"></div>
                 <div class="top">
-                    <img src="..\images\StopAndBreathe\StopandBreatheLogo.png" class="project-title-logo">
-                    <img src="..\images\Delicious Chaos\delicious-chaos-cover.png" class="project-title-cover">
+                    <img src="..\images\DeliciousChaos\delicous-chaos-title.png" class="project-title-logo">
+                    <img src="..\images\DeliciousChaos\delicious-chaos-cover.png" class="project-title-cover">
                 </div>
             </div>
 
@@ -165,15 +165,25 @@
 
             <div class="project-images">
                 <div class="project-image">
-                    <img src="..\images\StopAndBreathe\stop-and-breathe-1.png"> 
+                    <img src="..\images\DeliciousChaos\delicious-chaos-1.png"> 
                 </div>
 
                 <div class="project-image">
-                    <img src="..\images\StopAndBreathe\stop-and-breathe-2.png"> 
+                    <img src="..\images\DeliciousChaos\delicious-chaos-2.jpg"> 
                 </div>
 
                 <div class="project-image">
-                    <img src="..\images\StopAndBreathe\stop-and-breathe-3.png"> 
+                    <img src="..\images\DeliciousChaos\delicious-chaos-3.png"> 
+                </div>
+            </div>
+
+            <div class="project-images">
+                <div class="project-image">
+                    <img src="..\images\DeliciousChaos\delicious-chaos-4.png"> 
+                </div>
+
+                <div class="project-image">
+                    <img src="..\images\DeliciousChaos\delicious-chaos-5.png"> 
                 </div>
             </div>
 
@@ -183,20 +193,10 @@
                         <div class="bottom"></div>
                         <div class="top">
                             <div class="accomplishment-title">
-                                <h1>Building a Dialogue System</h1>
+                                <h1>Inverting Mechanic</h1>
                             </div>
                             <p>
-                                I was responsible for building our game's dialogue system. Early iteration of the dialogue box just held the text that was supposed to be shown and players would have to walk into triggers
-                                to activate the dialogue. This was very limited because we wanted dialogue to be shown while the player performs Life Breathing and when players loaded a new scene. We also recieved feedback
-                                that player's didn't know who was talking and whoever was had no personality. <br><br> 
-
-                                I revamped the dialogue system from the ground up. I dedicated a component that would ONLY handle dialogue and moved everything there. I then added a clear pipeline that the dialogue would go through
-                                by doing a bunch of checks when the dialogue system is activated. Namely to know where the dialogue is coming from, if the dialogue was timed or waited for a button press, etc. Checking for where the 
-                                dialogue was coming from allowed me to route the appropriate actions (such as if the dialogue is meant to be shown during a certain phase of breathing). I also added the ability to add dialogue for 
-                                when the player enters a new room  on load if our narrative designer wanted to add context before the puzzle began. <br><br>
-
-                                Then with the help of our wonderful artist, we were able to add personality by creating an arted dialogue box with different emotions Zen could display while the dialogue was being said (which I 
-                                allowed our narrative designer to change for each line). In the end, the dialogue system ended up being in a great state that I was very satisfied with.
+                                TBA
                             </p>
                         </div>
                     </div>
@@ -207,20 +207,10 @@
                         <div class="bottom"></div>
                         <div class="top">
                             <div class="accomplishment-title">
-                                <h1>Anxiety Effect</h1>
+                                <h1>Wave Management</h1>
                             </div>
                             <p>
-                                I was responsible for implementing the early version of the breathing mechanic which has gone through multiple iterations. The first iteration used a post processing material that darken
-                                the scene around the player. Then a sphere would enlarge at the center of the player which would 'dispel' the anxiety after each completion of Life Breathing. It worked for our proof of concept
-                                but it was limiting because there was no 'in-between' state. The circle either completely dispelled the anxiety or didn't. So I had to approach this differently. <br><br>
-
-                                I then changed the method to changing the saturation of the scene. This allowed us to have the more gradual change in the scene. We also added a new post processing material that gave objects in the scene 
-                                a small chromatic aberration effect that was subtle to try and enforce the anxiety effect, which was received well. Only problem with this is that this method does not let us cull certain game objects
-                                to keep their colour, such as the breathing pedestal. <br><br>
-
-                                I revisited the first method because it allowed me to cull game objects and I got the idea to combine the two methods. I used the same material in method one, added a desaturate node in the material graph and 
-                                played around until I got the effect I wanted and changed that value instead of the Global Saturation value found on the post processing volume. This allowed me to cull game objects from the saturation effect 
-                                WHILE also keeping the same gradual change!
+                                Placeholder blerb
                             </p>
                         </div>
                     </div>
