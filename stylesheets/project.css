@@ -146,9 +146,64 @@
     font-weight: bold;
 }
 
+/* PROJECT ACCOLADES --------------------------*/
+.accolades {
+    display: flex;
+
+    align-content: center;
+    justify-content: center;
+
+    margin-top: 2vw;
+}
+
+.accolades-accolade {
+    display: grid;
+    height: 20vw;
+
+    width: 100%;
+}
+
+.accolades-accolade>.bottom {
+    background: var(--teritary-colour-shade);
+    margin-top: 1vw;
+    border: 0.15vw solid black;
+    height: 20vw;
+}
+
+.accolades-accolade>.top {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: var(--teritary-colour);
+    border: 0.15vw solid black;
+    height: 20vw;
+}
+
+
+.accolades-accolade>.top>img {
+    object-fit: cover;
+}
+
+.accolade-organization {
+    grid-column: 1;
+    grid-row: 1;
+
+    border-right: 0.15vw solid black;
+    height: 20vw;
+    width: 100%;
+}
+
+.accolade-medal {
+    grid-column: 2;
+    grid-row: 1;
+
+    height: 20vw;
+    width: 90%;
+    justify-self: center;
+}
+
 /* PROJECT VIDEO  --------------------------- */
 .project-boiler {
-    margin-top: 2vw;
+    margin-top: 3vw;
     height:45vw;
     width: 100%;
     /* background: gray;*/
