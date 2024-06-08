@@ -261,6 +261,7 @@
 .project-description>.top p {
     color: white;
     text-align: center;
+    line-height: 1vw;
     /*text-wrap: balance;*/
     margin: 0vw 1vw;
 }
