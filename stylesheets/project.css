@@ -83,6 +83,11 @@
 .info-column {
     display: grid;
     margin: auto;
+
+    height:6vw;
+    width: 18vw;
+
+    border: 0.15vw solid black;
 }
 
 .first-column-info {
@@ -91,24 +96,6 @@
 
 .last-column-info {
     margin-right: 0;
-}
-
-.info-column>.bottom {
-    background: var(--teritary-colour-shade);
-    
-    height:6vw;
-    width: 18vw;
-
-    border: 0.15vw solid black;
-    margin-top: 1vw;
-}
-
-.info-column>.top {
-    display: grid;
-    height:6vw;
-    width: 18vw;
-
-    border: 0.15vw solid black;
 }
 
 .info-title{
@@ -131,12 +118,15 @@
     grid-row: 2;
     
     background: var(--teritary-colour);
-    border-bottom: 0.15vw solid black;
+
     height:3vw;
     width: 18vw;
 
     align-content: center;
     justify-content: center;
+    box-sizing: border-box;
+    border-bottom: 0.15vw solid black;
+    
 }
 
 .info-title h1,
@@ -161,6 +151,9 @@
     height: 20vw;
 
     width: 100%;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .accolades-accolade>.bottom {
@@ -231,25 +224,12 @@
 }
 
 .project-description {
-    display: grid;
-    flex: 2;
-}
-
-.project-description>.bottom {
-    background: var(--teritary-colour-shade);
-
-    height: 10vw;
-    width: 100%;
-    margin-top: 1vw;
-
-    border: 0.15vw solid black;
-}
-
-.project-description>.top {
+    display: flex;
     background: var(--teritary-colour);
     
-    display: flex;
-    height: 10vw;
+    flex: 2;
+    
+    height: 11vw;
     width: 100%;    
     border: 0.15vw solid black;
 
@@ -258,7 +238,8 @@
     flex-direction: column;
 }
 
-.project-description>.top p {
+
+.project-description p {
     color: white;
     text-align: center;
     line-height: 1vw;
@@ -319,7 +300,7 @@
     gap: 0vw 2vw;
 
     justify-content: center;
-    align-items: center;
+    align-items: end;
     flex-direction: row;
 }
 
@@ -342,47 +323,52 @@
     transform: scale(1.5);
 }
 
+.break {
+    flex-basis: 100%;
+    height: 0;
+    
+  }
+
 /* ACCOMPLISHMENTS ----------------------------*/
 .accomplishments {
     display: flex;
-
+    
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0vw 1vw 2vw;
 }
 
 .accomplishment{
     display: flex;
+    flex-wrap: wrap;
+    background: var(--primary-colour);
+
+    border: 0.15vw solid black;
+    border-radius: 1vw;
 
     width:100%;
-    gap: 2vw;
+    gap: 0vw 2vw; 
+    padding: 1vw;
     margin: 2vw 0vw 0vw;
 }
 
 .accomplishment-details{
     display: grid;
     flex:2;
-}
 
-.accomplishment-details>.bottom{
-    background: var(--teritary-colour-shade);
-    height: 25vw;
-    margin-top: 1vw;
-
-    border: 0.15vw solid black;
-}
-
-.accomplishment-details>.top{
     background: var(--teritary-colour);
-    height: 25vw;
 
     border: 0.15vw solid black;
+
+    border-radius: 1vw;
 }
 
 .accomplishment-title {
-    background: var(--primary-colour);
+    background: var(--secondary-colour);
     color: white;
 
+    border-radius: 0.9vw 0.9vw 0vw 0vw;
     height: 5vw;
     display: flex;
     align-content: center;
@@ -398,7 +384,7 @@
 .accomplishment-details p{
     color: white;
     text-align: center;
-    height: 25vw;
+    text-wrap: wrap;
     margin: 1vw 2vw;
     font-size: 1vw;
     line-height: 1.1vw;
@@ -415,24 +401,21 @@
 .accomplishment-image {
     display: grid;
     flex: 1;
+
+    transition: transform 0.25s ease;
 }
 
-.accomplishment-image>.bottom {
-    background: var(--teritary-colour-shade);
-    margin-top: 1vw;
-    
-    height: 25vw;
-    width: 100%;
-
-    border: 0.15vw solid black;
-    border-radius: 1vw;
+.accomplishment-image:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
-.accomplishment-image>.top {
+
+.accomplishment-image {
     height: 25vw;
 }
 
-.accomplishment-image>.top img {
+.accomplishment-image img {
     height: 25vw;
     width: 100%;
     line-height: 0;
@@ -440,6 +423,24 @@
 
     border: 0.15vw solid black;
     border-radius: 1vw;
+}
+
+.caption {
+    background: var(--secondary-colour);
+    
+    border: 0.15vw solid black;
+    border-radius: 1vw;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.caption p {
+    font-size: 0.75vw;
+    color: white;
 }
 
 .project-blocks {
@@ -453,7 +454,6 @@
     flex: 1;
 }
 .project-block-content {
-    /*background: aquamarine;*/
     text-align: center;
     min-height: 10vh;
     max-height: 40vh;

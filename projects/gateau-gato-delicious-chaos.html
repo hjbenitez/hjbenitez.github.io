@@ -84,68 +84,63 @@
 
             <div class="infomation-panel">
                 <div class="info-column first-column-info">
-                    <div class="bottom"></div>
-                    <div class="top">
-                        <div class="info-title">
-                            <h1>CONTRIBUTION</h1>
-                        </div>
-                        <div class="info-detail">
-                            <h1>PROGRAMMER</h1>
-                        </div>
+            
+                    <div class="info-title">
+                        <h1>CONTRIBUTION</h1>
+                    </div>
+                    <div class="info-detail">
+                        <h1>PROGRAMMER</h1>
                     </div>
                 </div>
-
+            
                 <div class="info-column">
-                    <div class="bottom"></div>
-                    <div class="top">
-                        <div class="info-title">
-                            <h1>ENGINE</h1>
-                        </div>
-                        <div class="info-detail">
-                            <h1>UNITY</h1>
-                        </div>
+                    <div class="info-title">
+                        <h1>ENGINE</h1>
+                    </div>
+                    <div class="info-detail">
+                        <h1>UNITY</h1>
                     </div>
                 </div>
-
+            
                 <div class="info-column">
-                    <div class="bottom"></div>
-                    <div class="top">
-                        <div class="info-title">
-                            <h1>LANGUAGE</h1>
-                        </div>
-                        <div class="info-detail">
-                            <h1>C#</h1>
-                        </div>
+                    <div class="info-title">
+                        <h1>LANGUAGE</h1>
+                    </div>
+                    <div class="info-detail">
+                        <h1>C#</h1>
                     </div>
                 </div>
-
+            
                 <div class="info-column last-column-info">
-                    <div class="bottom"></div>
-                    <div class="top">
-                        <div class="info-title">
-                            <h1>TYPE</h1>
-                        </div>
-                        <div class="info-detail">
-                            <h1>GAME JAM</h1>
-                        </div>
+                    <div class="info-title">
+                        <h1>TYPE</h1>
                     </div>
+                    <div class="info-detail">
+                        <h1>GAME JAM</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accolades">
+                <div class="accolades-accolade">
+                        <img src="..\accolades\ToJam2024.png">
                 </div>
             </div>
 
             <div class="project-description-links">
                 <div class="project-description">
-                    <div class="bottom"></div>
-                    <div class="top">
-                        <p>
-                            The game was created for TOJam 2024: Talk about Fourshadowing with the prompt "It's supposed to do that." In colloboration 
-                            with 5 others, Gateau Gato: Delicious Chaos was created in the span of 2 days. <br><br>
-
-                            Gateau Gato: Delicious Chaos is a wave survival game that has you destroying cake-y enemies and blowing up the mess with 
-                            your trusty CakeZooka for points. You are equipped with the Invert ability, which allows you to 'invert' dimensions but be 
-                            careful! Doing so also inverts your controls!
-                        </p>
-                    </div>
-
+                    <p>
+                        The game was created for TOJam 2024: Talk about Fourshadowing with the prompt "It's supposed to do that." In
+                        colloboration
+                        with 5 others, Gateau Gato: Delicious Chaos was created in the span of 2 days. <br><br>
+                
+                        Gateau Gato: Delicious Chaos is a wave survival game that has you destroying cake-y enemies and blowing up the
+                        mess with
+                        your trusty CakeZooka for points. You are equipped with the Invert ability, which allows you to 'invert'
+                        dimensions but be
+                        careful! Doing so also inverts your controls!
+                    </p>
+                
                 </div>
 
                 <div class="project-links">
@@ -192,8 +187,6 @@
             <div class="accomplishments">
                 <div class="accomplishment">
                     <div class="accomplishment-details">
-                        <div class="bottom"></div>
-                        <div class="top">
                             <div class="accomplishment-title">
                                 <h1>Inverting Mechanic</h1>
                             </div>
@@ -201,50 +194,79 @@
                                One of my resposiblities for the project was implementing the core mechanic: inverting the player, enemies, and the environment! <br><br>
 
                                Inverting the player was simple enough via an integer flip whenever the invert button was pressed (right-mouse button). This same boolean would handle the texture swap of the player's body. 
-                               To invert enemies, I had the enemy controller handle the enemy's state by listening to the Game Manager script and getting the current invert state. But when the enemy would be defeated, 
+                               To invert enemies, I had the enemy controller handle the enemy's state by listening to the GameManager script and getting the current invert state. But when the enemy would be defeated, 
                                the parent where the controller is located would be  destroyed and thus would stop listening. This made the enemy's corpses stop reacting to the invert state and caused some dissonance. 
                                I fixed this issue by moving the listening part to the children, i.e., the BODY PARTS of the enemy. This way the corpse can still listen to the Game Manager and change states accordingly.
                                To the right you can see the hierarchy breakdown of one of the enemies. The yellow is the parent where the enemy controller is located and where the invert state used to be checked. The green
                                is where the invert state is now checked, and it is for each body part. <br><br>
 
-                               The enivornment used a similar strategy, where the geometry itself will listen for the change in invert state and perform the texture swap.
-                        </div>
+                               The enivornment used a similar strategy, where the geometry itself will listen for the change in invert state and perform the texture swap. 
+                            </p>
                     </div>
 
                     <div class="accomplishment-image">
-                        <div class="bottom"></div>
-                        <div class="top">
-                            <img src="..\images\DeliciousChaos\accomplishment-images\hierarchy-breakdown-higlighted.jpg">
+                        <img src="..\images\DeliciousChaos\accomplishment-images\hierarchy-breakdown-higlighted.jpg">
+                    </div>
+
+                    <div class="break"></div>
+
+                    <div class="project-images">
+                        <div class="project-image">
+                            <img src="..\images\DeliciousChaos\accomplishment-images\shift.gif"> 
+                            <div class="caption">
+                                <p>Early concept of the invert affecting enemies & environment</p>
+                            </div>
+                        </div>
+        
+                        <div class="project-image">
+                            <img src="..\images\DeliciousChaos\accomplishment-images\shift-final.gif">
+                            <div class="caption">
+                                <p>Final pass showing the invert still affecting enemies & environment but also player and their weapons</p>
+                            </div> 
                         </div>
                     </div>
                 </div>
 
-                <div class="project-images">
-                    <div class="project-image">
-                        <img src="..\images\DeliciousChaos\accomplishment-images\shift.gif"> 
-                    </div>
-    
-                    <div class="project-image">
-                        <img src="..\images\DeliciousChaos\accomplishment-images\shift-final.gif"> 
-                    </div>
-                </div>
 
                 <div class="accomplishment">
+                    <div class="accomplishment-image">
+                        <img src="..\images\DeliciousChaos\accomplishment-images\spawning.gif">
+                    </div>
+
                     <div class="accomplishment-details">
-                        <div class="bottom"></div>
-                        <div class="top">
-                            <div class="accomplishment-title">
-                                <h1>Wave Management</h1>
+                        <div class="accomplishment-title">
+                            <h1>Wave Management</h1>
+                        </div>
+                        <p>
+                            Another one of my resposiblities was handling how waves work and managed. <br><br>
+
+                            A script called EnemySpawner handles spawning enemies and there are multiple instances of this script in the scene. This script tells the GameManager script when it has spawned a enemy and 
+                            which one it spawned. The GameManager uses this information to track how many of each type of enemy in the wave it still needs to spawn, and once all of the enemies has spawned, the spawners
+                            will cease to spawn enemies and waits until the player clears the remaining enemies to start the next wave. <br><br>
+
+                            The game determines how many of each type of enemy should be spawned on any given wave by using an algorithm, this allows a near infinite amount of waves!
+                        </p>
+                    </div>
+
+                    <div class="break"></div>
+
+                    <div class="project-images">
+                        <div class="project-image">
+                            <img src="..\images\DeliciousChaos\accomplishment-images\enemyspawner-spawning.jpg"> 
+                            <div class="caption">
+                                <p>Snippet from the EnemySpawner script, showing how enemies spawn & talking to GameManager</p>
                             </div>
-                            <p>
-                                Placeholder blerb
-                            </p>
+                        </div>
+        
+                        <div class="project-image">
+                            <img src="..\images\DeliciousChaos\accomplishment-images\gamemanager-nextwave.jpg"> 
+                            <div class="caption">
+                                <p>Snippet from the GameManger script, showing how the next wave starts</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="accomplishment"></div>
         </div>
     </div>
 

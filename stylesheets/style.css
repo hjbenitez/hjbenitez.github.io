@@ -157,11 +157,6 @@ body {
   background: #8d8d8d;
 }*/
 
-input:focus-visible+label {
-  /*outline: 2px solid rgba(0, 102, 204, 1);*/
-  /*border-radius: 3px;*/
-}
-
 .tabset>label:hover,
 .tabset>input:focus+label,
 .tabset>input:checked+label {
@@ -451,7 +446,7 @@ header {
 }
 
 .download-button>.button-bottom {
-  background: var(--secondary-colour-shade);
+  background: var(--primary-colour-shade);
   width: 100%;
 
   margin-top: 1vw;
@@ -461,7 +456,7 @@ header {
 }
 
 .download-button>.button-top {
-  background: var(--secondary-colour);
+  background: var(--primary-colour);
   width: 100%;
   border: 0.15vw solid black;
 
@@ -535,14 +530,14 @@ header {
 }
 
 .hero-panel>.bottom {
-  background: var(--tertiary-colour-shade);
+  background: var(--primary-colour-shade);
   height: 35vw;
   margin-top: 1vw;
   border: 0.15vw solid black;
 }
 
 .hero-panel>.top {
-  background: var(--tertiary-colour);
+  background: var(--primary-colour);
   color: white;
   height: 35vw;
   font-size: 1.5vw;
@@ -587,7 +582,7 @@ header {
 
 /* List Header Style */
 .list-header {
-  background: var(--primary-colour);
+  background: var(--secondary-colour);
   color: white;
   height: 3vw;
   
@@ -611,14 +606,14 @@ header {
 }
 
 .list-body>.bottom {
-  background: var(--secondary-colour-shade);
+  background: var(--tertiary-colour-shade);
   height: 10vw;
   margin-top: 1vw;
   border: 0.15vw solid black;
 }
 
 .list-body>.top {
-  background: var(--secondary-colour);
+  background: var(--tertiary-colour);
   color: white;
   height: 10vw;
   font-size: 1.5vw;
@@ -675,6 +670,11 @@ header {
 
 #project-4{
   grid-row: 4;
+  grid-column: 1;
+}
+
+#project-5 {
+  grid-row: 5;
   grid-column: 1;
 }
 
@@ -869,13 +869,15 @@ header {
   position: absolute;
   display: flex;
   height: 30%;
-  width: 100%;
+  width: 95%;
   background: rgb(34, 34, 34);
   opacity: 0;
   padding: 1vw 0vw;
   border-top: 0.15vw solid black;
   align-content: center;
   justify-content: center;
+
+  padding: 0vw 2.5%;
 
   transition: opacity .5s ease;
 }
@@ -890,7 +892,8 @@ header {
 
 .big-preview img{
   height: 100%;
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* WRITINGS -----------------------------------*/
