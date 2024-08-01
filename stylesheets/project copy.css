@@ -10,6 +10,12 @@
     --teritary-colour-shade: #31343d;
   }
 
+.tabset>label{
+    font-size: 2vw;
+    letter-spacing: 0vw;
+}
+
+/*
 .project-background {
     position: relative;
     background: var(--secondary-colour);
@@ -22,11 +28,11 @@
 .project-main {
     margin: 0vw 4vw; 
 }
-
+*/
 /* PROJECT HEADER --------------------------- */
 .project-title {
     display: grid;
-    margin: 2vw 0vw 0vw;
+    margin: 2vw 4vw 3vw;
 }
 
 .project-title>.bottom{
@@ -76,16 +82,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    gap: 1vw;
 
     margin: 2vw 0vw 0vw;
 }
 
 .info-column {
     display: grid;
+    flex: 1;
     margin: auto;
-
     height:6vw;
-    width: 18vw;
 
     border: 0.15vw solid black;
 }
@@ -100,29 +106,31 @@
 
 .info-title{
     display: flex;
+    flex: 1;
     grid-column: 1;
     grid-row: 1;
 
     background: var(--primary-colour);
     border-bottom: 0.15vw solid black;
     height:3vw;
-    width: 18vw;
 
+    line-height: 0;
     align-content: center;
     justify-content: center;
 }
 
 .info-detail {
     display: flex;
+    flex: 1;
     grid-column: 1;
     grid-row: 2;
     
     background: var(--teritary-colour);
 
-    height:3vw;
-    width: 18vw;
+    height: 3vw;
+    line-height: 0;
 
-    align-content: center;
+    align-self: center;
     justify-content: center;
     box-sizing: border-box;
     border-bottom: 0.15vw solid black;
@@ -198,7 +206,7 @@
 .project-boiler {
     display: grid;
     grid-template-columns: 60% 40%;
-    margin-top: 3vw;
+    margin-top: 2vw;
     height:30vw;
     width: 100%;
     line-height: 0vh;
@@ -304,6 +312,7 @@
 .project-description p {
     color: white;
     text-align: center;
+    margin: 0vw 1vw;
     
     line-height: 1vw;
     /*text-wrap: balance;*/
