@@ -37,7 +37,7 @@
 
 .project-title>.bottom{
     margin-top: 1vw;
-    background: var(--primary-colour-shade);
+    background: var(--secondary-colour-shade);
 
     border: 0.15vw solid black;
 
@@ -47,7 +47,7 @@
 .project-title>.top {
     display: grid;
     grid-template-columns: 60% 40%;
-    background: var(--primary-colour);
+    background: var(--secondary-colour);
 
     border: 0.15vw solid black;
     
@@ -145,61 +145,63 @@
 }
 
 /* PROJECT ACCOLADES --------------------------*/
-.accolades {
+.showcase-item {
+    display: flex;
+    gap: 2vw;
+}
+
+.showcase-info {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.showcase-banner {
+    background: cornflowerblue;
+    width: 100%;
+}
+
+.showcase-banner img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.showcase-description-accolade {
+    display: flex;
+    background: coral;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.showcase-description {
+    background: antiquewhite;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.showcase-accolade {
     display: flex;
 
-    align-content: center;
-    justify-content: center;
-
-    margin-top: 2vw;
-}
-
-.accolades-accolade {
-    display: grid;
-    height: 20vw;
-
-    width: 100%;
-
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.accolades-accolade>.bottom {
-    background: var(--teritary-colour-shade);
-    margin-top: 1vw;
-    border: 0.15vw solid black;
-    height: 20vw;
-}
-
-.accolades-accolade>.top {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    background: var(--teritary-colour);
-    border: 0.15vw solid black;
-    height: 20vw;
-}
-
-
-.accolades-accolade>.top>img {
+.showcase-accolade img {
+    background: black;
+    width: 85%;
     object-fit: cover;
 }
 
-.accolade-organization {
-    grid-column: 1;
-    grid-row: 1;
-
-    border-right: 0.15vw solid black;
-    height: 20vw;
-    width: 100%;
+.showcase-image {
+    background: chocolate;
+    flex:2;
 }
 
-.accolade-medal {
-    grid-column: 2;
-    grid-row: 1;
-
-    height: 20vw;
-    width: 90%;
-    justify-self: center;
+.showcase-image img {
+    object-fit: cover;
+    width: 100%;
 }
 
 /* PROJECT VIDEO  --------------------------- */
