@@ -82,18 +82,19 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-
+  gap: 2vw;
   margin-bottom: -1.5vw;
 }
 
 .external>.link-button {
   line-height: 0;
-  margin: 0vw 2vw;
 }
 
 
 .external img {
-  width: 6vw;
+  width: 12vw;
+  height: 6vw;
+  object-fit: contain;
   border: 0.15vw solid black;
   border-radius: 2vw;
 }
@@ -199,32 +200,44 @@ header {
   background: var(--primary-colour);
   color: #ffffff;
 }
-.demo-reel {
-  margin-top: 2vw;
-  display: flex;
-  background: var(--tertiary-colour);
-  border: 0.15vw solid black;
 
+.home-tab{
+  margin: 2vw 0vw 3vw;
+  display: flex;
+  flex-direction: row;
+
+  height: 30vw;
+
+  gap: 2vw;
+}
+
+.demo-reel {
+  display: flex;
+  flex: 2;
+  
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  border-radius: 1vw;
+  margin-bottom: -1vw;
 }
 
 .demo-reel>iframe {
-  height: 45vw;
+  height: 100%;
   width: 100%;
+  border: 0.15vw solid black;
+  border-radius: 1vw;
 }
 
 /* Section Header Style */
-.section-header {
-  margin: 2vw 0vw 0vw 0vw;
-  display: grid;
-}
-
 .bottom,
 .top {
   grid-column: 1;
   grid-row: 1;
+}
+
+.section-header {
+  margin: 2vw 0vw 0vw 0vw;
+  display: grid;
 }
 
 .section-header>.bottom {
@@ -247,35 +260,52 @@ header {
   align-items: center;
 }
 
-/*
-.section-header>.top:hover{
-  margin-top: 1vw;
-}*/
-/*------------------------------------*/
+.featured-header {
+  display: flex;
+  background: var(--primary-colour);
+  border: 0.15vw solid black;
+  height: 3vw;
+  width: 100%;
+}
 
-/* Project Button Style*/
-.projects-container {
+.featured-game {
+  display: flex;
+  background: var(--tertiary-colour);
+  margin-top: 1vw; 
+  border: 0.15vw solid black;
+  border-radius: 1vw;
+  height: 3vw;
+  width: 100%;
+}
+
+.featured-header h1,
+.featured-game h1 {
+  color: white;
+  font-size:2vw;
+  font-weight: bold;
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  flex: 1;
-  gap: 2vw;
+}
 
-  margin-bottom: 2vw;
-  margin-top: 2vw;
+/* Project Button Style*/
+.featured-container {
+  height: 30vw;
+  flex: 1;
 }
 
 .project {
   display: grid;
-  flex: 1;
+  margin-top: 1vw;
 }
 
 .project-bottom,
 .project-top {
   grid-row: 1;
   grid-column: 1;
-  height: 45vw;
+  height: 25.5vw;
 }
 
 .project-bottom {
@@ -290,7 +320,6 @@ header {
 
 .project-top {
   display: flex;
-
   background: var(--tertiary-colour);
   border: 0.15vw solid black;
   border-radius: 1vw;
@@ -339,6 +368,7 @@ header {
   font-size: 1vw;
   font-weight: bold;
   margin: 1vw;
+  line-height:0.5vw;
 }
 
 .project>.project-top:hover {
@@ -498,7 +528,6 @@ header {
 
 .link-button>.button-bottom {
   background: var(--secondary-colour-shade);
-  width: 6vw;
 
   margin-top: 2vw;
   border: 0.15vw solid black;
@@ -1142,4 +1171,9 @@ footer {
 
   align-items: center;
   justify-content: center;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
