@@ -1130,22 +1130,20 @@ footer {
   margin-top: 0.5vw;
 
   border: 0.15vw solid black;
-  border-bottom-right-radius: 0.5vw;
-  border-bottom-left-radius: 0.5vw;
+  border-radius: 1vw;
 
-  height: 2vw;
+  height: 4vw;
   width: 22vw;
 }
 
 .repository-button>.top {
   display: flex;
   background: var(--tertiary-colour);
-  height: 2vw;
+  height: 4vw;
   width: 22vw;
 
   border: 0.15vw solid black;
-  border-bottom-right-radius: 0.5vw;
-  border-bottom-left-radius: 0.5vw;
+  border-radius: 1vw;
 
   align-items: center;
   justify-content: center;
@@ -1171,6 +1169,14 @@ footer {
 
   align-items: center;
   justify-content: center;
+}
+
+.repository-link img {
+  width: 22vw;
+  height: 4vw;
+  object-fit: contain;
+  border: 0.15vw solid black;
+  border-radius: 1vw;
 }
 
 .break {

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <title>Humberto Benitez</title>
-    <link rel="stylesheet" href="../stylesheets/project.css">
-    <link rel="stylesheet" href="../stylesheets/style.css">
-    <script src="../main.js"></script>
+    <link rel="stylesheet" href="..\stylesheets\style.css">
+    <link rel="stylesheet" href="..\stylesheets\project.css">
+    <script src="..\main.js"></script>
 
 </head>
 
@@ -16,26 +16,18 @@
         <div class="navigation">
             <div class="external" id="left-navigation">
                 <div class="link-button">
-                    <div class="button-bottom"></div>
+                    <div class="button-bottom" style="background: #963535;"></div>
                     <div class="button-top">
-                        <a href="https://benitez177.itch.io/" target="_blank"><img class="icon-image"
-                                src="..\images\icons\itch-io.png" style="background: #FA5C5C;"></a>
+                        <a href="https://benitez177.itch.io/" target="_blank">
+                            <img src="..\images\icons\itch-io.png" style="background: #FA5C5C;"></a>
                     </div>
                 </div>
 
                 <div class="link-button">
-                    <div class="button-bottom"></div>
+                    <div class="button-bottom" style="background: #010101;"></div>
                     <div class="button-top">
-                        <a href="https://medium.com/@hjbenitezdev" target="_blank"><img src="..\images\icons\medium.png"
-                                style="background: #000000;"></a>
-                    </div>
-                </div>
-
-                <div class="link-button">
-                    <div class="button-bottom"></div>
-                    <div class="button-top">
-                        <a href="https://twitter.com/hjbenitez177" target="_blank"><img
-                                src="..\images\icons\twitter.png" style="background: #03A9F4;"></a>
+                        <a href="https://github.com/hjbenitez" target="_blank"><img src="..\images\icons\github.png"
+                                style="background: #0D1117;"></a>
                     </div>
                 </div>
             </div>
@@ -43,14 +35,13 @@
             <div class="button-header">
                 <div class="button-bottom"><img src="..\images\icons\logo-back.png" class="logo-image-back"></div>
                 <div class="button-top">
-                    <a href="../index.html"><img src="..\images\icons\logo.png" class="logo-image"></a>
+                    <a href="..\index.html"><img src="..\images\icons\logo.png" class="logo-image"></a>
                 </div>
             </div>
 
-
             <div class="external" id="right-navigation">
                 <div class="link-button">
-                    <div class="button-bottom"></div>
+                    <div class="button-bottom" style="background: #01537c;"></div>
                     <div class="button-top">
                         <a href="https://www.linkedin.com/in/hjbenitez/" target="_blank"><img
                                 src="..\images\icons\linkedin.png" style="background: #007BBA;"></a>
@@ -58,15 +49,7 @@
                 </div>
 
                 <div class="link-button">
-                    <div class="button-bottom"></div>
-                    <div class="button-top">
-                        <a href="https://github.com/hjbenitez" target="_blank"><img src="..\images\icons\github.png"
-                                style="background: #0D1117;"></a>
-                    </div>
-                </div>
-
-                <div class="link-button">
-                    <div class="button-bottom"></div>
+                    <div class="button-bottom" style="background: #40191B;"></div>
                     <div class="button-top">
                         <a href="mailto:hjbenitezdev@gmail.com" target="_blank" rel="noopener noreferrer"><img
                                 src="..\images\icons\mail.png" style="background: #853438;"></a>
@@ -76,199 +59,297 @@
         </div>
     </header>
 
+    <div class="project-title">
+        <div class="bottom"></div>
+        <div class="top">
+            <img src="..\images\StopAndBreathe\StopandBreatheLogo.png" class="project-title-logo">
+            <img src="..\images\StopAndBreathe\stop-and-breathe-cover.png" class="project-title-cover">
+        </div>
+    </div>
+
     <div class="project-background">
         <div class="project-main">
-            <div class="project-title">
-                <div class="bottom"></div>
-                <div class="top">
-                    <img src="..\images\StopAndBreathe\StopandBreatheLogo.png" class="project-title-logo">
-                    <img src="..\images\StopAndBreathe\stop-and-breathe-cover.png" class="project-title-cover">
-                </div>
-            </div>
 
-            <div class="infomation-panel">
-                <div class="info-column first-column-info">
+            <div class="tabset">
+                <!-- Tab 1 -->
+                <input type="radio" name="tabset" id="tab1" aria-controls="aboutproject" onClick="topFunction()" checked>
+                <label for="tab1">PROJECT INFO</label>
+                <!-- Tab 2 -->
+                <input type="radio" name="tabset" id="tab2" aria-controls="showcase" onClick="topFunction()">
+                <label for="tab2">SHOWCASES</label>
+                <!-- Tab 3 -->
+                <input type="radio" name="tabset" id="tab3" aria-controls="process" onClick="topFunction()">
+                <label for="tab3">PROCESS</label>
+                <!-- Tab 4
+                <input type="radio" name="tabset" id="tab4" aria-controls="writings" onClick="topFunction()">
+                <label for="tab4">WRITINGS</label> -->
+                <!-- Tab 5 
+                <input type="radio" name="tabset" id="tab5" aria-controls="resume" onClick="topFunction()">
+                <label for="tab5">RESUME</label>-->
+        
+                <div class="tab-panels">
 
-                    <div class="info-title">
-                        <h1>CONTRIBUTION</h1>
-                    </div>
-                    <div class="info-detail">
-                        <h1>PROGRAMMER</h1>
-                    </div>
-
-                </div>
-
-                <div class="info-column">
-
-                    <div class="info-title">
-                        <h1>ENGINE</h1>
-                    </div>
-                    <div class="info-detail">
-                        <h1>UNREAL ENGINE 5.3</h1>
-                    </div>
-
-                </div>
-
-                <div class="info-column">
-
-                    <div class="info-title">
-                        <h1>LANGUAGE</h1>
-                    </div>
-                    <div class="info-detail">
-                        <h1>BLUEPRINTS</h1>
-                    </div>
-
-                </div>
-
-                <div class="info-column last-column-info">
-
-                    <div class="info-title">
-                        <h1>TYPE</h1>
-                    </div>
-                    <div class="info-detail">
-                        <h1>COLLEGE PROJECT</h1>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="accolades">
-                <div class="accolades-accolade">
-                    <div class="bottom"></div>
-                    <div class="top">
-                        <img src="..\accolades\G4C2024-Awards_header.png" class="accolade-organization">
-                        <img src="..\accolades\Best Student Game - Winner (white).png" class="accolade-medal">
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-boiler">
-                <div class="project-cover">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uox7r1091DQ?si=mFb3cuHib10RqDJL"
-                        title="Stop & Breathe Trailer" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    <!-- <img src="..\images/placeholder-cover.png">-->
-                </div>
-            </div>
-            <div class="project-description-links">
-                <div class="project-description">
-
-                    <p>
-                        In collaboration with a professor from Sheridan's Child and Youth Care program, Stop and
-                        Breathe is a game that is designed to teach players a breathing
-                        technique that can help them deal with the onset of a panic/anxiety attack. <br><br>
-
-                        You play as Ace, a teen who struggles with their anxiety and is trapped in their own mind.
-                        You learn the breathing technique throughout the game with your companion, Zen.
-                        Use the technique to clear away the anxiety and solve puzzles to progress.
-                    </p>
-
-                </div>
-
-                <div class="project-links">
-                    <div class="project-link-button">
-                        <div class="bottom" style="background: #030405;"></div>
-                        <div class="top" style="background: #0d1117;">
-                            <a href="https://github.com/hjbenitez/ProjectAnxiety" target="_blank"><img
-                                    src="..\images\icons\github.png"></a>
+                    <section id="aboutproject" class="tab-panel" style="margin-bottom: 2vw;">
+                        <div class="infomation-panel">
+                            <div class="info-column first-column-info">
+                                <div class="info-title">
+                                    <h1>CONTRIBUTION</h1>
+                                </div>
+                                <div class="info-detail">
+                                    <h1>PROGRAMMER</h1>
+                                </div>
+                            </div>
+            
+                            <div class="info-column">
+                                <div class="info-title">
+                                    <h1>ENGINE</h1>
+                                </div>
+                                <div class="info-detail">
+                                    <h1>UNREAL ENGINE 5</h1>
+                                </div>
+                            </div>
+            
+                            <div class="info-column">
+                                <div class="info-title">
+                                    <h1>LANGUAGE</h1>
+                                </div>
+                                <div class="info-detail">
+                                    <h1>BLUEPRINTS</h1>
+                                </div>
+                            </div>
+            
+                            <div class="info-column last-column-info">
+                                <div class="info-title">
+                                    <h1>TYPE</h1>
+                                </div>
+                                <div class="info-detail">
+                                    <h1>COLLEGE PROJECT</h1>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="project-link-button">
-                        <div class="bottom" style="background: #a13e3e;"></div>
-                        <div class="top" style="background: #fa5c5c;">
-                            <a href="https://onemustimaginegames.itch.io/stop-and-breathe" target="_blank"><img
-                                    src="..\images\icons\itch-io.png"></a>
+                        
+                        <div class="project-boiler">
+                            <div class="project-cover">
+                                <iframe src="https://www.youtube.com/embed/uox7r1091DQ?si=mFb3cuHib10RqDJL"
+                                    title="Stop & Breathe Trailer" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+            
+                            <div class="project-sidebar">
+                                <div class="project-description">
+                                    <p>
+                                        In collaboration with a professor from Sheridan's Child and Youth Care program, Stop and
+                                        Breathe is a game that is designed to teach players a breathing
+                                        technique that can help them deal with the onset of a panic/anxiety attack. <br><br>
+                
+                                        You play as Ace, a teen who struggles with their anxiety and is trapped in their own mind.
+                                        You learn the breathing technique throughout the game with your companion, Zen.
+                                        Use the technique to clear away the anxiety and solve puzzles to progress.
+                                    </p>
+                                </div>
+                                
+                                <div class="project-link">
+                                    <div class="bottom" style="background: #a13e3e;"></div>
+                                    <div class="top" style="background: #fa5c5c;">
+                                        <a href="https://onemustimaginegames.itch.io/stop-and-breathe" target="_blank"><img
+                                                src="..\images\icons\itch-io.png"></a>
+                                    </div>
+                                </div>
+            
+                                <div class="project-link" style="margin-top: 2vw;">
+                                    <div class="bottom" style="background: #030405;"></div>
+                                    <div class="top" style="background: #0d1117;">
+                                        <a href="https://github.com/hjbenitez/ProjectAnxiety" target="_blank">
+                                            <img src="..\images\icons\github.png">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-images">
-                <div class="project-image">
-                    <img src="..\images\StopAndBreathe\stop-and-breathe-1.png">
-                </div>
-
-                <div class="project-image">
-                    <img src="..\images\StopAndBreathe\stop-and-breathe-2.png">
-                </div>
-
-                <div class="project-image">
-                    <img src="..\images\StopAndBreathe\stop-and-breathe-3.png">
-                </div>
-            </div>
-
-            <div class="accomplishments">
-                <div class="accomplishment">
-                    <div class="accomplishment-details">
-                        <div class="accomplishment-title">
-                            <h1>Building a Dialogue System</h1>
+                        
+                        <div class="project-images">
+                            <div class="project-image">
+                                <img src="..\images\StopAndBreathe\stop-and-breathe-1.png">
+                            </div>
+            
+                            <div class="project-image">
+                                <img src="..\images\StopAndBreathe\stop-and-breathe-2.png">
+                            </div>
+            
+                            <div class="project-image">
+                                <img src="..\images\StopAndBreathe\stop-and-breathe-3.png">
+                            </div>
                         </div>
-                        <p>
-                            I was responsible for building our game's dialogue system. Early iteration of the
-                            dialogue box just held the text that was supposed to be shown and players would have to
-                            walk into triggers
-                            to activate the dialogue. This was very limited because we wanted dialogue to be shown
-                            while the player performs Life Breathing and when players loaded a new scene. We also
-                            recieved feedback
-                            that player's didn't know who was talking and whoever was had no personality. <br><br>
+                    </section>
 
-                            I revamped the dialogue system from the ground up. I dedicated a component that would
-                            ONLY handle dialogue and moved everything there. I then added a clear pipeline that the
-                            dialogue would go through
-                            by doing a bunch of checks when the dialogue system is activated. Namely to know where
-                            the dialogue is coming from, if the dialogue was timed or waited for a button press,
-                            etc. Checking for where the
-                            dialogue was coming from allowed me to route the appropriate actions (such as if the
-                            dialogue is meant to be shown during a certain phase of breathing). I also added the
-                            ability to add dialogue for
-                            when the player enters a new room on load if our narrative designer wanted to add
-                            context before the puzzle began. <br><br>
+                    <section id="showcase" class="tab-panel" style="margin-bottom: 2vw;">
+                        <!-- GAMES FOR CHANGE 2024 -->
+                        <div class="showcase-item">
+                            <div class="showcase-info">
+                                <div class="showcase-banner">
+                                    <a href="https://festival.gamesforchange.org/" target="_blank">
+                                        <img src="..\accolades\G4C2024-Awards_header.png">
+                                    </a>
+                                </div>
 
-                            Then with the help of our wonderful artist, we were able to add personality by creating
-                            an arted dialogue box with different emotions Zen could display while the dialogue was
-                            being said (which I
-                            allowed our narrative designer to change for each line). In the end, the dialogue system
-                            ended up being in a great state that I was very satisfied with.
-                        </p>
-                    </div>
-                </div>
+                                <div class="showcase-details">
+                                    <h1>
+                                        The New School | Parsons School of Design <br>
+                                        June 27 - 28th 2024
+                                    </h1>
+                                </div>
 
-                <div class="accomplishment">
-                    <div class="accomplishment-details">
+                                <div class="showcase-description">
+                                    <p>
+                                        Stop and Breathe was recognized at the 2024 Games for Change Festival as a driving force for good and 
+                                        positive change and as a result was nominated and won the Best Student Project category. The game was also 
+                                        featured in the G4C Arcade and was playable to ticketholders.
 
-                        <div class="accomplishment-title">
-                            <h1>Anxiety Effect</h1>
+                                    </p>
+                                </div> 
+                            </div>
+
+                            <div class="showcase-image">
+                                <img src="..\images\StopAndBreathe\G4C-Arcade.jpg">
+                            </div>
                         </div>
-                        <p>
-                            I was responsible for implementing the early version of the breathing mechanic which has
-                            gone through multiple iterations. The first iteration used a post processing material
-                            that darken
-                            the scene around the player. Then a sphere would enlarge at the center of the player
-                            which would 'dispel' the anxiety after each completion of Life Breathing. It worked for
-                            our proof of concept
-                            but it was limiting because there was no 'in-between' state. The circle either
-                            completely dispelled the anxiety or didn't. So I had to approach this differently.
-                            <br><br>
 
-                            I then changed the method to changing the saturation of the scene. This allowed us to
-                            have the more gradual change in the scene. We also added a new post processing material
-                            that gave objects in the scene
-                            a small chromatic aberration effect that was subtle to try and enforce the anxiety
-                            effect, which was received well. Only problem with this is that this method does not let
-                            us cull certain game objects
-                            to keep their colour, such as the breathing pedestal. <br><br>
+                        <!-- LEVEL UP SHOWCASE -->
+                        <div class="showcase-item">
+                            <div class="showcase-image">
+                                <img src="..\images\StopAndBreathe\LevelUp-TeamPhoto.jpg">
+                            </div>
 
-                            I revisited the first method because it allowed me to cull game objects and I got the
-                            idea to combine the two methods. I used the same material in method one, added a
-                            desaturate node in the material graph and
-                            played around until I got the effect I wanted and changed that value instead of the
-                            Global Saturation value found on the post processing volume. This allowed me to cull
-                            game objects from the saturation effect
-                            WHILE also keeping the same gradual change!
-                        </p>
-                    </div>
+                            <div class="showcase-info">
+                                <div class="showcase-banner">
+                                    <a href="https://levelupshowcase.com/" target="_blank">
+                                        <img src="..\images\StopAndBreathe\levelup-banner.png">
+                                    </a>
+                                </div>
+
+                                <div class="showcase-details">
+                                    <h1>
+                                        Westin Harbour Castle <br>
+                                        April 19th 2024
+                                    </h1>
+                                </div>
+
+                                <div class="showcase-description">
+                                    <p>
+                                        The Level Up Showcase was an event that saw multiple student projects being showcased and judged.
+                                        An award cermony was held later that evening. The event opened to the general public at 4PM and saw 
+                                        thousands of patrons playing the student projects.
+                                    </p>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <!-- SERIOUS PLAY CONFERENCE -->
+                        <div class="showcase-item">
+                            <div class="showcase-info">
+                                <div class="showcase-banner" style="background: #201C10;">
+                                    <a href="https://seriousplayconf.com/" target="_blank">
+                                        <img src="..\images\StopAndBreathe\spc-banner.png" style="object-fit: contain; margin: 0.5vw;">
+                                    </a>
+                                </div>
+
+                                <div class="showcase-details">
+                                    <h1>
+                                        University of Toronto Mississauga <br>
+                                        August 12 - 14th 2024
+                                    </h1>
+                                </div>
+
+                                <div class="showcase-description">
+                                    <p>
+                                        Our game was featured at the Serious Play Conference 2024. The game was playable to ticketholders. Our team also gave a 
+                                        presentation on our game titled "Stop & Breathe: Tackling Youth Anxiety with Games" where we talked about problems, solutions 
+                                        and key takeaways that we learned while developing our game.
+                                    </p>
+                                </div> 
+                            </div>
+
+                            <div class="showcase-image">
+                                <img src="..\images\StopAndBreathe\spc-image.png" style="object-fit: contain; background: #000000;">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="process" class="tab-panel" style="margin-bottom: 2vw;">
+                        <div class="accomplishments">
+                            <div class="accomplishment">
+                                <div class="accomplishment-details">
+                                    <div class="accomplishment-title">
+                                        <h1>Building a Dialogue System</h1>
+                                    </div>
+                                    <p>
+                                        I was responsible for building our game's dialogue system. Early iteration of the
+                                        dialogue box just held the text that was supposed to be shown and players would have to
+                                        walk into triggers
+                                        to activate the dialogue. This was very limited because we wanted dialogue to be shown
+                                        while the player performs Life Breathing and when players loaded a new scene. We also
+                                        recieved feedback
+                                        that player's didn't know who was talking and whoever was had no personality. <br><br>
+            
+                                        I revamped the dialogue system from the ground up. I dedicated a component that would
+                                        ONLY handle dialogue and moved everything there. I then added a clear pipeline that the
+                                        dialogue would go through
+                                        by doing a bunch of checks when the dialogue system is activated. Namely to know where
+                                        the dialogue is coming from, if the dialogue was timed or waited for a button press,
+                                        etc. Checking for where the
+                                        dialogue was coming from allowed me to route the appropriate actions (such as if the
+                                        dialogue is meant to be shown during a certain phase of breathing). I also added the
+                                        ability to add dialogue for
+                                        when the player enters a new room on load if our narrative designer wanted to add
+                                        context before the puzzle began. <br><br>
+            
+                                        Then with the help of our wonderful artist, we were able to add personality by creating
+                                        an arted dialogue box with different emotions Zen could display while the dialogue was
+                                        being said (which I
+                                        allowed our narrative designer to change for each line). In the end, the dialogue system
+                                        ended up being in a great state that I was very satisfied with.
+                                    </p>
+                                </div>
+                            </div>
+            
+                            <div class="accomplishment">
+                                <div class="accomplishment-details">
+            
+                                    <div class="accomplishment-title">
+                                        <h1>Anxiety Effect</h1>
+                                    </div>
+                                    <p>
+                                        I was responsible for implementing the early version of the breathing mechanic which has
+                                        gone through multiple iterations. The first iteration used a post processing material
+                                        that darken
+                                        the scene around the player. Then a sphere would enlarge at the center of the player
+                                        which would 'dispel' the anxiety after each completion of Life Breathing. It worked for
+                                        our proof of concept
+                                        but it was limiting because there was no 'in-between' state. The circle either
+                                        completely dispelled the anxiety or didn't. So I had to approach this differently.
+                                        <br><br>
+            
+                                        I then changed the method to changing the saturation of the scene. This allowed us to
+                                        have the more gradual change in the scene. We also added a new post processing material
+                                        that gave objects in the scene
+                                        a small chromatic aberration effect that was subtle to try and enforce the anxiety
+                                        effect, which was received well. Only problem with this is that this method does not let
+                                        us cull certain game objects
+                                        to keep their colour, such as the breathing pedestal. <br><br>
+            
+                                        I revisited the first method because it allowed me to cull game objects and I got the
+                                        idea to combine the two methods. I used the same material in method one, added a
+                                        desaturate node in the material graph and
+                                        played around until I got the effect I wanted and changed that value instead of the
+                                        Global Saturation value found on the post processing volume. This allowed me to cull
+                                        game objects from the saturation effect
+                                        WHILE also keeping the same gradual change!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -283,22 +364,12 @@
             </div>
         </div>
 
-        <div class="footer-middle">
-            <div class="footer-text">
-                <div class="bottom"></div>
-                <div class="top">
-                    <p>
-                        You made it to the bottom!
-                    </p>
-                </div>
-            </div>
-
-            <div class="repository-button">
-                <div class="bottom"></div>
-                <div class="top">
-                    <a class="repository-link" href="https://github.com/hjbenitez/hjbenitez.github.io">You can take
-                        a peek behind the curtain here</a>
-                </div>
+        <div class="repository-button">
+            <div class="bottom"></div>
+            <div class="top">
+                <a class="repository-link" href="https://github.com/hjbenitez/hjbenitez.github.io">
+                    <img src="..\images\icons\github.png" style="background: #0D1117;">
+                </a>
             </div>
         </div>
 

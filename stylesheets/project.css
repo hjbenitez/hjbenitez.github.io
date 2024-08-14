@@ -10,6 +10,12 @@
     --teritary-colour-shade: #31343d;
   }
 
+.tabset>label{
+    font-size: 2vw;
+    letter-spacing: 0vw;
+}
+
+/*
 .project-background {
     position: relative;
     background: var(--secondary-colour);
@@ -22,16 +28,16 @@
 .project-main {
     margin: 0vw 4vw; 
 }
-
+*/
 /* PROJECT HEADER --------------------------- */
 .project-title {
     display: grid;
-    margin: 2vw 0vw 0vw;
+    margin: 2vw 4vw 3vw;
 }
 
 .project-title>.bottom{
     margin-top: 1vw;
-    background: var(--primary-colour-shade);
+    background: var(--secondary-colour-shade);
 
     border: 0.15vw solid black;
 
@@ -41,7 +47,7 @@
 .project-title>.top {
     display: grid;
     grid-template-columns: 60% 40%;
-    background: var(--primary-colour);
+    background: var(--secondary-colour);
 
     border: 0.15vw solid black;
     
@@ -76,16 +82,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    gap: 1vw;
 
     margin: 2vw 0vw 0vw;
 }
 
 .info-column {
     display: grid;
+    flex: 1;
     margin: auto;
-
     height:6vw;
-    width: 18vw;
 
     border: 0.15vw solid black;
 }
@@ -100,29 +106,31 @@
 
 .info-title{
     display: flex;
+    flex: 1;
     grid-column: 1;
     grid-row: 1;
 
     background: var(--primary-colour);
     border-bottom: 0.15vw solid black;
     height:3vw;
-    width: 18vw;
 
+    line-height: 0;
     align-content: center;
     justify-content: center;
 }
 
 .info-detail {
     display: flex;
+    flex: 1;
     grid-column: 1;
     grid-row: 2;
     
     background: var(--teritary-colour);
 
-    height:3vw;
-    width: 18vw;
+    height: 3vw;
+    line-height: 0;
 
-    align-content: center;
+    align-self: center;
     justify-content: center;
     box-sizing: border-box;
     border-bottom: 0.15vw solid black;
@@ -136,161 +144,236 @@
     font-weight: bold;
 }
 
-/* PROJECT ACCOLADES --------------------------*/
-.accolades {
+/* PROJECT SHOWCASE --------------------------*/
+.showcase {
     display: flex;
-
-    align-content: center;
-    justify-content: center;
-
-    margin-top: 2vw;
+    flex-direction: column;
 }
+.showcase-item {
+    background: var(--primary-colour);
+    margin-top: 4vw;
+    padding: 1vw;
+    display: flex;
+    gap: 2vw;
 
-.accolades-accolade {
-    display: grid;
-    height: 20vw;
-
-    width: 100%;
-
-    justify-content: center;
-    align-items: center;
-}
-
-.accolades-accolade>.bottom {
-    background: var(--teritary-colour-shade);
-    margin-top: 1vw;
     border: 0.15vw solid black;
-    height: 20vw;
+    border-radius: 1vw;
 }
 
-.accolades-accolade>.top {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    background: var(--teritary-colour);
-    border: 0.15vw solid black;
-    height: 20vw;
+.showcase-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    flex: 2;
 }
 
-
-.accolades-accolade>.top>img {
-    object-fit: cover;
-}
-
-.accolade-organization {
-    grid-column: 1;
-    grid-row: 1;
-
-    border-right: 0.15vw solid black;
-    height: 20vw;
+.showcase-banner {
+    display: flex;
     width: 100%;
-}
+    height: 12.5vw;
 
-.accolade-medal {
-    grid-column: 2;
-    grid-row: 1;
+    border: 0.15vw solid black;
+    border-radius: 1vw;
 
-    height: 20vw;
-    width: 90%;
+    align-self: center;
     justify-self: center;
+}
+
+.showcase-banner a {
+    display: flex;
+    width: 100%;
+    height: 12.5vw;
+}
+
+.showcase-banner img{
+    object-fit: cover;
+    width: 100%;
+    
+    border-radius: 1vw;
+}
+
+.showcase-details {
+    display: flex;
+    background: var(--teritary-colour);
+    width: 100%;
+    height: 5vw;
+    border: 0.15vw solid black;
+    border-radius: 1vw;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-details h1 {
+    font-size: 1.75vw;
+    color: white;
+    margin: 0vw 1vw;
+    line-height: 2.5vw;
+}
+
+.showcase-description {
+    display: flex;
+    background: var(--teritary-colour);
+    flex: 1;
+    width: 100%;
+    height: 100%;
+
+    border: 0.15vw solid black;
+    border-radius: 1vw;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-description p {
+    color: white;
+    font-size: 1.5vw;
+    text-wrap: balance;
+    line-height: 2vw;
+    margin: 0vw 0.5vw;
+}
+
+.showcase-image {
+    flex:2;
+    line-height: 0;
+}
+
+.showcase-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 35vw;
+
+    border: 0.15vw solid black;
+    border-radius: 1vw;
+}
+
+.showcase-image-contain {
+    object-fit: contain;
 }
 
 /* PROJECT VIDEO  --------------------------- */
 .project-boiler {
-    margin-top: 3vw;
-    height:45vw;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 2vw;
+    height:30vw;
     width: 100%;
-    /* background: gray;*/
-    display: flex;
     line-height: 0vh;
 }
 
 .project-cover {
-    /*background: lightcoral;*/
+    grid-column: 1;
+    grid-row: 1;
     width: 100%;
     height: 100%;
+
+    margin-right: 1vw;
 }
 
 .project-cover iframe {
     width: 100%;
     height: 100%;
+
+    border: 0.15vw solid black;
+    border-radius: 1vw;
+}
+
+.project-cover img {
+    object-fit: cover;
+    width: 100%;
+    border: 0.15vw solid black;
+    height:30vw;
+
+    border-radius: 1vw;
+}
+
+.project-sidebar {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+
+    flex-direction: column;
+    margin-left: 1vw;
+}
+
+/* PROJECT LINKS ---------------------------------*/
+.project-link {
+    display: grid;
+    flex: 1;
+
+    height: 100%;
+}
+
+.project-link>.bottom {
+    display: flex;
+    
+
+    height: 100%;
+    width: 100%;
+
+    border: 0.15vw solid black;
+    border-radius: 1vw;
+}
+
+.project-link>.top {
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+
+    border: 0.15vw solid black;
+    border-radius: 1vw;
+
+    margin-top: -1vw;
+
+    transition: margin-top 0.25s ease-in;
+}
+
+.project-link>.top:hover {
+    margin-top: 0vw;
+    transition: margin-top 0.25s ease-in;
 }
 
 
-/* PROJECT DESCRIPTION & LINKS  --------------------------- */
-.project-description-links {
+.project-link>.top a{
     display: flex;
-    margin: 2vw 0vw 0vw;
-    gap: 3vw;
+    justify-content: center;
+    align-items: center;   
+
+    height: 100%;
+    width: 100%;
+}
+
+.project-link img {
+    object-fit: contain;
+    height: 5vw;
+    width: 100%;
 }
 
 .project-description {
     display: flex;
     background: var(--teritary-colour);
-    
     flex: 2;
-    
-    height: 11vw;
-    width: 100%;    
+    width: 100%;
+    height: 100%;
+
     border: 0.15vw solid black;
+    border-radius: 1vw;
 
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
+    margin-bottom: 2vw;
+
+    justify-items: center;
+    align-items: center;
 }
-
 
 .project-description p {
     color: white;
     text-align: center;
+    margin: 0vw 1vw;
+    
     line-height: 1vw;
     /*text-wrap: balance;*/
-    margin: 0vw 1vw;
-}
 
-.project-links{
-    display: flex;
-    flex: 1;
-    gap: 3vw;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.project-link-button {
-    display: grid;
-    flex: 1;
-}
-
-.project-link-button>.bottom {
-    height: 10vw;
-    margin-top: 1vw;
-
-    border: 0.15vw solid black;
-    border-radius: 1vw;
-}
-
-.project-link-button>.top {
-    height: 10vw;
-
-    border: 0.15vw solid black;
-    border-radius: 1vw;
-
-    transition: margin-top 0.25s ease-in;
-}
-
-.project-link-button>.top:hover {
-    margin-top: 1vw;
-    transition: margin-top 0.25s ease-in;
-}
-
-.project-link-button>.top img {
-    height: 10vw;
-}
-
-.project-link-button>.top a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* PROJECT IMAGES  --------------------------- */
@@ -326,7 +409,6 @@
 .break {
     flex-basis: 100%;
     height: 0;
-    
   }
 
 /* ACCOMPLISHMENTS ----------------------------*/
@@ -342,7 +424,7 @@
 .accomplishment{
     display: flex;
     flex-wrap: wrap;
-    background: var(--primary-colour);
+    background: var(--teritary-colour);
 
     border: 0.15vw solid black;
     border-radius: 1vw;
@@ -357,23 +439,20 @@
     display: grid;
     flex:2;
 
-    background: var(--teritary-colour);
-
-    border: 0.15vw solid black;
 
     border-radius: 1vw;
 }
 
 .accomplishment-title {
-    background: var(--secondary-colour);
+    background: var(--primary-colour);
     color: white;
 
-    border-radius: 0.9vw 0.9vw 0vw 0vw;
+    border-radius: 1vw;
     height: 5vw;
     display: flex;
     align-content: center;
     justify-content: center;
-    border-bottom: 0.15vw solid black;
+    border: 0.15vw solid black;
 }
 
 .accomplishment-title h1{

@@ -34,7 +34,7 @@
             <div class="button-header">
                 <div class="button-bottom"><img src="..\images\icons\logo-back.png" class="logo-image-back"></div>
                 <div class="button-top">
-                    <a href="..\homepage\index.html"><img src="..\images\icons\logo.png" class="logo-image"></a>
+                    <a href="..\index.html"><img src="..\images\icons\logo.png" class="logo-image"></a>
                 </div>
             </div>
 
@@ -58,158 +58,172 @@
         </div>
     </header>
 
+    <div class="project-title">
+        <div class="bottom"></div>
+        <div class="top">
+            <img src="../images/Gunsmith/GunsmithLogo.png" class="project-title-logo">
+            <img src="../images/Gunsmith/gunsmith-cover.png" class="project-title-cover">
+        </div>
+    </div>
+
     <div class="project-background">
         <div class="project-main">
-            <div class="project-title">
-                <div class="bottom"></div>
-                <div class="top">
-                    <img src="../images/Gunsmith/GunsmithLogo.png" class="project-title-logo">
-                    <img src="../images/Gunsmith/gunsmith-cover.png" class="project-title-cover">
-                </div>
-            </div>
 
-            <div class="infomation-panel">
-                <div class="info-column first-column-info">
-                    <div class="bottom"></div>
-                    <div class="top">
-                        <div class="info-title">
-                            <h1>CONTRIBUTION</h1>
-                        </div>
-                        <div class="info-detail">
-                            <h1>SOLO</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-column">
-                    <div class="bottom"></div>
-                    <div class="top">
-                        <div class="info-title">
-                            <h1>ENGINE</h1>
-                        </div>
-                        <div class="info-detail">
-                            <h1>UNREAL ENGINE 4.27</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-column">
-                    <div class="bottom"></div>
-                    <div class="top">
-                        <div class="info-title">
-                            <h1>LANGUAGE</h1>
-                        </div>
-                        <div class="info-detail">
-                            <h1>BLUEPRINTS</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-column last-column-info">
-                    <div class="bottom"></div>
-                    <div class="top">
-                        <div class="info-title">
-                            <h1>TYPE</h1>
-                        </div>
-                        <div class="info-detail">
-                            <h1>COLLEGE PROJECT</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--
-            <div class="project-boiler">
-                <div class="project-cover">
-                    <iframe src="https://www.youtube.com/embed/JS2vGvm_OVA?si=R-x1g89bD_NTEAWe"
-                        title="Doc punches Little Mac so hard he shatters reality" frameborder="1"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    </div>
-                </div>
-            -->
-            <div class="project-description-links">
-                <div class="project-description">
-                    <div class="bottom"></div>
-                    <div class="top">
-                        <p>
-                            A project created for an assignment in an asset creation class at Sheridan College. I modelled two meshes (Service Weapon and Holosight), textured them, then 
-                            created a dynamic weapon customization system that allows you to change attachments and paint colours. <br> <br>
-
-                            The other weapons/attachments were provided by fellow students and the professor.
-                        </p>
-                    </div>
-
-                </div>
-
-               
-                <div class="project-links">
-                    <div class="project-link-button">
-                        <div class="bottom" style="background: #030405;"></div>
-                        <div class="top" style="background: #0d1117;">
-                            <a href="https://github.com/hjbenitez/gunsmith" target="_blank"><img src="../images/icons/github.png"></a>
-                        </div>
-                    </div>
-                    <!--
-                    <div class="project-link-button">
-                        <div class="bottom" style="background: #a13e3e;"></div>
-                        <div class="top" style="background: #fa5c5c;">
-                            <a href="https://onemustimaginegames.itch.io/stop-and-breathe"><img src="../images/icons/itch-io.png"></a>
-                        </div>
-                    </div>
-                       -->
-                </div>
-            </div>
-            <div class="project-images">
-                <div class="project-image">
-                    <img src="..\images\Gunsmith\gunsmith-image1.png"> 
-                </div>
-
-                <div class="project-image">
-                    <img src="..\images\Gunsmith\gunsmith-image2.png"> 
-                </div>
-
-                <div class="project-image">
-                    <img src="..\images\Gunsmith\gunsmith-image3.png"> 
-                </div>
-            </div>
-
-            <div class="accomplishments">
-                <div class="accomplishment">
-                    <div class="accomplishment-details">
-                        <div class="bottom"></div>
-                        <div class="top">
-                            <div class="accomplishment-title">
-                                <h1>Asset Creation Pipeline</h1>
+            <div class="tabset">
+                <!-- Tab 1 -->
+                <input type="radio" name="tabset" id="tab1" aria-controls="aboutproject" onClick="topFunction()" checked>
+                <label for="tab1">PROJECT INFO</label>
+                <!-- Tab 2 -->
+                <!--<input type="radio" name="tabset" id="tab2" aria-controls="showcase" onClick="topFunction()">
+                <label for="tab2">SHOWCASES</label>-->
+                <!-- Tab 3 -->
+                <input type="radio" name="tabset" id="tab3" aria-controls="process" onClick="topFunction()">
+                <label for="tab3">PROCESS</label>
+                <!-- Tab 4
+                <input type="radio" name="tabset" id="tab4" aria-controls="writings" onClick="topFunction()">
+                <label for="tab4">WRITINGS</label> -->
+                <!-- Tab 5 
+                <input type="radio" name="tabset" id="tab5" aria-controls="resume" onClick="topFunction()">
+                <label for="tab5">RESUME</label>-->
+        
+                <div class="tab-panels">
+                    <section id="aboutproject" class="tab-panel" style="margin-bottom: 2vw;">
+                        <div class="infomation-panel">
+                            <div class="info-column first-column-info">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="info-title">
+                                        <h1>CONTRIBUTION</h1>
+                                    </div>
+                                    <div class="info-detail">
+                                        <h1>SOLO</h1>
+                                    </div>
+                                </div>
                             </div>
-                            <p>
-                                While creating the Service Weapon and Holosight, I followed an asset creation pipeline that was taught in one of my courses at Sheridan. <br><br>
-
-                                I modelled the assets in Maya and since the Service Weapon is the Service Weapon from the game Control, I was able to use multiple reference photos to aid me. I created 
-                                two versions of each one, an high-poly and low-poly. I unwrapped the UVs of the models using Maya's tools. I then took the low-poly into Substance Painter and baked the high-poly into the low-poly keep both
-                                the detail of the high-poly and optimization of the low-poly. I used Substance to texture the assets and exported the appropiate maps into Unreal Engine 4 with the untextured the assets.
-                                
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accomplishment">
-                    <div class="accomplishment-details">
-                        <div class="bottom"></div>
-                        <div class="top">
-                            <div class="accomplishment-title">
-                                <h1>UI/HUD Designing</h1>
+            
+                            <div class="info-column">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="info-title">
+                                        <h1>ENGINE</h1>
+                                    </div>
+                                    <div class="info-detail">
+                                        <h1>UNREAL ENGINE 4.27</h1>
+                                    </div>
+                                </div>
                             </div>
-                            <p>
-                                I wanted to have a dynamic UI that showed relevant information for what is being clicked on. So I only showed buttons that were relevant to the weapon being inspected. 
-                                UI lights up when the options are selected and if the player switches weapons the attachmen, if supported, will transfer over to the new weapon. I also added a camera shake and a particle
-                                effect to make the HUD more dynamic. <br><br>
-
-                                The last item implemented was sound. I added sound effects that made sense and that are satisfying to hear. For instance, changing the paint job makes a sound of a spray can being sprayed, adding an attachment
-                                makes a wrench turning sound etc. Lastly, to set the mood, I added some ambience to the scene with a rain & thunder soundtrack playing and looping in the background which makes the scene feel more alive.
-                            </p>
+            
+                            <div class="info-column">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="info-title">
+                                        <h1>LANGUAGE</h1>
+                                    </div>
+                                    <div class="info-detail">
+                                        <h1>BLUEPRINTS</h1>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="info-column last-column-info">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="info-title">
+                                        <h1>TYPE</h1>
+                                    </div>
+                                    <div class="info-detail">
+                                        <h1>COLLEGE PROJECT</h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        
+                        <div class="project-boiler">
+                            <div class="project-cover">
+                                <img src="..\images\Gunsmith\Gunsmith.png">
+                                <!--<iframe src="https://www.youtube.com/embed/uox7r1091DQ?si=mFb3cuHib10RqDJL"
+                                    title="Stop & Breathe Trailer" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>-->
+                            </div>
+            
+                            <div class="project-sidebar">
+                                <div class="project-description">
+                                    <div class="bottom"></div>
+                                    <div class="top">
+                                        <p>
+                                            A project created for an assignment in an asset creation class at Sheridan College. I modelled two meshes (Service Weapon and Holosight), textured them, then 
+                                            created a dynamic weapon customization system that allows you to change attachments and paint colours. <br> <br>
+
+                                            The other weapons/attachments were provided by fellow students and the professor.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="project-link">
+                                    <div class="bottom" style="background: #030405;"></div>
+                                    <div class="top" style="background: #0d1117;">
+                                        <a href="https://github.com/hjbenitez/gunsmith" target="_blank"><img src="../images/icons/github.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-images">
+                            <div class="project-image">
+                                <img src="..\images\Gunsmith\gunsmith-image1.png"> 
+                            </div>
+            
+                            <div class="project-image">
+                                <img src="..\images\Gunsmith\gunsmith-image2.png"> 
+                            </div>
+            
+                            <div class="project-image">
+                                <img src="..\images\Gunsmith\gunsmith-image3.png"> 
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="process" class="tab-panel" style="margin-bottom: 2vw;">
+                        <div class="accomplishments">
+                            <div class="accomplishment">
+                                <div class="accomplishment-details">
+                                    <div class="bottom"></div>
+                                    <div class="top">
+                                        <div class="accomplishment-title">
+                                            <h1>UI/HUD Designing</h1>
+                                        </div>
+                                        <p>
+                                            I wanted to have a dynamic UI that showed relevant information for what is being clicked on. So I only showed buttons that were relevant to the weapon being inspected. 
+                                            UI lights up when the options are selected and if the player switches weapons the attachmen, if supported, will transfer over to the new weapon. I also added a camera shake and a particle
+                                            effect to make the HUD more dynamic. <br><br>
+            
+                                            The last item implemented was sound. I added sound effects that made sense and that are satisfying to hear. For instance, changing the paint job makes a sound of a spray can being sprayed, adding an attachment
+                                            makes a wrench turning sound etc. Lastly, to set the mood, I added some ambience to the scene with a rain & thunder soundtrack playing and looping in the background which makes the scene feel more alive.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accomplishment">
+                                <div class="accomplishment-details">
+                                    <div class="bottom"></div>
+                                    <div class="top">
+                                        <div class="accomplishment-title">
+                                            <h1>Asset Creation Pipeline</h1>
+                                        </div>
+                                        <p>
+                                            While creating the Service Weapon and Holosight, I followed an asset creation pipeline that was taught in one of my courses at Sheridan. <br><br>
+            
+                                            I modelled the assets in Maya and since the Service Weapon is the Service Weapon from the game Control, I was able to use multiple reference photos to aid me. I created 
+                                            two versions of each one, an high-poly and low-poly. I unwrapped the UVs of the models using Maya's tools. I then took the low-poly into Substance Painter and baked the high-poly into the low-poly keep both
+                                            the detail of the high-poly and optimization of the low-poly. I used Substance to texture the assets and exported the appropiate maps into Unreal Engine 4 with the untextured the assets.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>

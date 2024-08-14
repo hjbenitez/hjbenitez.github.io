@@ -35,7 +35,7 @@
             <div class="button-header">
                 <div class="button-bottom"><img src="..\images\icons\logo-back.png" class="logo-image-back"></div>
                 <div class="button-top">
-                    <a href="..\homepage\index.html"><img src="..\images\icons\logo.png" class="logo-image"></a>
+                    <a href="..\index.html"><img src="..\images\icons\logo.png" class="logo-image"></a>
                 </div>
             </div>
 
@@ -59,182 +59,223 @@
         </div>
     </header>
 
+    <div class="project-title">
+        <div class="bottom"></div>
+        <div class="top">
+            <img src="..\images\OMAAT\one-month-at-a-time.png" class="project-title-logo">
+            <img src="..\images\OMAAT\One Month at a TIme.png" class="project-title-cover">
+        </div>
+    </div>
+
     <div class="project-background">
         <div class="project-main">
-            <div class="project-title">
-                <div class="bottom"></div>
-                <div class="top">
-                    <img src="..\images\OMAAT\one-month-at-a-time.png" class="project-title-logo">
-                    <img src="..\images\OMAAT\One Month at a TIme.png" class="project-title-cover">
-                </div>
-            </div>
+            <div class="tabset">
+                <!-- Tab 1 -->
+                <input type="radio" name="tabset" id="tab1" aria-controls="aboutproject" onClick="topFunction()"
+                    checked>
+                <label for="tab1">PROJECT INFO</label>
+                <!-- Tab 2 -->
+                <!--<input type="radio" name="tabset" id="tab2" aria-controls="showcase" onClick="topFunction()">
+                <label for="tab2">SHOWCASES</label>-->
+                <!-- Tab 3 -->
+                <input type="radio" name="tabset" id="tab3" aria-controls="process" onClick="topFunction()">
+                <label for="tab3">PROCESS</label>
+                <!-- Tab 4
+                <input type="radio" name="tabset" id="tab4" aria-controls="writings" onClick="topFunction()">
+                <label for="tab4">WRITINGS</label> -->
+                <!-- Tab 5 
+                <input type="radio" name="tabset" id="tab5" aria-controls="resume" onClick="topFunction()">
+                <label for="tab5">RESUME</label>-->
 
-            <div class="infomation-panel">
-                <div class="info-column first-column-info">
-                    <div class="info-title">
-                        <h1>CONTRIBUTION</h1>
-                    </div>
-                    <div class="info-detail">
-                        <h1>PROGRAMMER</h1>
-                    </div>
-                </div>
+                <div class="tab-panels">
+                    <section id="aboutproject" class="tab-panel" style="margin-bottom: 2vw;">
+                        <div class="infomation-panel">
+                            <div class="info-column first-column-info">
+                                <div class="info-title">
+                                    <h1>CONTRIBUTION</h1>
+                                </div>
+                                <div class="info-detail">
+                                    <h1>PROGRAMMER</h1>
+                                </div>
+                            </div>
 
-                <div class="info-column">
-                    <div class="info-title">
-                        <h1>ENGINE</h1>
-                    </div>
-                    <div class="info-detail">
-                        <h1>Unity</h1>
-                    </div>
-                </div>
+                            <div class="info-column">
+                                <div class="info-title">
+                                    <h1>ENGINE</h1>
+                                </div>
+                                <div class="info-detail">
+                                    <h1>Unity</h1>
+                                </div>
+                            </div>
 
-                <div class="info-column">
-                    <div class="info-title">
-                        <h1>LANGUAGE</h1>
-                    </div>
-                    <div class="info-detail">
-                        <h1>C#</h1>
-                    </div>
-                </div>
+                            <div class="info-column">
+                                <div class="info-title">
+                                    <h1>LANGUAGE</h1>
+                                </div>
+                                <div class="info-detail">
+                                    <h1>C#</h1>
+                                </div>
+                            </div>
 
-                <div class="info-column last-column-info">
-                    <div class="info-title">
-                        <h1>TYPE</h1>
-                    </div>
-                    <div class="info-detail">
-                        <h1>COLLEGE PROJECT</h1>
-                    </div>
-                </div>
-            </div>
-
-            <!--
-            <div class="project-boiler">
-                <div class="project-cover">
-                    <iframe src="https://www.youtube.com/embed/JS2vGvm_OVA?si=R-x1g89bD_NTEAWe"
-                        title="Doc punches Little Mac so hard he shatters reality" frameborder="1"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            -->
-            <div class="project-description-links">
-                <div class="project-description">
-
-                    <p>
-                        You follow Victoria, a college student as she struggles to get by during the housing crisis in
-                        Ontario. A wide variety of characters to
-                        interact with in this visual novel that informs the player about an issue that is felt across
-                        Canada.
-                    </p>
-                </div>
-
-                <div class="project-links">
-                    <div class="project-link-button">
-                        <div class="bottom" style="background: #030405;"></div>
-                        <div class="top" style="background: #0d1117;">
-                            <a href="https://github.com/hjbenitez/OneMonthAtATime" target="_blank"
-                                title="https://github.com/hjbenitez/OneMonthAtATime"><img
-                                    src="..\images\icons\github.png"></a>
+                            <div class="info-column last-column-info">
+                                <div class="info-title">
+                                    <h1>TYPE</h1>
+                                </div>
+                                <div class="info-detail">
+                                    <h1>COLLEGE PROJECT</h1>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="project-link-button">
-                        <div class="bottom" style="background: #a13e3e;"></div>
-                        <div class="top" style="background: #fa5c5c;">
-                            <a href="https://benitez177.itch.io/one-month-at-a-time" target="_blank"
-                                title="https://benitez177.itch.io/one-month-at-a-time"><img
-                                    src="..\images\icons\itch-io.png"></a>
+                        <div class="project-boiler">
+                            <div class="project-cover">
+                                <iframe src="https://www.youtube.com/embed/JS2vGvm_OVA?si=R-x1g89bD_NTEAWe"
+                                    title="Doc punches Little Mac so hard he shatters reality" frameborder="1"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                            <div class="project-sidebar">
+                                <div class="project-description">
+                                    <p>
+                                        You follow Victoria, a college student as she struggles to get by during the
+                                        housing crisis in
+                                        Ontario. A wide variety of characters to
+                                        interact with in this visual novel that informs the player about an issue that
+                                        is felt across
+                                        Canada.
+                                    </p>
+                                </div>
+
+                                <div class="project-link">
+                                    <div class="bottom" style="background: #030405;"></div>
+                                    <div class="top" style="background: #0d1117;">
+                                        <a href="https://github.com/hjbenitez/OneMonthAtATime" target="_blank"
+                                            title="https://github.com/hjbenitez/OneMonthAtATime"><img
+                                                src="..\images\icons\github.png"></a>
+                                    </div>
+                                </div>
+
+                                <div class="project-link" style="margin-top: 2vw;">
+                                    <div class="bottom" style="background: #a13e3e;"></div>
+                                    <div class="top" style="background: #fa5c5c;">
+                                        <a href="https://benitez177.itch.io/one-month-at-a-time" target="_blank"
+                                            title="https://benitez177.itch.io/one-month-at-a-time"><img
+                                                src="..\images\icons\itch-io.png"></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="project-images">
-                <div class="project-image">
-                    <img src="..\images\OMAAT\apartment-day1.png">
-                </div>
+                        <div class="project-images">
+                            <div class="project-image">
+                                <img src="..\images\OMAAT\apartment-day1.png">
+                            </div>
 
-                <div class="project-image">
-                    <img src="..\images\OMAAT\apartment-day10.png">
-                </div>
+                            <div class="project-image">
+                                <img src="..\images\OMAAT\apartment-day10.png">
+                            </div>
 
-                <div class="project-image">
-                    <img src="..\images\OMAAT\classroom-day7.png">
-                </div>
-            </div>
-
-            <div class="accomplishments">
-                <div class="accomplishment">
-                    <div class="accomplishment-details left">
-                        <div class="accomplishment-title">
-                            <h1>Working with Fungus</h1>
+                            <div class="project-image">
+                                <img src="..\images\OMAAT\classroom-day7.png">
+                            </div>
                         </div>
-                        <p>
-                            Since the team decided it was best to tell the story in a visual genre, we decided it was
-                            best to use Fungus, which is an open source tool that
-                            provides a robust dialogue system and character portraits. <br><br>
+                    </section>
 
-                            I was able to pick up Fungus relatively quickly and was able to start manipulating the tool
-                            to the needs of the project, such as changing the layout of the default
-                            dialogue box, changing font size, changing the dialogue box background, etc. <br><br>
+                    <section id="process" class="tab-panel" style="margin-bottom: 2vw;">
+                        <div class="accomplishments">
+                            <div class="accomplishment">
+                                <div class="accomplishment-details left">
+                                    <div class="accomplishment-title">
+                                        <h1>Working with Fungus</h1>
+                                    </div>
+                                    <p>
+                                        Since the team decided it was best to tell the story in a visual genre, we
+                                        decided it was
+                                        best to use Fungus, which is an open source tool that
+                                        provides a robust dialogue system and character portraits. <br><br>
 
-                            Since Fungus is a visual scripting tool, there are a ton of nodes (called Commands) that
-                            prove to be useful during development. There were also some variables I created that I
-                            needed
-                            to change using the "Change Variable" node would make the exisitng tree very long and
-                            tedious to deal with. Thankfully, Fungus allows users to create their own Commands in C#,
-                            and so I created a bunch
-                            for certain aspects in the project that I needed to keep referencing (such as changing the
-                            Academic, Mental Health, and Money values).
-                        </p>
-                    </div>
-                </div>
+                                        I was able to pick up Fungus relatively quickly and was able to start
+                                        manipulating the tool
+                                        to the needs of the project, such as changing the layout of the default
+                                        dialogue box, changing font size, changing the dialogue box background, etc.
+                                        <br><br>
 
-                <div class="accomplishment">
-                    <div class="accomplishment-details left">
-                        <div class="accomplishment-title">
-                            <h1>Collaborating with Others</h1>
+                                        Since Fungus is a visual scripting tool, there are a ton of nodes (called
+                                        Commands) that
+                                        prove to be useful during development. There were also some variables I created
+                                        that I
+                                        needed
+                                        to change using the "Change Variable" node would make the exisitng tree very
+                                        long and
+                                        tedious to deal with. Thankfully, Fungus allows users to create their own
+                                        Commands in C#,
+                                        and so I created a bunch
+                                        for certain aspects in the project that I needed to keep referencing (such as
+                                        changing the
+                                        Academic, Mental Health, and Money values).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accomplishment">
+                                <div class="accomplishment-details left">
+                                    <div class="accomplishment-title">
+                                        <h1>Collaborating with Others</h1>
+                                    </div>
+                                    <p>
+                                        This project allowed to collaborate with others for an extended period of time
+                                        (2 semester)
+                                        which at the time was the longest
+                                        I would be undertaking a project like this. <br><br>
+
+                                        I learned how to function in a team, how communicate requirements across
+                                        different
+                                        disciplines, and since it was a small team of game designers as well,
+                                        how to participate in discussions respectfully and how to critizing points and
+                                        provide
+                                        feedback. <br><br>
+
+                                        Even though this experience was short lived compared to the length of an AAA or
+                                        even indie
+                                        team would spend together, I think I still learned some valuable
+                                        experiences about collaborations and I was able to transfer some of these skills
+                                        into
+                                        capstone.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accomplishment">
+                                <div class="accomplishment-details">
+                                    <div class="accomplishment-title">
+                                        <h1>UI Design and Iterations</h1>
+                                    </div>
+                                    <p>
+                                        The UI of One Month at a Time has gone through multiple iterations, with each
+                                        iteration
+                                        addressing a problem with the previous version. Most of these iterations
+                                        worked to improve the readibility of the icons so players can recognize what
+                                        each bar meant
+                                        without having the need to TELL the players directly and clogging up
+                                        the screen with more text. <br><br>
+
+                                        One iteration of the UI introduced visual feedback by highlighting which bars
+                                        would be
+                                        affected when the player hovers over an option. This allowed players to gain an
+                                        informed decision on what their choice affects. This was later polished by
+                                        adding fades
+                                        ins/outs to the colour and deeper saturation if the option affected the resource
+                                        greatly. <br><br>
+
+                                        Below, you'll see the multiple iterations the UI design has underwent and the
+                                        intent of each
+                                        iteration that the solution tried to address.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <p>
-                            This project allowed to collaborate with others for an extended period of time (2 semester)
-                            which at the time was the longest
-                            I would be undertaking a project like this. <br><br>
-
-                            I learned how to function in a team, how communicate requirements across different
-                            disciplines, and since it was a small team of game designers as well,
-                            how to participate in discussions respectfully and how to critizing points and provide
-                            feedback. <br><br>
-
-                            Even though this experience was short lived compared to the length of an AAA or even indie
-                            team would spend together, I think I still learned some valuable
-                            experiences about collaborations and I was able to transfer some of these skills into
-                            capstone.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="accomplishment">
-                    <div class="accomplishment-details">
-                        <div class="accomplishment-title">
-                            <h1>UI Design and Iterations</h1>
-                        </div>
-                        <p>
-                            The UI of One Month at a Time has gone through multiple iterations, with each iteration
-                            addressing a problem with the previous version. Most of these iterations
-                            worked to improve the readibility of the icons so players can recognize what each bar meant
-                            without having the need to TELL the players directly and clogging up
-                            the screen with more text. <br><br>
-
-                            One iteration of the UI introduced visual feedback by highlighting which bars would be
-                            affected when the player hovers over an option. This allowed players to gain an
-                            informed decision on what their choice affects. This was later polished by adding fades
-                            ins/outs to the colour and deeper saturation if the option affected the resource
-                            greatly. <br><br>
-
-                            Below, you'll see the multiple iterations the UI design has underwent and the intent of each
-                            iteration that the solution tried to address.
-                        </p>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -245,26 +286,17 @@
             <div class="color-button">
                 <div class="bottom" style="background: #D68765;"></div>
                 <div class="top" style="background: #708168;"
-                    onClick="changeColour('#708168', '#374231', '#D68765', '#804F3A', '#484957', '#202026')"></div>
+                    onClick="changeColour('#708168', '#374231', '#D68765', '#804F3A', '#484957', '#202026')">
+                </div>
             </div>
         </div>
 
-        <div class="footer-middle">
-            <div class="footer-text">
-                <div class="bottom"></div>
-                <div class="top">
-                    <p>
-                        You made it to the bottom!
-                    </p>
-                </div>
-            </div>
-
-            <div class="repository-button">
-                <div class="bottom"></div>
-                <div class="top">
-                    <a class="repository-link" href="https://github.com/hjbenitez/hjbenitez.github.io">You can take
-                        a peek behind the curtain here</a>
-                </div>
+        <div class="repository-button">
+            <div class="bottom"></div>
+            <div class="top">
+                <a class="repository-link" href="https://github.com/hjbenitez/hjbenitez.github.io">
+                    <img src="..\images\icons\github.png" style="background: #0D1117;">
+                </a>
             </div>
         </div>
 
@@ -272,7 +304,8 @@
             <div class="color-button">
                 <div class="bottom" style="background: #853438;"></div>
                 <div class="top" style="background: #343E85;"
-                    onClick="changeColour('#343E85', '#0E1A48', '#853438', '#40191B', '#474B59', '#31343d')"></div>
+                    onClick="changeColour('#343E85', '#0E1A48', '#853438', '#40191B', '#474B59', '#31343d')">
+                </div>
             </div>
         </div>
     </footer>
