@@ -424,23 +424,20 @@
 .accomplishment{
     display: flex;
     flex-wrap: wrap;
-    background: var(--teritary-colour);
 
-    border: 0.15vw solid black;
-    border-radius: 1vw;
-
+    
     width:100%;
     gap: 0vw 2vw; 
-    padding: 1vw;
-    margin: 2vw 0vw 0vw;
 }
 
 .accomplishment-details{
     display: grid;
-    flex:2;
-
-
+    background: var(--teritary-colour);
+    border: 0.15vw solid black;
     border-radius: 1vw;
+    flex:2;
+    border-radius: 1vw;
+    margin: 0.5vw 0vw 0vw;
 }
 
 .accomplishment-title {
@@ -449,10 +446,12 @@
 
     border-radius: 1vw;
     height: 5vw;
+    width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
     border: 0.15vw solid black;
+    margin-top: 2vw;
 }
 
 .accomplishment-title h1{
