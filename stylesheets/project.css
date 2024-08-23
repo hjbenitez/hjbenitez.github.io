@@ -459,13 +459,17 @@
     font-weight: bold;
 }
 
+.accomplishment-details a {
+    color: white;
+}
+
 .accomplishment-details p{
     color: white;
     text-align: center;
     text-wrap: wrap;
     margin: 1vw 2vw;
     font-size: 1.5vw;
-    line-height: 1.5vw;
+    line-height: 1.75vw;
 }
 
 .accomplishment-details.right p{
@@ -479,28 +483,25 @@
 .accomplishment-image {
     display: grid;
     flex: 1;
+    height: 25vw;
 
-    transition: transform 0.25s ease;
+    margin-top: 0.5vw;
+
 }
 
-.accomplishment-image:hover {
+.accomplishment-image img:hover {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
 }
 
-
-.accomplishment-image {
-    height: 25vw;
-}
-
 .accomplishment-image img {
     height: 25vw;
-    width: 100%;
     line-height: 0;
     object-fit: cover;
-
+    
     border: 0.15vw solid black;
     border-radius: 1vw;
+    transition: transform 0.25s ease;
 }
 
 .caption {

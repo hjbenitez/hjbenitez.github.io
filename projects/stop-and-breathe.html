@@ -156,15 +156,6 @@
                                                 src="..\images\icons\itch-io.png"></a>
                                     </div>
                                 </div>
-            
-                                <div class="project-link" style="margin-top: 2vw;">
-                                    <div class="bottom" style="background: #030405;"></div>
-                                    <div class="top" style="background: #0d1117;">
-                                        <a href="https://github.com/hjbenitez/ProjectAnxiety" target="_blank">
-                                            <img src="..\images\icons\github.png">
-                                        </a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         
@@ -290,22 +281,14 @@
                                         The team wanted to have the anxiety to have a visual representation on the world around the player.
                                         Originally, the idea was to have the anxiety "cloud" the area and once the player performs a breathing
                                         technique it would push away the fog and reveal the area and unlock the puzzles the player needs to 
-                                        complete to progress.
-
-                                        
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Building the Dialogue System ---------------------------------------------->
-                            <div class="accomplishment-title">
-                                <h1>Building a Dialogue System</h1>
-                            </div>
-
-                            <div class="accomplishment">
-                                <div class="accomplishment-details">
-                                    <p>
-                                        
+                                        complete to progress. My first idea was exploring Unreal's Volumetric Fog system. Unfortunately, I don't
+                                        have images of this concept because it was extremely early in development and I pivoted away from this rather
+                                        quickly. There is a video by MrKosiej on YouTube that demonstrates how this would have been implemented 
+                                        <a href="https://www.youtube.com/watch?v=d20QYs8YNeY" target="_blank">found here!</a> The method works
+                                        really well for a top-down perspective but there are issues concerning visibility for a 3D side-scrolling puzzle-platformer.
+                                        How can I make sure players see where they are? How can I ensure they can see how big a gap is to make a jump?
+                                        How can I make sure they don't get lost in the cloudy environment while exploring for the way forward? A solution
+                                        could include decreasing the density of the fog but initial testing  made the fog too weak to convey the desired effect.
                                     </p>
                                 </div>
 
@@ -313,8 +296,37 @@
 
                                 <div class="accomplishment-details">
                                     <p>
-                                        
+                                        I decided to try to "colour" the world instead to protray the anxiety affect instead so I set my eyes on the Post Processing Volume (PPV) that 
+                                        was in the scene by default. The PPV lets you set materials that can then be overlayed onto the screen, allowing for cool visuals and effects. 
+                                        This was how our chromatic aberration effect was developed later by a colleague. So I created a Post Processing Material (PPM) that is 
+                                        specifically for the PPV and added an effect where it tints the screen darker than usual. Then I attached an invisible circle static mesh
+                                        to the player controller and set the size to 0 when beginning play. I then enabled a setting on the circle called "Custom Render Depth." Because of how
+                                        I set up the PPM, this will allow anything within the screen bounds of the circle static mesh to ignore the PPV material. Then as the player breathes, I make 
+                                        this circle bigger and bigger and it effectively dispels the anxiety away! (see right)
                                     </p>
+                                </div>
+                                
+                                <div class="accomplishment-image" style="justify-content: end;">
+                                    <img src="..\images\StopAndBreathe\accomplishments\initial-anxiety-effect - med.gif">
+                                </div>
+
+                                <div class="break"></div>
+
+                                <div class="accomplishment-details">
+                                    <p>
+                                        I later added the ability to mess up but the breathing but be able to try again. By itself it didn't "feel" like the player messed up but rather cancelled the 
+                                        inputs. So I added a subtle screenshake to signify a mistake was made.
+                                    </p>
+                                </div>
+
+                                <div class="break"></div>
+
+                                <div class="accomplishment-image">
+                                    <img src="..\images\StopAndBreathe\accomplishments\mess-up-no-shake - med.gif" style="width: 100%;">
+                                </div>
+
+                                <div class="accomplishment-image">
+                                    <img src="..\images\StopAndBreathe\accomplishments\mess-up-shake - med.gif" style="width: 100%;">
                                 </div>
                             </div>
                         </div>
