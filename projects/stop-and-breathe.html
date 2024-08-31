@@ -300,7 +300,7 @@
                                         was in the scene by default. The PPV lets you set materials that can then be overlayed onto the screen, allowing for cool visuals and effects. 
                                         This was how our chromatic aberration effect was developed later by a colleague. So I created a Post Processing Material (PPM) that is 
                                         specifically for the PPV and added an effect where it tints the screen darker than usual. Then I attached an invisible circle static mesh
-                                        to the player controller and set the size to 0 when beginning play. I then enabled a setting on the circle called "Custom Render Depth." Because of how
+                                        to the player controller and set the size to 0 when beginning play. I then enabled a setting on the mesh called "Render CustomDepth Pass." Because of how
                                         I set up the PPM, this will allow anything within the screen bounds of the circle static mesh to ignore the PPV material. Then as the player breathes, I make 
                                         this circle bigger and bigger and it effectively dispels the anxiety away! (right)
                                     </p>
@@ -308,20 +308,19 @@
                                 
                                 <div class="accomplishment-image" style="justify-content: end;">
                                     <img src="..\images\StopAndBreathe\accomplishments\initial-anxiety-effect - med.gif">
-                                    <div class="caption">your mom</div>
+                                    <div class="caption" style="top: 96%;"><p>Initial Anxiety Effect</p></div>
                                     
                                 </div>
 
                                 <div class="break"></div>
-
-                                
+           
                                 <div class="accomplishment-image">
-                                    <img src="..\images\StopAndBreathe\accomplishments\mess-up-no-shake - med.gif" style="width: 100%;">
+                                    <img src="..\images\StopAndBreathe\accomplishments\mess-up-no-shake - med.gif">
                                     <div class="caption" style="top: 95%;"><p>No Screen Shake on Mess Up</p></div>
                                 </div>
                                 
                                 <div class="accomplishment-image">
-                                    <img src="..\images\StopAndBreathe\accomplishments\mess-up-shake - med.gif" style="width: 100%;">
+                                    <img src="..\images\StopAndBreathe\accomplishments\mess-up-shake - med.gif">
                                     <div class="caption" style="top: 95%;"><p>Screen Shake on Mess Up</p></div>
                                 </div>
 
@@ -331,7 +330,77 @@
                                         inputs. So I added a subtle screenshake to signify a mistake was made.
                                     </p>
                                 </div>
+
+                                <div class="break"></div>
+
+                                <div class="accomplishment-details">
+                                    <p>
+                                        After some playtests with peers in the same year, it was quickly realized that due to the bounds between "Anxiety" and "Calm" being a hard edge and the 
+                                        "Anxiety" itself is darkness, that the effect felt more like someone feeling depressed than someone feeling anxious. After some brainstorming, the team decided
+                                        that we should change the current state of the effect drastically. It would now encompass 3 features:
+                                    </p>
+
+                                    <ul>
+                                        <li>Saturation control</li>
+                                        <li>Chromatic abbrevation</li>
+                                        <li>Vignette</li>
+                                    </ul>
+
+                                    <p>
+                                        I would be fully responsible for saturation control and the vignette while another team member, <a href="https://www.dawsonpeloquin.com/" target="_blank">Dawson</a> 
+                                        would be responsible for creating the chromatic abbrevation material which I would later implement.
+                                    </p>
+
+                                    <p>
+                                        The team took decided this was the best way to do it because the onset of anxiety is usually a gradual change that an individual would feel. It doesn't flip on like a switch.
+                                        This change would allow us to convey this gradually change through the visuals of the game. The saturation, vignette and even the intensity of the chromatic abbrevation
+                                        could be adjusted during runtime to slowly show the onset of the anxiety. 
+                                    </p>
+                                </div>
+
+                                <div class="break"></div>
+
+                                <div class="accomplishment-details">
+                                    <p>
+                                        I decided to start working on the saturation effect. This effect would cause the color in the world to solely come back as the player performs the breathing exercises.
+                                        The PPV has setting that allows the developer to change the Global Saturation within the viewport with a value. 0 meant the world was desaturated while 1 meant it was saturated. 
+                                        I tied the saturation increase to be equally distributed across each consecutive breathing sequence. For example, in the Atrium the player has to perform the breathing exercises 
+                                        3 times before continuing to the next area. Each successful sequence would increase the saturation by 0.33... so after the player finished performing the exercises it would be 
+                                        (effectively) be 1, a fully saturated world! I later changed the max to 1.2 to show a little more colour to the world.
+                                    </p>
+                                </div>
+
+                                <div class="accomplishment-image">
+                                    <img src="..\images\under-construction.gif">
+                                    <div class="caption" style="top: 96%;"><p>Saturation Slowly Returning on each Sequence</p></div>
+                                </div>
+
+                                <div class="break"></div>
+
+                                
+                                <div class="accomplishment-image">
+                                    <img src="..\images\under-construction.gif">
+                                    <div class="caption" style="top: 96%;"><p>BC not culled from the effect</p></div>
+                                </div>
+                                
+                                <div class="accomplishment-image">
+                                    <img src="..\images\under-construction.gif">
+                                    <div class="caption" style="top: 96%;"><p>BC being culled from the effect</p></div>
+                                </div>
+                                
+                                <div class="accomplishment-details">
+                                    <p>
+                                        Due to the saturation making everything monochromatic, I wanted to at least make the breathing circle standout so players would be drawn to it and investigate it, so they could 
+                                        start performing the breathing exercises. This would've been possible with "Render CustomDepth Pass" but since the Global Saturation doesn't involve using a PPM, this feature has
+                                        no effect. Since I felt this effect would be crucial to the player experience, I investigated whether or not I could replicate this effect in a PPM. I used the same PPM i created from
+                                        the first iteration and saw there was a desaturation node and after some playing around, I was able to get the exact same effect with the added benefit of culling any objects I desired!
+                                    </p>
+                                </div>
                             </div>
+                            
+
+
+
                         </div>
                     </section>
                 </div>

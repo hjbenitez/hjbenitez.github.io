@@ -425,7 +425,6 @@
     display: flex;
     flex-wrap: wrap;
 
-    
     width:100%;
     gap: 0vw 2vw; 
 }
@@ -463,15 +462,22 @@
     color: white;
 }
 
-.accomplishment-details p{
+.accomplishment-details p,
+.accomplishment-details li{
     color: white;
-    text-align: center;
+    text-align: start;
     text-wrap: wrap;
     margin: 1vw 2vw;
     font-size: 1.5vw;
-    line-height: 1.5vw;
+    line-height: 1.75vw;
 
     align-self: center;
+}
+
+.accomplishment-details ul {
+    list-style-position: inside;
+    text-align: start;
+    margin: -0.5vw 0vw;
 }
 
 .accomplishment-details.right p{
@@ -504,7 +510,7 @@
 */
 
 .accomplishment-image:hover > .caption {
-    opacity: 0.75;
+    opacity: 0.9;
 }
 
 .accomplishment-image img {
