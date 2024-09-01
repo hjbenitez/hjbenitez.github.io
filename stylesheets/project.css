@@ -435,7 +435,6 @@
     border: 0.15vw solid black;
     border-radius: 1vw;
     flex:2;
-    border-radius: 1vw;
     margin: 1vw 0vw 0vw;
 }
 
@@ -456,6 +455,30 @@
 .accomplishment-title h1{
     font-size: 2.5vw;
     font-weight: bold;
+}
+
+.accomplishment-sub {
+    background: var(--secondary-colour-shade);
+    color: white;
+
+    border-radius: 1vw;
+    height: 3vw;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 0.15vw solid black;
+    margin-top: 2vw;
+    flex-basis: 100%;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.accomplishment-sub h1{
+    font-size: 1.5vw;
+    font-weight: bold;
+    line-height: 1vw;
 }
 
 .accomplishment-details a {

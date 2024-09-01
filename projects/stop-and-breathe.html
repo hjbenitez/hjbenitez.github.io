@@ -292,8 +292,10 @@
                                     </p>
                                 </div>
 
-                                <div class="break"></div>
-
+                                <div class="accomplishment-sub">
+                                    <h1>First Iteration</h1>
+                                </div>
+                                
                                 <div class="accomplishment-details">
                                     <p>
                                         I decided to try to "colour" the world instead to protray the anxiety affect instead so I set my eyes on the Post Processing Volume (PPV) that 
@@ -331,7 +333,9 @@
                                     </p>
                                 </div>
 
-                                <div class="break"></div>
+                                <div class="accomplishment-sub">
+                                    <h1>Changes</h1>
+                                </div>
 
                                 <div class="accomplishment-details">
                                     <p>
@@ -366,26 +370,17 @@
                                         The PPV has setting that allows the developer to change the Global Saturation within the viewport with a value. 0 meant the world was desaturated while 1 meant it was saturated. 
                                         I tied the saturation increase to be equally distributed across each consecutive breathing sequence. For example, in the Atrium the player has to perform the breathing exercises 
                                         3 times before continuing to the next area. Each successful sequence would increase the saturation by 0.33... so after the player finished performing the exercises it would be 
-                                        (effectively) be 1, a fully saturated world! I later changed the max to 1.2 to show a little more colour to the world.
+                                        (effectively) be 1, a fully saturated world! I later changed the max to 1.2 to show a little more colour to the world. The vignette works a very similar way but with a max intensity of 1.5.
                                     </p>
                                 </div>
 
                                 <div class="accomplishment-image">
-                                    <img src="..\images\under-construction.gif">
+                                    <img src="..\images\StopAndBreathe\accomplishments\new saturation effect.gif">
                                     <div class="caption" style="top: 96%;"><p>Saturation Slowly Returning on each Sequence</p></div>
                                 </div>
 
-                                <div class="break"></div>
-
-                                
-                                <div class="accomplishment-image">
-                                    <img src="..\images\under-construction.gif">
-                                    <div class="caption" style="top: 96%;"><p>BC not culled from the effect</p></div>
-                                </div>
-                                
-                                <div class="accomplishment-image">
-                                    <img src="..\images\under-construction.gif">
-                                    <div class="caption" style="top: 96%;"><p>BC being culled from the effect</p></div>
+                                <div class="accomplishment-sub">
+                                    <h1>Getting the Culling Effect on the Breathing Circle</h1>
                                 </div>
                                 
                                 <div class="accomplishment-details">
@@ -395,6 +390,18 @@
                                         no effect. Since I felt this effect would be crucial to the player experience, I investigated whether or not I could replicate this effect in a PPM. I used the same PPM i created from
                                         the first iteration and saw there was a desaturation node and after some playing around, I was able to get the exact same effect with the added benefit of culling any objects I desired!
                                     </p>
+                                </div>
+
+                                <div class="break"></div>
+
+                                <div class="accomplishment-image">
+                                    <img src="..\images\StopAndBreathe\accomplishments\not culled.png">
+                                    <div class="caption" style="top: 96%;"><p>BC not culled from the effect</p></div>
+                                </div>
+                                
+                                <div class="accomplishment-image">
+                                    <img src="..\images\StopAndBreathe\accomplishments\culled.png">
+                                    <div class="caption" style="top: 96%;"><p>BC being culled from the effect</p></div>
                                 </div>
                             </div>
                             
