@@ -425,7 +425,6 @@
     display: flex;
     flex-wrap: wrap;
 
-    
     width:100%;
     gap: 0vw 2vw; 
 }
@@ -436,8 +435,7 @@
     border: 0.15vw solid black;
     border-radius: 1vw;
     flex:2;
-    border-radius: 1vw;
-    margin: 0.5vw 0vw 0vw;
+    margin: 1vw 0vw 0vw;
 }
 
 .accomplishment-title {
@@ -459,13 +457,50 @@
     font-weight: bold;
 }
 
-.accomplishment-details p{
+.accomplishment-sub {
+    background: var(--secondary-colour-shade);
     color: white;
-    text-align: center;
+
+    border-radius: 1vw;
+    height: 3vw;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 0.15vw solid black;
+    margin-top: 2vw;
+    flex-basis: 100%;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.accomplishment-sub h1{
+    font-size: 1.5vw;
+    font-weight: bold;
+    line-height: 1vw;
+}
+
+.accomplishment-details a {
+    color: white;
+}
+
+.accomplishment-details p,
+.accomplishment-details li{
+    color: white;
+    text-align: start;
     text-wrap: wrap;
     margin: 1vw 2vw;
     font-size: 1.5vw;
-    line-height: 1.5vw;
+    line-height: 1.75vw;
+
+    align-self: center;
+}
+
+.accomplishment-details ul {
+    list-style-position: inside;
+    text-align: start;
+    margin: -0.5vw 0vw;
 }
 
 .accomplishment-details.right p{
@@ -477,24 +512,32 @@
 }
 
 .accomplishment-image {
-    display: grid;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
     flex: 1;
+    /*transition: transform 0.25s ease;*/
+    margin-top: 1vw;
 
-    transition: transform 0.25s ease;
+    justify-content: center;
+    align-items: center;
 }
 
+/*
 .accomplishment-image:hover {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
 }
+*/
 
-
-.accomplishment-image {
-    height: 25vw;
+.accomplishment-image:hover > .caption {
+    opacity: 0.9;
 }
 
 .accomplishment-image img {
-    height: 25vw;
+    height: 100%;
     width: 100%;
     line-height: 0;
     object-fit: cover;
@@ -504,22 +547,28 @@
 }
 
 .caption {
-    background: var(--secondary-colour);
+    position: absolute;
+    width: 100%;
+    height: 2vw;
+
+    top: 0;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+
+    border-radius: 0vw 0vw 1vw 1vw;
     
-    border: 0.15vw solid black;
-    border-radius: 1vw;
+    background-color: #000000; 
+    opacity: 0;
 
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-    line-height: 0;
+    transition: opacity 0.5s ease;
 }
-
 .caption p {
-    font-size: 0.75vw;
     color: white;
-}
+    font-size: 1vw;
+    
+    text-align: center;
+    line-height: 0;
+ }
 
 .project-blocks {
     display: flex;
