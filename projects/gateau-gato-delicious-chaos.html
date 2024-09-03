@@ -230,10 +230,11 @@
                     <section id="process" class="tab-panel" style="margin-bottom: 2vw;">
                         <div class="accomplishments">
                             <div class="accomplishment">
+                                <div class="accomplishment-title">
+                                    <h1>Inverting Mechanic</h1>
+                                </div>
+
                                 <div class="accomplishment-details">
-                                        <div class="accomplishment-title">
-                                            <h1>Inverting Mechanic</h1>
-                                        </div>
                                         <p>
                                            One of my resposiblities for the project was implementing the core mechanic: inverting the player, enemies, and the environment! <br><br>
             
@@ -247,10 +248,7 @@
                                            The enivornment used a similar strategy, where the geometry itself will listen for the change in invert state and perform the texture swap. 
                                         </p>
                                 </div>
-            
-                                <div class="accomplishment-image">
-                                    <img src="..\images\DeliciousChaos\accomplishment-images\hierarchy-breakdown-higlighted.jpg">
-                                </div>
+
             
                                 <div class="break"></div>
             
@@ -271,43 +269,30 @@
                                 </div>
                             </div>
             
+                            <div class="accomplishment-title">
+                                <h1>Wave Management</h1>
+                            </div>
             
                             <div class="accomplishment">
                                 <div class="accomplishment-image">
                                     <img src="..\images\DeliciousChaos\accomplishment-images\spawning.gif">
                                 </div>
-            
                                 <div class="accomplishment-details">
-                                    <div class="accomplishment-title">
-                                        <h1>Wave Management</h1>
-                                    </div>
                                     <p>
-                                        Another one of my resposiblities was handling how waves work and managed. <br><br>
+                                        Another one of my resposiblities was handling how waves work and managed.
             
                                         A script called EnemySpawner handles spawning enemies and there are multiple instances of this script in the scene. This script tells the GameManager script when it has spawned a enemy and 
                                         which one it spawned. The GameManager uses this information to track how many of each type of enemy in the wave it still needs to spawn, and once all of the enemies has spawned, the spawners
-                                        will cease to spawn enemies and waits until the player clears the remaining enemies to start the next wave. <br><br>
-            
-                                        The game determines how many of each type of enemy should be spawned on any given wave by using an algorithm, this allows a near infinite amount of waves!
+                                        will cease to spawn enemies and waits until the player clears the remaining enemies to start the next wave. 
                                     </p>
                                 </div>
-            
+
                                 <div class="break"></div>
-            
-                                <div class="project-images">
-                                    <div class="project-image">
-                                        <img src="..\images\DeliciousChaos\accomplishment-images\enemyspawner-spawning.jpg"> 
-                                        <div class="caption">
-                                            <p>Snippet from the EnemySpawner script, showing how enemies spawn & talking to GameManager</p>
-                                        </div>
-                                    </div>
-                    
-                                    <div class="project-image">
-                                        <img src="..\images\DeliciousChaos\accomplishment-images\gamemanager-nextwave.jpg"> 
-                                        <div class="caption">
-                                            <p>Snippet from the GameManger script, showing how the next wave starts</p>
-                                        </div>
-                                    </div>
+                                
+                                <div class="accomplishment-details">
+                                    <p>
+                                        The game determines how many of each type of enemy should be spawned on any given wave by using an algorithm, this allows a near infinite amount of waves!
+                                    </p>
                                 </div>
                             </div>
                         </div>
