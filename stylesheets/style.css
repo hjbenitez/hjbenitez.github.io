@@ -117,7 +117,7 @@ body {
   font: 1vw/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
   color: #333;
   font-weight: 300;
-  background: var(--primary-colour);
+  background: var(--primary-colour); 
   margin: 0;
 }
 
