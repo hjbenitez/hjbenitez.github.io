@@ -610,3 +610,7 @@
     justify-content: center;
     flex-direction: row;
 }
+
+.play-game {
+    margin-top: 2vw;;
+}
