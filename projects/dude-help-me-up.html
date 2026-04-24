@@ -209,17 +209,159 @@
                     <section id="process" class="tab-panel" style="margin-bottom: 2vw;">
                         <div class="accomplishments">
 
-                            <!-- Creating the Anxiety Effect --------------------------------------------->
+                            <!-- Developing the Game --------------------------------------------->
                             <div class="accomplishment-title">
-                                <h1>Anxiety Effect</h1>
+                                <h1>Developing the Game</h1>
+                            </div>
+
+                            <div class="accomplishment-sub">
+                                    <h1>Day One - Ideation & Core Gameplay Loop</h1>
+                                </div>
+
+                            <div class="accomplishment">
+                                <div class="accomplishment-details">
+                                    <p>
+                                       The theme for the game jam was Capitalism, with a restriction that I could only use two colours. I knew immediately 
+                                       that I wanted to do something that emphasised mechanics since a resource-based game would take too long to balance. 
+                                       One talking point regarding capitalism is how people can be taken advantage of, and I felt I could show this in my main 
+                                       gameplay loop.
+                                    </p>
+                                    <p>
+                                        The idea is that the game would be a lite-rage game inspired by Jump King, where the player would have to climb the 
+                                        corporate ladder by using the people they work with by “collecting” them and placing them down as stepping stones 
+                                        to get higher.
+                                    </p>
+                                    <p>
+                                       I used Unity 2D as my engine of choice since I was familiar with it and used the tilemap system to be able to block out 
+                                       levels quickly. I developed a character controller and a platform, and I had my rudimentary testing grounds! I also 
+                                       decided to go with white and blue as my colour palette and created a placeholder player sprite.
+
+                                    </p>
+                                </div>
+
+                                <div class="accomplishment-sub">
+                                    <h1>Day Two - Dialogue Box & Controller Improvements</h1>
+                                </div>
+
+                                <div class="accomplishment-details">
+                                    <p>
+                                       I started working on a dialogue system so I could use it to teach players the controls of the game during key moments. 
+                                       I also thought it would be a nice addition to give some of the NPCs some personality when the player walks up to them.
+                                    </p>
+                                    <p>
+                                        I also added onto the character controller by adjusting the amount of air control the player, reducing it and adding my 
+                                        own friction, so the player can stop faster when they stop hitting the movement keys. The former makes the platforming a 
+                                        reasonable challenge, while the latter allows the player to not get punished for landing on a platform but sliding off in 
+                                        the process. 
+                                    </p>
+                                    <p>
+                                       I also added the main mechanic which I called “Place”, it allows the player to place any NPCs they collected directly underneath 
+                                       their feet to stand on but only while in the air. They would use this mechanic as the main way to progress through the levels.
+
+                                    </p>
+                                </div>
+
+                                <div class="accomplishment-sub">
+                                    <h1>Day Three - Character Animations & New Mechanic</h1>
+                                </div>
+
+                                <div class="accomplishment-details">
+                                    <p>
+                                        I started with recreating the player sprite and creating animations for movement. I used Aseprite to create the frames and I took 
+                                        those into Unity and created the idle, walking, and animations in-engine. While in Aseprite I also took the time to create the NPCs and 
+                                        accessories to stylize the NPCs a bit more. 
+                                    </p>
+                                        
+                                    <p>
+                                        Once that was done, I added a new mechanic I called “Throw” which allowed the player to throw an NPC instead to which they can 
+                                        jump to and cross large gaps. While I was testing this mechanic, I realized that this is fundamentally the same as the “Place” mechanic 
+                                        so started to brainstorm other ways a “Throw” could work.
+                                    </p>
+                                </div>
+
+                                <div class="accomplishment-sub">
+                                    <h1>Day Four - Repurposing a Mechanic</h1>
+                                </div>
+
+                                <div class="accomplishment-details">
+                                    <p>
+                                        This was a short day, but I had an idea on how to repurpose the “Throw” mechanic. Instead of using it to cross gaps, I decided that 
+                                        it would be used to throw the NPCs to break walls that are blocking the player’s path.
+                                    </p>
+
+                                    <p>
+                                        I created breakable walls that would react to a thrown NPC and would break if one was thrown at it. I think it turned out well..
+                                    </p>
+
+                                    <p>
+                                        I finished out the day by adding a start screen that would serve as the landing screen for the game. 
+                                    </p>
+                                </div>
+
+                                <div class="accomplishment-sub">
+                                    <h1>Day Five - Level Designing</h1>
+                                </div>
+
+                                <div class="accomplishment-details">
+                                    <p>
+                                        Now that the mechanics are out of the way, I can start designing the levels. I started with 3 levels as a side-scroller that 
+                                        taught the players movement and jumping then it would transition into vertical levels where to progress you had to reach 
+                                        the top of the screen. The vertical levels are where I would introduce “Collecting”, “Placing”, and “Throwing” each in that 
+                                        order. I finished the first half of the levels and tweaked the character the controller a little bit to fit the metrics of the tilemap.
+                                    </p>
+                                </div>
+
+                                <div class="accomplishment-sub">
+                                    <h1>Day Six - More Leveling Designing & Slopes</h1>
+                                </div>
+
+                                <div class="accomplishment-details">
+                                    <p>
+                                        The later levels were the goal for today; I wanted to these levels to test and challenge the player on using the mechanics. Some 
+                                        examples I did were to use the “Place” mechanic multiple times in succession or using the “Place” mechanic to position themselves 
+                                        to “Throw” an NPC. 
+                                    </p>
+
+                                    <p>
+                                        While finishing up the levels, I thought adding some slopes would add some challenge and depth to the platforming. Once I added my 
+                                        own physics to the slopes, they would now cause the player to slide off if they landed on or attempted to walk up any slope.
+                                    </p>
+
+                                    <p>
+                                        On the last level, I added a cutscene using Unity’s keyframe animation system. This would play once the player reaches the top and 
+                                        acted as the end condition for the game. It would also display some of the player’s stats like completion time and how many times they 
+                                        interacted with each mechanic.
+                                    </p>
+                                </div>
+
+                                <div class="accomplishment-sub">
+                                    <h1>Day Seven - Sound Effects & Polish</h1>
+                                </div>
+
+                                <div class="accomplishment-details">
+                                    <p>
+                                        Last day was primarily focused on polishing and fixing any outstanding buys. I first added sound effects which I used Freesounds.org to 
+                                        collect some. I took most of the sounds into Reaper, an audio editing software, to trim or adjust the pitch/reverb for specific cases.
+                                    </p>
+
+                                    <p>
+                                        I moved onto UI and added a collected NPC count in the top right corner so players can see how many people they have collected and a 
+                                        button prompt icon for when the player is close enough to collect an NPC.
+                                    </p>
+
+                                    <p>
+                                        I then added dialogue for NPCs that would appear once the player got close enough to collect and disappear if the player collected them. 
+                                        Then lastly, I animated the start screen by having NPCs falling in the background.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </section>
 
                     <section id="game" class="tab-panel" style="margin-bottom: 2vw;">
                         <div class="play-game">
-                            <iframe frameborder="0" src="https://itch.io/embed-upload/16599032?color=ffffff" allowfullscreen="" 
-                            width="1920" height="1080"><a href="https://wandergamedev.itch.io/dude-help-me-up">Play Dude! Help Me Up! on itch.io</a></iframe>
+                            <iframe frameborder="0" src="https://itch.io/embed/4317000" width="1280" height="720">
+                            <a href="https://wandergamedev.itch.io/dude-help-me-up">Dude! Help Me Up! by Wander</a></iframe>
                         </div>
                     </section>
                 </div>
